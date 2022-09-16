@@ -9,7 +9,7 @@ int main() {
     std::cout << "Введите число b: ";
     std::cin >> b;
     std::cin.clear();
-    while (a >= INT_MAX || b >= INT_MAX) {
+    while (a >= INT_MAX || b >= INT_MAX || a <= INT_MIN || b <= INT_MIN) {
         std::cout << "Одна из переменных переполнилась, введите новые.\n";
         std::cin.clear();
         std::cout << "Введите число а: ";
