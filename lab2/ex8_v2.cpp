@@ -96,19 +96,19 @@ x3;
                     std::cout << "Решений нет";
                     return 0;
                 }
-                t1 = (-b - sqrt(D)) / (2 * a);
-                t2 = (-b + sqrt(D)) / (2 * a);
-                D = t1 * t1 - 4;
+                t1 = (-b - sqrt(D)) / (2. * a);
+                t2 = (-b + sqrt(D)) / (2. * a);
+                D = t1 * t1 - 4.;
                 if (!(D < 0)) {
-                    x1 = (t1 - sqrt(D)) / 2;
-                    x2 = (t1 + sqrt(D)) / 2;
+                    x1 = (t1 - sqrt(D)) / 2.;
+                    x2 = (t1 + sqrt(D)) / 2.;
                     std::cout << "x1 = " << x1 << " x2 = " << x2;
                     return 0;
                 }
                 D = t2 * t2 - 4;
                 if (!(D < 0)) {
-                    x1 = (t2 - sqrt(D)) / 2;
-                    x2 = (t2 + sqrt(D)) / 2;
+                    x1 = (t2 - sqrt(D)) / 2.;
+                    x2 = (t2 + sqrt(D)) / 2.;
                     std::cout << "x1 = " << x1 << " x2 = " << x2;
                     return 0;
                 }
@@ -121,24 +121,24 @@ x3;
         case 3:
             std::cout << "Введите числа p, q: ";
             std::cin >> p >> q;
-            long double al,bet;
-            Q = ((p / 3) * (p / 3) * (p / 3)) + ((q / 2) * (q / 2));
-            al = cbrtl((-1 * q / 2) + sqrtl(Q));
-            bet = cbrtl((-1 * q / 2) - sqrtl(Q));
-            F = acos(((-1 * q / 2) * sqrt((3 / (-1 * p))) * (3 / (-1 * p)) 
-* (3 / (-1 * p))));
+            long double alpha,beta;
+            Q = ((p / 3.) * (p / 3.) * (p / 3.)) + ((q / 2.) * (q / 2.));
+            alpha = cbrtl((-q / 2.) + sqrtl(Q));
+            beta = cbrtl((-q / 2.) - sqrtl(Q));
+            F = acos(((-q / 2.) * sqrt((3. / (-p)) * (3. / (-p)) * (3. / 
+(-p)))));
             if (Q < 0) {
-                x1 = 2 * sqrtl(-1 * p / 3) * cos(F / 3);
-                x2 = 2 * sqrtl(-1 * p / 3) * cos((F / 3) + (2 * acos(-1) / 
-3));
-                x3 = 2 * sqrtl(-1 * p / 3) * cos((F / 3) - (2 * acos(-1) / 
-3));
+                x1 = (2. * sqrtl(-p / 3.) * cos(F / 3.));
+                x2 = (2. * sqrtl(-p / 3.) * cos((F / 3.) + (2. * acos(-1) 
+/ 3.)));
+                x3 = (2. * sqrtl(-p / 3.) * cos((F / 3.) - (2. * acos(-1) 
+/ 3.)));
                 std::cout << "x1 = " << x1 << " x2 = " << x2 << " x3 = " 
 << x3;
                 return 0;
             }
             else {
-                x1 = al + bet;
+                x1 = alpha + beta;
                 std::cout << "x1 = " << x1;
                 return 0;
             }
