@@ -2,7 +2,7 @@
 #include <cmath>
 
 int fact(int k) {
-    int res = 0;
+    int res = 1;
     for (int q = 0; q <= k; q++) {
          res *= q;
     }

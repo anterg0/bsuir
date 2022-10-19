@@ -1,25 +1,17 @@
 #include <iostream>
-
-int powint(int m, int pow) {
-    int result = 1;
-    if (pow == 0) {
-        return 1;
-    }
-    for (int i = 1; i <= pow; i++) {
-        result *= m;
-    }
-    return result;
-}
+#include <cmath>
 
 int main() {
-    int n, a;
-    std::cout << "Введите кол-во членов прогрессии: ";
-    std::cin >> n;
-    std::cout << "\nВведите число первый член прогрессии: ";
-    std::cin >> a;
-    for (int i = 2; i <= n;i++) {
-        a += (a * powint(2, (i - 1)) * powint(-1, (i - 1)));
+    long double result = 0,d,an,a0,n = 0;
+    std::cout << "Введите d,a0,an: ";
+    std::cin >> d >> a0 >> an;
+    n = ((an - a0) / d) + 1;
+    if (!(d) || !((an - a0) / d)) {
+        std::cout << "Такой прогрессии не существует";
     }
-    std::cout << "\n" << a;
+    result = (-3 * a0  * (pow(-2,n) * -1) - (d * (3 * pow(-2,n) * n + 
+pow(-2, n + 1) + 2)) ) / 9;
+    std::cout << result;
     return 0;
 }
+

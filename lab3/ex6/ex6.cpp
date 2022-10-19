@@ -3,7 +3,7 @@
 
 int main() {
     long double step, x_minf = 0, minf = 1e20, f, x = 0;
-    int n;
+    int n; 
     std::cout << "Введитие кол-во раз поиска корня уравнения: ";
     std::cin >> n;
     step = 1. / n;
