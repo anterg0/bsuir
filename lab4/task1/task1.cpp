@@ -56,15 +56,12 @@ int main(){
                 if (array[i] > array[i + 1]) count++;
             }
             std::cout << "Кол-во пар инверсий: " << count;
-            std::cout << "\nЖелаете повторить? (y/n)";
+            std::cout << "\nДля повтора введите 'y', либо что угодно другое для завершения программы.\n";
             char a;
             std::cin >> a;
             switch(a) {
                 case 'y':
                     continue;
-                    break;
-                case 'n':
-                    return 0;
                     break;
                 default:
                     return 0;
