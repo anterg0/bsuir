@@ -2,6 +2,12 @@
 #include <iostream>
 #include "lib.hpp"
 
+bool intValidation(char b, int a) {
+    if (b != '\n') return true;
+    if (a > 2147483647 || a < -2147483648) return true;
+    return false;
+}
+
 int** CreateMatrix(int n, int k){
     int** array = new int*[n];
     for (int i = 0; i < n; i++) array[i] = new int[k];

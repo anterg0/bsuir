@@ -23,6 +23,16 @@ int main() {
         int *arr = CreateArray(n);
         FillArray(arr, n);
         std::cout << (Sum(arr, 1, n / 3) + Sum(arr, n / 3 + 1, int(n / 3) * 3));
-        return 0;
+        std::cout << "Введите 'f' для повтора программы, либо любой другой символ для завершения программы.";
+        char bebra;
+        std::cin >> bebra;
+        switch (bebra) {
+            case 'f':
+                continue;
+                break;
+            default:
+                return 0;
+                break;
+        }
     }
 }

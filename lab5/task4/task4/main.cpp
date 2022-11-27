@@ -60,6 +60,7 @@ void ReverseArrOutput(double **arr, int n, int k) {
 
 int main() {
     int n,k;
+    std::cout << "Создать двумерный динамический массив вещественных чисел. Определить, встречаются ли среди них элементы с нулевым значением. Если встречаются такие элементы, то определить их индексы и общее количество. Переставить элементы этого массива в обратном порядке и вывести на экран.\nВыполнил Шпаковский Антон\n";
     while (true) {
         std::cout << "Введите размер массива: ";
         std::cin >> n;
@@ -84,6 +85,16 @@ int main() {
         int zeros = ZeroCount(array,n,k);
         std::cout << "\nКол-во таких элементов: " << zeros << "\n";
         ReverseArrOutput(array,n,k);
-        return 0;
+        std::cout << "Введите 'f' для повтора программы, либо любой другой символ для завершения программы.";
+        char bebra;
+        std::cin >> bebra;
+        switch (bebra) {
+            case 'f':
+                continue;
+                break;
+            default:
+                return 0;
+                break;
+        }
     }
 }
