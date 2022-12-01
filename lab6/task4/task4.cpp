@@ -59,7 +59,4 @@ int main() {
     std::cout << a;
     return 0;
 }
-//if ((char(a[i] - 'A' + 'a') == a[i + 1]) && !(a[i] =='E' || a[i] =='Y' || a[i] =='U' || a[i] =='I' || a[i] =='O' || a[i] =='A')) a.erase(i + 1, 1);
-//if ((a[i] == a[i + 1]) && !(a[i] == 'e' || a[i] == 'y' || a[i] == 'u' || a[i] == 'i' || a[i] == 'o' || a[i] == 'a')) a.erase(i + 1, 1);
-//if ((char(a[i + 1] - 'A' + 'a') == a[i]) && !(a[i] == 'e' || a[i] == 'y' || a[i] == 'u' || a[i] == 'i' || a[i] == 'o' || a[i] == 'a')) a.erase(i + 1, 1);
 

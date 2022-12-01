@@ -7,7 +7,7 @@ int* CreateArray(int n) {
 }
 
 bool intValidation(char b, int a) {
-    if (b != '\n') return true;
+    if (b != '\n' && b != ' ') return true;
     if (a > 2147483647 || a < -2147483648) return true;
     return false;
 }
