@@ -19,7 +19,8 @@ int main() {
 }
 
 void task() {
-    int n1, n2, base;
+    int base;
+    std::string n1, n2;
     while (true) {
         std::cout << "Введите первое число, второе число и основание системы счисления (пр. 123 123 16): ";
         std::cin >> n1 >> n2 >> base;
@@ -30,7 +31,7 @@ void task() {
             continue;
         } else break;
     }
-    if (n1 < 0 && n2 >= 0) {
+    /* if (n1 < 0 && n2 >= 0) {
         if (abs(n1) >= n2) {
             std::string bebra1 = convertToAnyBase(-n1, base), bebra2 = convertToAnyBase(n2, base);
             std::string bebraSum = subtrInBase(bebra1, bebra2, base);
@@ -69,8 +70,8 @@ void task() {
             std::string bebraSubtr = sumInBase(bebra1, bebra2, base);
             std::cout << "Cумма данных чисел: -" << bebraSum << "\nРазность данных чисел: " << bebraSubtr;
         }
-    } else {
-        std::string bebra1 = convertToAnyBase(n1, base), bebra2 = convertToAnyBase(n2, base);
+    } else { */
+        std::string bebra1 = n1, /* convertToAnyBase(n1, base), */ bebra2 = n2; // convertToAnyBase(n2, base);
         std::string bebraSum = sumInBase(bebra2, bebra1, base);
         std::string bebraSubtr;
         if (n1 >= n2) {
@@ -81,7 +82,7 @@ void task() {
             bebraSubtr = subtrInBase(bebra2, bebra1, base);
             std::cout << "Cумма данных чисел: " << bebraSum << "\nРазность данных чисел: -" << bebraSubtr;
         }
-    }
+ //   }
 }
 
 std::string convertToAnyBase(int n, int base) {

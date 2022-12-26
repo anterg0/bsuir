@@ -1,9 +1,8 @@
 #include <iostream>
 #include <cmath>
 
-int main() {
-    std::string s,result;
-    std::cin >> s;
+std::string bebra(std::string s) {
+    std::string result;
     bool bebra = false;
     for (int i = 0; i < s.size();i++) if (isalpha(s[i])) return 0;
     for (int i = 0; i < s.size();i++) {
@@ -79,7 +78,7 @@ int main() {
         }
         else if (s.size() >= 4) {
             if (!(bebra)) {
-                for (int j = 0; j < int(std::stoi(s) / (pow(10, s.size() - (s.size() - 3))));j++) result += "M";
+                for (int j = 0; j < int(std::stoll(s) / (pow(10, s.size() - (s.size() - 3))));j++) result += "M";
                 bebra = true;
             }
             if (s.size() - i == 3) {
@@ -117,6 +116,12 @@ int main() {
             }
         }
     }
-    std::cout << result;
+    return result;
+}
+
+int main() {
+    std::string s;
+    std::cin >> s;
+    std::cout << bebra(s);
     return 0;
 }

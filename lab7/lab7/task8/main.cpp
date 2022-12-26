@@ -5,7 +5,7 @@
 std::string convertTo3(long long num) {
     std::string result;
     std::string numbers = "0123";
-    while (num) { // O(log num)
+    while (num) { 
         result += std::to_string(num % 3);
         num /= 3;
     }

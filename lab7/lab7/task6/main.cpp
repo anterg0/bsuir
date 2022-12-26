@@ -69,6 +69,11 @@ int mod(int a, int b) {
 int main() {
     int bebra;
     std::cin >> bebra;
-    std::cout << mod(bebra, 7);
+    if (mod(bebra, 7) == 0) std::cout << "Число делится на 7.\n";
+    else std::cout << "Число не делится на 7.\n";
+    if (mod(bebra, 73) == 0) std::cout << "Число делится на 73.\n";
+    else std::cout << "Число не делится на 73.\n";
+    if (mod(bebra, 109) == 0) std::cout << "Число делится на 109.\n";
+    else std::cout << "Число не делится на 109.\n";
     return 0;
 }

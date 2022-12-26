@@ -4,7 +4,7 @@
 std::string binary(long long num) {
     long long num2 = abs(num);
     std::string s;
-    while (true) {                      // O(log num2)
+    while (true) {                      
         s += std::to_string(num2 % 2);
         num2 /= 2;
         if (num2 == 1 || num2 == 0) {
