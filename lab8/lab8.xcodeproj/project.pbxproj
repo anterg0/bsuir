@@ -10,6 +10,7 @@
 		74835B0F2959ED6C0003BD0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74835B0E2959ED6C0003BD0D /* main.cpp */; };
 		74835B1A2959ED750003BD0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74835B192959ED750003BD0D /* main.cpp */; };
 		74835B252959ED7B0003BD0D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74835B242959ED7B0003BD0D /* main.cpp */; };
+		74F2E777295B676A008570AE /* bebra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 74F2E775295B676A008570AE /* bebra.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -49,6 +50,8 @@
 		74835B192959ED750003BD0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		74835B222959ED7B0003BD0D /* task3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = task3; sourceTree = BUILT_PRODUCTS_DIR; };
 		74835B242959ED7B0003BD0D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		74F2E775295B676A008570AE /* bebra.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = bebra.cpp; sourceTree = "<group>"; };
+		74F2E776295B676A008570AE /* bebra.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = bebra.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				74835B0E2959ED6C0003BD0D /* main.cpp */,
+				74F2E775295B676A008570AE /* bebra.cpp */,
+				74F2E776295B676A008570AE /* bebra.hpp */,
 			);
 			path = task1;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F2E777295B676A008570AE /* bebra.cpp in Sources */,
 				74835B0F2959ED6C0003BD0D /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
