@@ -1,18 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
-
-struct Zavod {
-    struct {
-        int cehID;
-        int workersNum;
-    } ceh;
-    struct {
-        char name[300]{};
-        int quantity;
-        int failedQuantity;
-    } product;
-    bool deleted = false;
-};
+#include "bebra.hpp"
 
 int ind = 0;
 Zavod *zavody = new Zavod[300];

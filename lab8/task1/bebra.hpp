@@ -3,6 +3,19 @@
 
 #include <stdio.h>
 
+struct Zavod {
+    struct {
+        int cehID;
+        int workersNum;
+    } ceh;
+    struct {
+        char name[300]{};
+        int quantity;
+        int failedQuantity;
+    } product;
+    bool deleted = false;
+};
+
 void func1();
 void func2();
 void func3();
