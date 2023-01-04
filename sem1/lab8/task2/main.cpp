@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <curses.h>
 
 struct Book {
     long long bookID;
@@ -255,26 +254,21 @@ int main() {
         std::cin >> bebra;
         switch (bebra) {
             case 1:
-//                system("clear");
                 func1();
                 break;
             case 2:
-//                system("clear");
                 func2();
                 break;
             case 3:
-//                system("clear");
                 func3();
                 break;
             case 4:
-//                system("clear");
                 func4();
                 break;
             case 5:
                 func5();
                 break;
             case 6:
-//                system("clear");
                 fout.open("/Users/anterg0/Documents/bsuir/lab8/task2/output.txt");
                 for (int i = 0; i < ind; i++) {
                     if (books[i].deleted) continue;
@@ -287,6 +281,7 @@ int main() {
                     fout << books[i].pageCount << std::endl;
                 }
                 fout.close();
+                delete[] books;
                 std::cout << "Программа завершена.\n";
                 return 0;
                 break;
