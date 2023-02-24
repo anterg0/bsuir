@@ -1,11 +1,13 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include "savesuccess.h"
+#include "ui_savesuccess.h"
 #include "date.h"
 #include <QFileDialog>
 #include <fstream>
 
 Date bruh[100];
-int count = 0;
+QString fileName;
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -22,7 +24,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_clicked() {
     QFileDialog dialog;
-    QString fileName = dialog.getOpenFileName();
+    fileName = dialog.getOpenFileName(this,nullptr,QDir::homePath(),tr("Text files (*.txt)"));
     std::ifstream file;
     file.open(fileName.toStdString());
     if (file.is_open()) {
@@ -33,6 +35,8 @@ void MainWindow::on_pushButton_clicked() {
     while (!file.eof()) {
         file >> date;
         int row = ui->tableWidget->rowCount();
+        QDate dateCheck = QDate::fromString(QString::fromStdString(date), "dd.MM.yyyy");
+        if (!dateCheck.isValid()) continue;
         bruh[row].setDate(QDate::fromString(QString::fromStdString(date), "dd.MM.yyyy"));
         ui->tableWidget->insertRow(row);
         QTableWidgetItem *item = new QTableWidgetItem(QString::fromStdString(date));
@@ -139,5 +143,63 @@ void MainWindow::on_pushButton_6_clicked() {
         item = new QTableWidgetItem(QString::number(daysSince));
         ui->tableWidget->setItem(i,5,item);
     }
+}
+
+
+void MainWindow::on_pushButton_5_clicked() {
+    saveSuccess *newWindow = new saveSuccess(this);
+    if (fileName.isEmpty()) {
+        fileName = QFileDialog::getSaveFileName(this, tr("Save File"), QDir::homePath(), tr("Text files (*.txt)"));
+        if (fileName.isEmpty()) {
+            return;
+        }
+
+        QFile file(fileName);
+        if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+            newWindow->ui->label->setText("Не удалось сохранить файл.");
+            newWindow->show();
+            return;
+        }
+
+        QTextStream out(&file);
+        for (int i = 0; i < ui->tableWidget->rowCount();i++) {
+            for (int j = 0; j < ui->tableWidget->columnCount();j++) {
+                QTableWidgetItem *item = ui->tableWidget->item(i,j);
+                if (!item) {
+                    out << '\t';
+                    continue;
+                }
+                QVariant data = item->data(Qt::DisplayRole);
+                QString text = data.toString();
+                out << text << '\t';
+            }
+            out << '\n';
+        }
+        file.close();
+        newWindow->ui->label->setText("Файл был сохранен.");
+        newWindow->show();
+    } else {
+        QFile file(fileName);
+        if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) return;
+
+        QTextStream out(&file);
+        for (int i = 0; i < ui->tableWidget->rowCount();i++) {
+            for (int j = 0; j < ui->tableWidget->columnCount();j++) {
+                QTableWidgetItem *item = ui->tableWidget->item(i,j);
+                out << item->text() << '\t';
+            }
+            out << '\n';
+        }
+        file.close();
+        newWindow->ui->label->setText("Файл был сохранен.");
+        newWindow->show();
+    }
+}
+
+
+void MainWindow::on_pushButton_7_clicked()  {
+    fileName = "";
+    ui->tableWidget->clearContents();
+    ui->tableWidget->setRowCount(0);
 }
 

@@ -42,6 +42,7 @@ public:
     QVBoxLayout *verticalLayout;
     QPushButton *pushButton;
     QPushButton *pushButton_5;
+    QPushButton *pushButton_7;
     QWidget *verticalLayoutWidget_2;
     QVBoxLayout *verticalLayout_4;
     QPushButton *pushButton_2;
@@ -119,7 +120,7 @@ public:
 
         verticalLayoutWidget = new QWidget(centralwidget);
         verticalLayoutWidget->setObjectName("verticalLayoutWidget");
-        verticalLayoutWidget->setGeometry(QRect(10, 380, 160, 80));
+        verticalLayoutWidget->setGeometry(QRect(10, 380, 160, 100));
         verticalLayout = new QVBoxLayout(verticalLayoutWidget);
         verticalLayout->setObjectName("verticalLayout");
         verticalLayout->setContentsMargins(0, 0, 0, 0);
@@ -133,8 +134,14 @@ public:
 
         verticalLayout->addWidget(pushButton_5);
 
+        pushButton_7 = new QPushButton(verticalLayoutWidget);
+        pushButton_7->setObjectName("pushButton_7");
+
+        verticalLayout->addWidget(pushButton_7);
+
         pushButton_5->raise();
         pushButton->raise();
+        pushButton_7->raise();
         verticalLayoutWidget_2 = new QWidget(centralwidget);
         verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
         verticalLayoutWidget_2->setGeometry(QRect(330, 380, 203, 103));
@@ -150,6 +157,7 @@ public:
         verticalLayout_5->setObjectName("verticalLayout_5");
         dateEdit_2 = new QDateEdit(verticalLayoutWidget_2);
         dateEdit_2->setObjectName("dateEdit_2");
+        dateEdit_2->setCalendarPopup(true);
 
         verticalLayout_5->addWidget(dateEdit_2);
 
@@ -203,6 +211,7 @@ public:
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\264\320\260\321\202\321\203", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
+        pushButton_7->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\272\321\200\321\213\321\202\321\214 \321\204\320\260\320\271\320\273", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\321\201\321\201\321\207\320\270\321\202\320\260\321\202\321\214", nullptr));
         pushButton_6->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\321\201\321\201\321\207\320\270\321\202\320\260\321\202\321\214 \320\264\320\260\321\202\321\203 \321\200\320\276\320\266\320\264\320\265\320\275\320\270\321\217", nullptr));
     } // retranslateUi

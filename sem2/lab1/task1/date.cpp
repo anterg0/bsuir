@@ -37,6 +37,6 @@ int Date::Duration(QDate date) {
 }
 
 int Date::birthdayDuration(QDate date) {
-    if (date == nowDate || date < nowDate) return 0;
+    if (date == nowDate || nowDate < date) return 0;
     return qAbs(nowDate.daysTo(date));
 }

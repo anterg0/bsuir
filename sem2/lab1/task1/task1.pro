@@ -11,14 +11,17 @@ CONFIG += c++17
 SOURCES += \
     date.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    savesuccess.cpp
 
 HEADERS += \
     date.h \
-    mainwindow.h
+    mainwindow.h \
+    savesuccess.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    savesuccess.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

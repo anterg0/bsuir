@@ -54,11 +54,15 @@ OBJECTS_DIR   = ./
 
 SOURCES       = ../task1/date.cpp \
 		../task1/main.cpp \
-		../task1/mainwindow.cpp moc_mainwindow.cpp
+		../task1/mainwindow.cpp \
+		../task1/savesuccess.cpp moc_mainwindow.cpp \
+		moc_savesuccess.cpp
 OBJECTS       = date.o \
 		main.o \
 		mainwindow.o \
-		moc_mainwindow.o
+		savesuccess.o \
+		moc_mainwindow.o \
+		moc_savesuccess.o
 DIST          = /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_pre.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/device_config.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/common/unix.conf \
@@ -176,6 +180,7 @@ DIST          = /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_pre.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/qt_config.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qmake.conf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_post.prf \
+		../task1/.qmake.stash \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/exclusive_builds.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/mac/sdk.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/toolchain.prf \
@@ -205,9 +210,11 @@ DIST          = /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_pre.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/yacc.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/lex.prf \
 		../task1/task1.pro ../task1/date.h \
-		../task1/mainwindow.h ../task1/date.cpp \
+		../task1/mainwindow.h \
+		../task1/savesuccess.h ../task1/date.cpp \
 		../task1/main.cpp \
-		../task1/mainwindow.cpp
+		../task1/mainwindow.cpp \
+		../task1/savesuccess.cpp
 QMAKE_TARGET  = task1
 DESTDIR       = 
 TARGET        = task1.app/Contents/MacOS/task1
@@ -216,7 +223,7 @@ TARGET        = task1.app/Contents/MacOS/task1
 EXPORT_QMAKE_MAC_SDK = macosx
 EXPORT_QMAKE_MAC_SDK_VERSION = 13.1
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Applications/Xcode.app/Contents/Developer
-EXPORT__QMAKE_STASH_ = 
+EXPORT__QMAKE_STASH_ = /Users/anterg0/Documents/bsuir/sem2/lab1/build-task1-Qt_6_4_2_for_macOS-Debug/.qmake.stash
 EXPORT_VALID_ARCHS = x86_64 arm64
 EXPORT_DEFAULT_ARCHS = arm64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
@@ -228,7 +235,7 @@ include /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/mac/sdk.mk
 first: all
 ####### Build rules
 
-task1.app/Contents/MacOS/task1: ui_mainwindow.h $(OBJECTS)  
+task1.app/Contents/MacOS/task1: ui_mainwindow.h ui_savesuccess.h $(OBJECTS)  
 	@test -d task1.app/Contents/MacOS/ || mkdir -p task1.app/Contents/MacOS/
 	$(LINK) $(LFLAGS) -o $(TARGET)  $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -349,6 +356,7 @@ Makefile: ../task1/task1.pro /Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qm
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/qt_config.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qmake.conf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/exclusive_builds.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/mac/sdk.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/toolchain.prf \
@@ -499,6 +507,7 @@ Makefile: ../task1/task1.pro /Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qm
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/qt_config.prf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qmake.conf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_post.prf:
+.qmake.stash:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/exclusive_builds.prf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/mac/sdk.prf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/toolchain.prf:
@@ -560,9 +569,9 @@ dist: distdir FORCE
 distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
-	$(COPY_FILE) --parents ../task1/date.h ../task1/mainwindow.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../task1/date.cpp ../task1/main.cpp ../task1/mainwindow.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../task1/mainwindow.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ../task1/date.h ../task1/mainwindow.h ../task1/savesuccess.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../task1/date.cpp ../task1/main.cpp ../task1/mainwindow.cpp ../task1/savesuccess.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../task1/mainwindow.ui ../task1/savesuccess.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -572,6 +581,7 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r task1.app
+	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -590,25 +600,35 @@ benchmark: first
 
 compiler_rcc_make_all:
 compiler_rcc_clean:
-compiler_moc_header_make_all: moc_mainwindow.cpp
+compiler_moc_header_make_all: moc_mainwindow.cpp moc_savesuccess.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_mainwindow.cpp
+	-$(DEL_FILE) moc_mainwindow.cpp moc_savesuccess.cpp
 moc_mainwindow.cpp: ../task1/mainwindow.h \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		/Users/anterg0/Qt/6.4.2/macos/libexec/moc
 	/Users/anterg0/Qt/6.4.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=14 -D__clang_minor__=0 -D__clang_patchlevel__=0 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang -I/Users/anterg0/Documents/bsuir/sem2/lab1/task1 -I/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers -I/Users/anterg0/Qt/6.4.2/macos/lib/QtGui.framework/Headers -I/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/anterg0/Qt/6.4.2/macos/lib ../task1/mainwindow.h -o moc_mainwindow.cpp
 
+moc_savesuccess.cpp: ../task1/savesuccess.h \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+		/Users/anterg0/Qt/6.4.2/macos/libexec/moc
+	/Users/anterg0/Qt/6.4.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=14 -D__clang_minor__=0 -D__clang_patchlevel__=0 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang -I/Users/anterg0/Documents/bsuir/sem2/lab1/task1 -I/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers -I/Users/anterg0/Qt/6.4.2/macos/lib/QtGui.framework/Headers -I/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.0/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/anterg0/Qt/6.4.2/macos/lib ../task1/savesuccess.h -o moc_savesuccess.cpp
+
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_mainwindow.h
+compiler_uic_make_all: ui_mainwindow.h ui_savesuccess.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_mainwindow.h
+	-$(DEL_FILE) ui_mainwindow.h ui_savesuccess.h
 ui_mainwindow.h: ../task1/mainwindow.ui \
 		/Users/anterg0/Qt/6.4.2/macos/libexec/uic
 	/Users/anterg0/Qt/6.4.2/macos/libexec/uic ../task1/mainwindow.ui -o ui_mainwindow.h
+
+ui_savesuccess.h: ../task1/savesuccess.ui \
+		/Users/anterg0/Qt/6.4.2/macos/libexec/uic
+	/Users/anterg0/Qt/6.4.2/macos/libexec/uic ../task1/savesuccess.ui -o ui_savesuccess.h
 
 compiler_rez_source_make_all:
 compiler_rez_source_clean:
@@ -630,6 +650,8 @@ date.o: ../task1/date.cpp ../task1/date.h \
 main.o: ../task1/main.cpp ../task1/mainwindow.h \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers/QDate \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers/qdatetime.h \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QApplication \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qapplication.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o ../task1/main.cpp
@@ -637,11 +659,25 @@ main.o: ../task1/main.cpp ../task1/mainwindow.h \
 mainwindow.o: ../task1/mainwindow.cpp ../task1/mainwindow.h \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
-		ui_mainwindow.h
+		ui_mainwindow.h \
+		../task1/date.h \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers/QDate \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers/qdatetime.h \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QFileDialog \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qfiledialog.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o mainwindow.o ../task1/mainwindow.cpp
+
+savesuccess.o: ../task1/savesuccess.cpp ../task1/savesuccess.h \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+		ui_savesuccess.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o savesuccess.o ../task1/savesuccess.cpp
 
 moc_mainwindow.o: moc_mainwindow.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_mainwindow.o moc_mainwindow.cpp
+
+moc_savesuccess.o: moc_savesuccess.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_savesuccess.o moc_savesuccess.cpp
 
 ####### Install
 
