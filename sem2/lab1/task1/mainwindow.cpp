@@ -28,7 +28,7 @@ void MainWindow::on_pushButton_clicked() {
     if (file.is_open()) {
         ui->tableWidget->setRowCount(0);
         ui->tableWidget->clearContents();
-    }
+    } else return;
     std::string date;
     while (!file.eof()) {
         file >> date;
@@ -121,18 +121,23 @@ void MainWindow::on_pushButton_4_clicked() {
     int row = ui->spinBox->value() - 1;
     ui->tableWidget->removeRow(row);
     ui->spinBox->setMaximum(ui->tableWidget->rowCount());
+    for (int i = 0; i < ui->tableWidget->rowCount();i++) {
+        QTableWidgetItem *item = ui->tableWidget->item(i,0);
+        QString textDate = item->text();
+        bruh[i].setDate(QDate::fromString(textDate, "dd.MM.yyyy"));
+    }
 }
 
 
 void MainWindow::on_pushButton_6_clicked() {
     for (int i = 0; i < ui->tableWidget->rowCount();i++) {
-    QDate dr = ui->dateEdit_2->date();
-    int days = bruh[i].DaysTillYourBirthday(dr);
-    QTableWidgetItem *item = new QTableWidgetItem(QString::number(days));
-    ui->tableWidget->setItem(i,4,item);
-    int daysSince = bruh[i].Duration(dr);
-    item = new QTableWidgetItem(QString::number(daysSince));
-    ui->tableWidget->setItem(i,5,item);
+        QDate dr = ui->dateEdit_2->date();
+        int days = bruh[i].DaysTillYourBirthday(dr);
+        QTableWidgetItem *item = new QTableWidgetItem(QString::number(days));
+        ui->tableWidget->setItem(i,4,item);
+        int daysSince = bruh[i].birthdayDuration(dr);
+        item = new QTableWidgetItem(QString::number(daysSince));
+        ui->tableWidget->setItem(i,5,item);
     }
 }
 

@@ -11,6 +11,7 @@ public:
     QDate PreviousDay(QDate date);
     int DaysTillYourBirthday(QDate birthDate);
     int Duration(QDate date);
+    int birthdayDuration(QDate date);
 };
 
 #endif // DATE_H

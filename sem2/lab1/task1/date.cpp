@@ -12,24 +12,31 @@ void Date::setDate(QDate date) {
     this->nowDate = date;
 }
 
-int Date::DaysTillYourBirthday(QDate birthDate) {
-    if (birthDate.isLeapYear(birthDate.year()) && nowDate.isLeapYear(nowDate.year()) && (birthDate == nowDate)) {
-        birthDate = birthDate.addYears(4);
-    }
-    if (birthDate.isLeapYear(birthDate.year()) && !nowDate.isLeapYear(nowDate.year())) {
-        birthDate = birthDate.addDays(1);
-    }
-    if (nowDate.isLeapYear(nowDate.year()) && !birthDate.isLeapYear(birthDate.year())) {
-        birthDate = birthDate.addDays(-1);
-    }
-    birthDate.setDate(nowDate.year(), birthDate.month(), birthDate.day());
-    if (nowDate > birthDate) {
-        birthDate = birthDate.addYears(1);
-    }
-    int daysToBirthday = nowDate.daysTo(birthDate);
-    return daysToBirthday;
+int Date::DaysTillYourBirthday(QDate birthday) {
+    QDate today = this->nowDate;
+        if (today == birthday) {
+            return 0;
+        }
+        QDate nextBirthday;
+
+        if (birthday.month() == 2 && birthday.day() == 29) {
+            if (!today.isLeapYear(today.year()) && birthday.isLeapYear(birthday.year())) {
+                nextBirthday.setDate(today.year() + (4 - today.year() % 4), birthday.month(), birthday.day());
+            } else nextBirthday.setDate(today.year(), birthday.month(), birthday.day());
+        } else nextBirthday.setDate(today.year(), birthday.month(), birthday.day());
+
+        if (nextBirthday < today) {
+            nextBirthday = nextBirthday.addYears(1);
+        }
+
+        return today.daysTo(nextBirthday);
 }
 
 int Date::Duration(QDate date) {
+    return qAbs(nowDate.daysTo(date));
+}
+
+int Date::birthdayDuration(QDate date) {
+    if (date == nowDate || date < nowDate) return 0;
     return qAbs(nowDate.daysTo(date));
 }
