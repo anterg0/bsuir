@@ -180,7 +180,6 @@ DIST          = /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_pre.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/qt_config.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qmake.conf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_post.prf \
-		../task1/.qmake.stash \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/exclusive_builds.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/mac/sdk.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/toolchain.prf \
@@ -223,7 +222,7 @@ TARGET        = task1.app/Contents/MacOS/task1
 EXPORT_QMAKE_MAC_SDK = macosx
 EXPORT_QMAKE_MAC_SDK_VERSION = 13.1
 EXPORT_QMAKE_XCODE_DEVELOPER_PATH = /Applications/Xcode.app/Contents/Developer
-EXPORT__QMAKE_STASH_ = /Users/anterg0/Documents/bsuir/sem2/lab1/build-task1-Qt_6_4_2_for_macOS-Debug/.qmake.stash
+EXPORT__QMAKE_STASH_ = 
 EXPORT_VALID_ARCHS = x86_64 arm64
 EXPORT_DEFAULT_ARCHS = arm64
 EXPORT_ARCHS = $(filter $(EXPORT_VALID_ARCHS), $(if $(ARCHS), $(ARCHS), $(if $(EXPORT_DEFAULT_ARCHS), $(EXPORT_DEFAULT_ARCHS), $(EXPORT_VALID_ARCHS))))
@@ -356,7 +355,6 @@ Makefile: ../task1/task1.pro /Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qm
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/qt_config.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qmake.conf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_post.prf \
-		.qmake.stash \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/exclusive_builds.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/mac/sdk.prf \
 		/Users/anterg0/Qt/6.4.2/macos/mkspecs/features/toolchain.prf \
@@ -507,7 +505,6 @@ Makefile: ../task1/task1.pro /Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qm
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/qt_config.prf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/macx-clang/qmake.conf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/spec_post.prf:
-.qmake.stash:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/exclusive_builds.prf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/mac/sdk.prf:
 /Users/anterg0/Qt/6.4.2/macos/mkspecs/features/toolchain.prf:
@@ -581,7 +578,6 @@ clean: compiler_clean
 
 distclean: clean 
 	-$(DEL_FILE) -r task1.app
-	-$(DEL_FILE) .qmake.stash
 	-$(DEL_FILE) Makefile
 
 
@@ -660,6 +656,10 @@ mainwindow.o: ../task1/mainwindow.cpp ../task1/mainwindow.h \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QMainWindow \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
 		ui_mainwindow.h \
+		../task1/savesuccess.h \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/anterg0/Qt/6.4.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+		ui_savesuccess.h \
 		../task1/date.h \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers/QDate \
 		/Users/anterg0/Qt/6.4.2/macos/lib/QtCore.framework/Headers/qdatetime.h \
