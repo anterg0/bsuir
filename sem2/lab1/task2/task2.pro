@@ -9,13 +9,21 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    addbooks.cpp \
+    findname.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    reader.cpp
 
 HEADERS += \
-    mainwindow.h
+    addbooks.h \
+    findname.h \
+    mainwindow.h \
+    reader.h
 
 FORMS += \
+    addbooks.ui \
+    findname.ui \
     mainwindow.ui
 
 # Default rules for deployment.

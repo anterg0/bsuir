@@ -181,7 +181,6 @@ void MainWindow::on_pushButton_5_clicked() {
     } else {
         QFile file(fileName);
         if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) return;
-
         QTextStream out(&file);
         for (int i = 0; i < ui->tableWidget->rowCount();i++) {
             for (int j = 0; j < ui->tableWidget->columnCount();j++) {
