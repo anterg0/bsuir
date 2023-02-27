@@ -30,6 +30,8 @@ public:
         if (findName->objectName().isEmpty())
             findName->setObjectName("findName");
         findName->resize(400, 300);
+        findName->setMinimumSize(QSize(400, 300));
+        findName->setMaximumSize(QSize(400, 300));
         lineEdit = new QLineEdit(findName);
         lineEdit->setObjectName("lineEdit");
         lineEdit->setGeometry(QRect(110, 130, 181, 21));
@@ -48,7 +50,7 @@ public:
 
     void retranslateUi(QDialog *findName)
     {
-        findName->setWindowTitle(QCoreApplication::translate("findName", "Dialog", nullptr));
+        findName->setWindowTitle(QCoreApplication::translate("findName", "\320\273\320\270\321\207\320\275\320\276\320\265 \320\264\320\265\320\273\320\276", nullptr));
         label->setText(QCoreApplication::translate("findName", "\320\244\320\230\320\236:", nullptr));
         pushButton->setText(QCoreApplication::translate("findName", "\320\235\320\260\320\271\321\202\320\270", nullptr));
     } // retranslateUi

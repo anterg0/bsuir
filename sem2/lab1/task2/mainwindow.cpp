@@ -87,6 +87,7 @@ void MainWindow::on_comboBox_activated(int index) {
 
 void MainWindow::on_addBook_clicked()  {
     addBooks *newWindow = new addBooks(this);
+    newWindow->ui->editButton->hide();
     newWindow->show();
 }
 
@@ -234,13 +235,15 @@ void MainWindow::on_listWidget_2_itemDoubleClicked(QListWidgetItem *item) {
 
 void MainWindow::on_pushButton_5_clicked()  {
     int ind = ui->listWidget_2->currentRow();
-    ui->listWidget_2->takeItem(ind);
-    books.removeAt(ind);
-    if (books.size() != 0) {
-        ui->listWidget_2->clear();
-        for (int i = 0; i < books.size();i++) {
-            QListWidgetItem *item = new QListWidgetItem(books[i].name);
-            ui->listWidget_2->addItem(item);
+    if (ind != -1) {
+        ui->listWidget_2->takeItem(ind);
+        books.removeAt(ind);
+        if (books.size() != 0) {
+            ui->listWidget_2->clear();
+            for (int i = 0; i < books.size();i++) {
+                QListWidgetItem *item = new QListWidgetItem(books[i].name);
+                ui->listWidget_2->addItem(item);
+            }
         }
     }
 }
@@ -300,6 +303,119 @@ void MainWindow::on_Debters_triggered() {
             }
         }
         out << '\n';
+    }
+    file.close();
+}
+
+
+void MainWindow::on_bookList_triggered() {
+    QFileDialog dialog;
+    QFile file(dialog.getSaveFileName(this,nullptr,QDir::homePath(),tr("Text files (*.txt)")));
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qDebug() << "Error opening file";
+        return;
+    }
+    QTextStream out(&file);
+
+    for (int i = 0; i < readers.size(); i++) {
+        out << "ID: (" << readers[i].getID() << ") " << readers[i].getName() << ": \n";
+        QList<Book> list = readers[i].getBorrowedBooks();
+        for (int j = 0; j < list.size(); j++) {
+            out << "ID: (" << list[j].bookID << ") " << list[j].name << "\n";
+        }
+    }
+    file.close();
+}
+
+
+void MainWindow::on_pushButton_7_clicked()  {
+    int row = ui->listWidget->currentRow();
+    int ind = ui->comboBox->currentIndex();
+    readers[ind].delBorrowedBook(row);
+    ui->listWidget->clear();
+    QList<Book> list = readers[ind].getBorrowedBooks();
+    for (int i = 0; i < list.size();i++) {
+        QListWidgetItem *item = new QListWidgetItem(list[i].name);
+        ui->listWidget->addItem(item);
+    }
+}
+
+
+void MainWindow::on_pushButton_8_clicked() {
+    int check = ui->listWidget_2->currentRow();
+    if (check != -1) {
+        addBooks *bruh = new addBooks(this);
+        bruh->ui->pushButton_2->hide();
+        bruh->ui->bookID->setReadOnly(true);
+        int row = ui->listWidget_2->currentRow();
+
+        bruh->ui->bookAuthor->setText(books[row].author);
+        bruh->ui->bookName->setText(books[row].name);
+        bruh->ui->bookLanguage->setText(books[row].language);
+        bruh->ui->bookYear->setDate(QDate(books[row].year,1,1));
+        bruh->show();
+    }
+}
+
+void addBooks::on_editButton_clicked()  {
+    QListWidget *list = m_mainWindow->getListWidget();
+    int row = list->currentRow();
+    QString text1 = ui->bookName->text();
+    QString text2 = ui->bookAuthor->text();
+    QString text3 = ui->bookLanguage->text();
+    QDate date = ui->bookYear->date();
+    books[row].name = text1;
+    books[row].author = text2;
+    books[row].language = text3;
+    books[row].year = date.toString("yyyy").toInt();
+    list->clear();
+    for (int i = 0; i < books.size(); i++) {
+        QListWidgetItem *item = new QListWidgetItem(books[i].name);
+        list->addItem(item);
+    }
+}
+
+void MainWindow::on_pushButton_9_clicked()  {
+    QFileDialog dialog;
+    QFile file(dialog.getOpenFileName(this,nullptr,QDir::homePath(), tr("Text files (*.txt)")));
+    if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
+        qDebug() << "Error opening file";
+        return;
+    }
+    QTextStream in(&file);
+    while (!in.atEnd()) {
+        QString line = in.readLine();
+        QStringList parts = line.split(" ");
+        if (parts.size() < 5) {
+            qDebug() << "Invalid line format: " << line;
+            continue;
+        }
+        int id = parts[0].toInt();
+        QString bookAuthor = parts[1];
+        QString bookLanguage = parts[2];
+        int bookYear = parts[3].toInt();
+        QString bookName;
+        for (int i = 4; i < parts.size(); i++) bookName += parts[i] + ' ';
+        bookName.erase(bookName.end() - 1,bookName.end());
+        int count = ui->listWidget_2->count();
+        books.append(Book(id, bookName, bookAuthor, bookLanguage, bookYear));
+        ui->listWidget_2->addItem(books[count].name);
+    }
+    file.close();
+}
+
+
+void MainWindow::on_pushButton_10_clicked() {
+    QFileDialog dialog;
+    QFile file(dialog.getSaveFileName(this,nullptr,QDir::homePath(),tr("Text files (*.txt)")));
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qDebug() << "Error opening file";
+        return;
+    }
+    QTextStream out(&file);
+
+    for (int i = 0; i < books.size(); i++) {
+        out << books[i].bookID << " " << books[i].author << " " << books[i].language << " " << books[i].year << " " << books[i].name << "\n";
     }
     file.close();
 }

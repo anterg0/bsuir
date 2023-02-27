@@ -21,6 +21,8 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_editButton_clicked();
+
 private:
     MainWindow *m_mainWindow;
 };

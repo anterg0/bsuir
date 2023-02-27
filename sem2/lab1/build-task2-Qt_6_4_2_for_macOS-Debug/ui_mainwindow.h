@@ -56,6 +56,10 @@ public:
     QPushButton *pushButton_6;
     QLabel *label_2;
     QLabel *label_3;
+    QPushButton *pushButton_7;
+    QPushButton *pushButton_8;
+    QPushButton *pushButton_9;
+    QPushButton *pushButton_10;
     QMenuBar *menubar;
     QMenu *menu;
     QStatusBar *statusbar;
@@ -64,7 +68,9 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(547, 534);
+        MainWindow->resize(547, 598);
+        MainWindow->setMinimumSize(QSize(547, 598));
+        MainWindow->setMaximumSize(QSize(547, 598));
         Debters = new QAction(MainWindow);
         Debters->setObjectName("Debters");
         bookList = new QAction(MainWindow);
@@ -153,6 +159,18 @@ public:
         label_3 = new QLabel(centralwidget);
         label_3->setObjectName("label_3");
         label_3->setGeometry(QRect(40, 430, 221, 16));
+        pushButton_7 = new QPushButton(centralwidget);
+        pushButton_7->setObjectName("pushButton_7");
+        pushButton_7->setGeometry(QRect(10, 450, 171, 32));
+        pushButton_8 = new QPushButton(centralwidget);
+        pushButton_8->setObjectName("pushButton_8");
+        pushButton_8->setGeometry(QRect(280, 430, 121, 32));
+        pushButton_9 = new QPushButton(centralwidget);
+        pushButton_9->setObjectName("pushButton_9");
+        pushButton_9->setGeometry(QRect(420, 430, 121, 32));
+        pushButton_10 = new QPushButton(centralwidget);
+        pushButton_10->setObjectName("pushButton_10");
+        pushButton_10->setGeometry(QRect(280, 460, 121, 32));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -175,7 +193,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "welcome to the \320\261\320\270\320\261\320\273\320\270\320\276\321\202\320\265\320\272\320\260, bitch", nullptr));
         Debters->setText(QCoreApplication::translate("MainWindow", "\320\241\320\277\320\270\321\201\320\276\320\272 \320\264\320\276\320\273\320\266\320\275\320\270\320\272\320\276\320\262", nullptr));
         bookList->setText(QCoreApplication::translate("MainWindow", "\320\241\320\277\320\270\321\201\320\276\320\272 \320\272\320\275\320\270\320\263 \321\203 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\320\265\320\271", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\320\265\320\271", nullptr));
@@ -192,6 +210,10 @@ public:
         pushButton_6->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\262\321\213\320\261\321\200\320\260\320\275\320\275\321\203\321\216 \320\272\320\275\320\270\320\263\321\203 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\321\216", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "\320\224\320\260\321\202\320\260 \320\262\320\276\320\267\320\262\321\200\320\260\321\202\320\260", nullptr));
         label_3->setText(QString());
+        pushButton_7->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\321\203 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\321\217", nullptr));
+        pushButton_8->setText(QCoreApplication::translate("MainWindow", "\320\230\320\267\320\274\320\265\320\275\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\321\203", nullptr));
+        pushButton_9->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\320\270", nullptr));
+        pushButton_10->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\320\270", nullptr));
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\241\320\277\320\270\321\201\320\272\320\270", nullptr));
     } // retranslateUi
 

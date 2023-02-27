@@ -42,6 +42,8 @@ public:
         if (bookInfo->objectName().isEmpty())
             bookInfo->setObjectName("bookInfo");
         bookInfo->resize(303, 261);
+        bookInfo->setMinimumSize(QSize(303, 261));
+        bookInfo->setMaximumSize(QSize(303, 261));
         formLayoutWidget = new QWidget(bookInfo);
         formLayoutWidget->setObjectName("formLayoutWidget");
         formLayoutWidget->setGeometry(QRect(39, 40, 211, 181));

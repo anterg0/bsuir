@@ -36,6 +36,7 @@ public:
     QString getNumber();
     QString getAddress();
     void addBorrowedBook(Book book);
+    void delBorrowedBook(int index);
     QList<Book> getBorrowedBooks();
     void isDebtor();
     bool isDebt();

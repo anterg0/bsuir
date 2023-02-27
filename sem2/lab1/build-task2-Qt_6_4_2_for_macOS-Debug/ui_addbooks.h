@@ -51,12 +51,15 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QLabel *label_7;
+    QPushButton *editButton;
 
     void setupUi(QDialog *addBooks)
     {
         if (addBooks->objectName().isEmpty())
             addBooks->setObjectName("addBooks");
         addBooks->resize(904, 148);
+        addBooks->setMinimumSize(QSize(904, 148));
+        addBooks->setMaximumSize(QSize(904, 148));
         horizontalLayoutWidget = new QWidget(addBooks);
         horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
         horizontalLayoutWidget->setGeometry(QRect(10, 20, 891, 80));
@@ -172,6 +175,14 @@ public:
         label_7 = new QLabel(addBooks);
         label_7->setObjectName("label_7");
         label_7->setGeometry(QRect(550, 115, 341, 21));
+        editButton = new QPushButton(addBooks);
+        editButton->setObjectName("editButton");
+        editButton->setGeometry(QRect(440, 110, 100, 32));
+        editButton->raise();
+        horizontalLayoutWidget->raise();
+        pushButton->raise();
+        pushButton_2->raise();
+        label_7->raise();
 
         retranslateUi(addBooks);
 
@@ -180,7 +191,7 @@ public:
 
     void retranslateUi(QDialog *addBooks)
     {
-        addBooks->setWindowTitle(QCoreApplication::translate("addBooks", "Dialog", nullptr));
+        addBooks->setWindowTitle(QCoreApplication::translate("addBooks", "\320\260\321\200\321\205\320\270\320\262\320\260\321\200\320\270\321\203\320\274", nullptr));
         label_3->setText(QCoreApplication::translate("addBooks", "\320\232\320\276\320\264 \320\272\320\275\320\270\320\263\320\270", nullptr));
         label_4->setText(QCoreApplication::translate("addBooks", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265", nullptr));
         label_5->setText(QCoreApplication::translate("addBooks", "\320\220\320\262\321\202\320\276\321\200", nullptr));
@@ -190,6 +201,7 @@ public:
         pushButton->setText(QCoreApplication::translate("addBooks", "\320\236\321\202\320\274\320\265\320\275\320\260", nullptr));
         pushButton_2->setText(QCoreApplication::translate("addBooks", "\320\236\320\272", nullptr));
         label_7->setText(QString());
+        editButton->setText(QCoreApplication::translate("addBooks", "\320\230\320\267\320\274\320\265\320\275\320\270\321\202\321\214", nullptr));
     } // retranslateUi
 
 };

@@ -61,3 +61,7 @@ void Reader::isDebtor() {
 bool Reader::isDebt() {
     return Debtor;
 }
+
+void Reader::delBorrowedBook(int index) {
+    borrowedBooks.removeAt(index);
+}

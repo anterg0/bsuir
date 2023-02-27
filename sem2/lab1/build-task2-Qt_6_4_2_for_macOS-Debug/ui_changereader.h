@@ -34,6 +34,8 @@ public:
         if (changeReader->objectName().isEmpty())
             changeReader->setObjectName("changeReader");
         changeReader->resize(400, 300);
+        changeReader->setMinimumSize(QSize(400, 300));
+        changeReader->setMaximumSize(QSize(400, 300));
         id = new QLineEdit(changeReader);
         id->setObjectName("id");
         id->setGeometry(QRect(30, 40, 113, 21));
@@ -64,7 +66,7 @@ public:
 
     void retranslateUi(QDialog *changeReader)
     {
-        changeReader->setWindowTitle(QCoreApplication::translate("changeReader", "Dialog", nullptr));
+        changeReader->setWindowTitle(QCoreApplication::translate("changeReader", "\320\277\320\260\321\201\320\277\320\276\321\200\321\202\320\275\321\213\320\271 \321\201\321\202\320\276\320\273", nullptr));
         id->setPlaceholderText(QCoreApplication::translate("changeReader", "ID", nullptr));
         name->setPlaceholderText(QCoreApplication::translate("changeReader", "\320\244\320\230\320\236", nullptr));
         phone->setPlaceholderText(QCoreApplication::translate("changeReader", "\320\235\320\276\320\274\320\265\321\200 \321\202\320\265\320\273\320\265\321\204\320\276\320\275\320\260", nullptr));
