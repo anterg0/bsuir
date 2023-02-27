@@ -8,6 +8,7 @@
 
 #include <memory>
 #include "../task2/addbooks.h"
+#include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'addbooks.h' doesn't include <QObject>."

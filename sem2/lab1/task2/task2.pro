@@ -10,6 +10,7 @@ CONFIG += c++17
 
 SOURCES += \
     addbooks.cpp \
+    bookinfo.cpp \
     changereader.cpp \
     findname.cpp \
     main.cpp \
@@ -18,6 +19,7 @@ SOURCES += \
 
 HEADERS += \
     addbooks.h \
+    bookinfo.h \
     changereader.h \
     findname.h \
     mainwindow.h \
@@ -25,6 +27,7 @@ HEADERS += \
 
 FORMS += \
     addbooks.ui \
+    bookinfo.ui \
     changereader.ui \
     findname.ui \
     mainwindow.ui

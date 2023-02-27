@@ -7,12 +7,12 @@
 #include "ui_findname.h"
 #include "changereader.h"
 #include "ui_changereader.h"
+#include "bookinfo.h"
+#include "ui_bookinfo.h"
 #include <QRandomGenerator>
 #include <QFile>
 #include <QFileDialog>
 
-
-//Reader *readers = new Reader[1000];
 QList<Reader> readers;
 QList<Book> books;
 
@@ -25,6 +25,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 QComboBox* MainWindow::getComboBox() {
     return ui->comboBox;
+}
+
+QListWidget* MainWindow::getListWidget() {
+    return ui->listWidget_2;
 }
 
 
@@ -72,8 +76,8 @@ void MainWindow::on_comboBox_activated(int index) {
         ui->phone->setText(number);
         ui->id->setText(QString::number(id));
         QList<Book> list = readers[index].getBorrowedBooks();
+        ui->listWidget->clear();
         for (int i = 0; i < list.size(); i++) {
-            ui->listWidget->clear();
             QListWidgetItem *item = new QListWidgetItem(list[i].name);
             ui->listWidget->addItem(item);
         }
@@ -82,13 +86,12 @@ void MainWindow::on_comboBox_activated(int index) {
 
 
 void MainWindow::on_addBook_clicked()  {
-    addBooks *newWindow = new addBooks();
+    addBooks *newWindow = new addBooks(this);
     newWindow->show();
 }
 
 void addBooks::on_pushButton_2_clicked() {
-    QString text1 = ui->readerID->text();
-    int id = text1.toInt();
+    QListWidget *list = m_mainWindow->getListWidget();
     QString text2 = ui->bookID->text();
     int bookID = text2.toInt();
     QString text3 = ui->bookName->text();
@@ -96,35 +99,27 @@ void addBooks::on_pushButton_2_clicked() {
     QString text5 = ui->bookLanguage->text();
     QDate text6 = ui->bookYear->date();
     int year = text6.year();
-    QDate text7 = ui->dateEdit->date();
-    if (text1.isEmpty() || text2.isEmpty() || text3.isEmpty() || text4.isEmpty() || text5.isEmpty()) {
+    if (text2.isEmpty() || text3.isEmpty() || text4.isEmpty() || text5.isEmpty()) {
         ui->label_7->setText("Не все поля заполнены.");
     } else {
-        Book book(bookID,text3,text4,text5,year,text7);
-        for (int i = 0; i < 1000; i++) {
-            if (readers[i].getID() == id) {
-                readers[i].addBorrowedBook(book);
-                this->close();
+        Book book(bookID,text3,text4,text5,year);
+        for (int i = 0; i < books.size();i++) {
+            if (books[i].bookID == bookID) {
+                ui->label_7->setText("ID уже существует.");
                 return;
             }
         }
-        ui->label_7->setText("Читатель не был найден.");
+        books.append(book);
+        QListWidgetItem *item = new QListWidgetItem(book.name);
+        list->addItem(item);
+        this->close();
     }
 }
+
 
 void addBooks::on_pushButton_clicked() {
     this->close();
 }
-
-
-//void MainWindow::on_add_clicked()
-//{
-//    for (const Book& book : books) {
-//        QListWidgetItem* item = new QListWidgetItem(book.name);
-//        item->setData(Qt::UserRole, QVariant::fromValue(book));
-//        ui->listWidget_2->addItem(item);
-//    }
-//}
 
 
 void MainWindow::on_pushButton_2_clicked() {
@@ -143,8 +138,8 @@ void MainWindow::on_comboBox_currentIndexChanged(int index) {
         ui->phone->setText(number);
         ui->id->setText(QString::number(id));
         QList<Book> list = readers[index].getBorrowedBooks();
+        ui->listWidget->clear();
         for (int i = 0; i < list.size(); i++) {
-            ui->listWidget->clear();
             QListWidgetItem *item = new QListWidgetItem(list[i].name);
             ui->listWidget->addItem(item);
         }
@@ -191,10 +186,121 @@ void changeReader::on_pushButton_clicked()  {
     QString text4 = ui->address->text();
     QComboBox *comboBox = m_mainWindow->getComboBox();
     int sel = comboBox->currentIndex();
+    if (sel == -1) return;
     readers[sel].setName(text2);
     readers[sel].setNumber(text3);
     readers[sel].setContantAddress(text4);
     comboBox->setItemText(sel,readers[sel].getName());
     this->close();
+}
+
+void MainWindow::on_addReader_clicked() {
+    changeReader *bruh = new changeReader(this);
+    bruh->ui->pushButton->setEnabled(false);
+    bruh->ui->addButton->setEnabled(true);
+    bruh->show();
+}
+
+void changeReader::on_addButton_clicked() {
+    int id = ui->id->text().toInt();
+    QString text2 = ui->name->text();
+    QString text3 = ui->phone->text();
+    QString text4 = ui->address->text();
+    for (int i = 0; i < readers.size();i++) {
+        if (id == readers[i].getID()) {
+            ui->label->setText("ID уже существует.");
+            return;
+        }
+    }
+    readers.append(Reader(id,text2,text3,text4));
+    QComboBox *comboBox = m_mainWindow->getComboBox();
+    comboBox->addItem(text2);
+    this->close();
+}
+
+
+
+void MainWindow::on_listWidget_2_itemDoubleClicked(QListWidgetItem *item) {
+    int ind = ui->listWidget_2->row(item);
+    bookInfo *info = new bookInfo();
+    info->ui->id->setText(QString::number(books[ind].bookID));
+    info->ui->author->setText(books[ind].author);
+    info->ui->name->setText(books[ind].name);
+    info->ui->lan->setText(books[ind].language);
+    info->ui->year->setText(QString::number(books[ind].year));
+    info->show();
+}
+
+
+void MainWindow::on_pushButton_5_clicked()  {
+    int ind = ui->listWidget_2->currentRow();
+    ui->listWidget_2->takeItem(ind);
+    books.removeAt(ind);
+    if (books.size() != 0) {
+        ui->listWidget_2->clear();
+        for (int i = 0; i < books.size();i++) {
+            QListWidgetItem *item = new QListWidgetItem(books[i].name);
+            ui->listWidget_2->addItem(item);
+        }
+    }
+}
+
+
+void MainWindow::on_pushButton_6_clicked() {
+    ui->label_3->clear();
+    int row = ui->listWidget_2->currentRow();
+    QDate date = ui->dateEdit->date();
+    if (row != -1) {
+        int ind = ui->comboBox->currentIndex();
+        Book book = books[row];
+        book.returnDate = date;
+        QList<Book> list = readers[ind].getBorrowedBooks();
+        for (int i = 0; i < list.size();i++) {
+            if (list[i].bookID == book.bookID) {
+                ui->label_3->setText("У читателя есть эта книга.");
+                return;
+            }
+        }
+        readers[ind].addBorrowedBook(book);
+    }
+}
+
+
+void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item) {
+    int ind = ui->listWidget->row(item);
+    int beb = ui->comboBox->currentIndex();
+    QList<Book> boo = readers[beb].getBorrowedBooks();
+    bookInfo *info = new bookInfo();
+    info->ui->id->setText(QString::number(boo[ind].bookID));
+    info->ui->author->setText(boo[ind].author);
+    info->ui->name->setText(boo[ind].name);
+    info->ui->lan->setText(boo[ind].language);
+    info->ui->year->setText(QString::number(boo[ind].year));
+    info->ui->date->setText(boo[ind].returnDate.toString("dd.MM.yyyy"));
+    info->show();
+}
+
+
+void MainWindow::on_Debters_triggered() {
+    QFileDialog dialog;
+    QFile file(dialog.getSaveFileName(this,nullptr,QDir::homePath(),tr("Text files (*.txt)")));
+    if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        qDebug() << "Error opening file";
+        return;
+    }
+    QTextStream out(&file);
+
+    for (int i = 0; i < readers.size(); i++) {
+        readers[i].isDebtor();
+        if (readers[i].isDebt()) {
+            out << "ID: (" << readers[i].getID() << ") " << readers[i].getName() << "\t || ";
+            QList<Book> list = readers[i].getBorrowedBooks();
+            for (int j = 0; j < list.size();j++) {
+                if (list[j].debt) out << " Book ID: (" << list[j].bookID << ") " << list[j].name;
+            }
+        }
+        out << '\n';
+    }
+    file.close();
 }
 

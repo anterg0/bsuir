@@ -8,6 +8,7 @@ struct Book {
     QString author;
     QString language;
     int year;
+    bool debt = false;
     QDate returnDate;
     Book() {}
     Book(int ID, QString nam, QString autho, QString languag, int yea, QDate returnDat) : bookID(ID), name(nam), author(autho), language(languag), year(yea), returnDate(returnDat) {}
@@ -37,6 +38,7 @@ public:
     void addBorrowedBook(Book book);
     QList<Book> getBorrowedBooks();
     void isDebtor();
+    bool isDebt();
 };
 
 #endif // READER_H

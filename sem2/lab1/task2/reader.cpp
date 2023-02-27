@@ -51,6 +51,13 @@ void Reader::isDebtor() {
     int count = borrowedBooks.size();
     for (int i = 0; i < count; i++) {
         QDate newDate = borrowedBooks[i].returnDate.addDays(10);
-        if (QDate::currentDate() > newDate) Debtor = true;
+        if (QDate::currentDate() > newDate) {
+            Debtor = true;
+            borrowedBooks[i].debt = true;
+        }
     }
+}
+
+bool Reader::isDebt() {
+    return Debtor;
 }

@@ -27,6 +27,7 @@ public:
     QLineEdit *address;
     QPushButton *pushButton;
     QLabel *label;
+    QPushButton *addButton;
 
     void setupUi(QDialog *changeReader)
     {
@@ -51,6 +52,10 @@ public:
         label = new QLabel(changeReader);
         label->setObjectName("label");
         label->setGeometry(QRect(180, 40, 161, 16));
+        addButton = new QPushButton(changeReader);
+        addButton->setObjectName("addButton");
+        addButton->setEnabled(false);
+        addButton->setGeometry(QRect(130, 200, 100, 32));
 
         retranslateUi(changeReader);
 
@@ -66,6 +71,7 @@ public:
         address->setPlaceholderText(QCoreApplication::translate("changeReader", "\320\220\320\264\321\200\320\265\321\201", nullptr));
         pushButton->setText(QCoreApplication::translate("changeReader", "\320\230\320\267\320\274\320\265\320\275\320\270\321\202\321\214", nullptr));
         label->setText(QString());
+        addButton->setText(QCoreApplication::translate("changeReader", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", nullptr));
     } // retranslateUi
 
 };

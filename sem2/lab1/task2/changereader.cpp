@@ -13,4 +13,3 @@ changeReader::~changeReader()
 {
     delete ui;
 }
-
