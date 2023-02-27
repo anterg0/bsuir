@@ -44,6 +44,9 @@ public:
     QListWidget *listWidget_2;
     QPushButton *add;
     QPushButton *pushButton_2;
+    QPushButton *addReader;
+    QPushButton *pushButton_3;
+    QPushButton *pushButton_4;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -115,6 +118,15 @@ public:
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(90, 0, 100, 32));
+        addReader = new QPushButton(centralwidget);
+        addReader->setObjectName("addReader");
+        addReader->setGeometry(QRect(10, 260, 151, 32));
+        pushButton_3 = new QPushButton(centralwidget);
+        pushButton_3->setObjectName("pushButton_3");
+        pushButton_3->setGeometry(QRect(10, 290, 151, 32));
+        pushButton_4 = new QPushButton(centralwidget);
+        pushButton_4->setObjectName("pushButton_4");
+        pushButton_4->setGeometry(QRect(9, 320, 151, 32));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -140,6 +152,9 @@ public:
         addBook->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\321\203", nullptr));
         add->setText(QCoreApplication::translate("MainWindow", "bruh", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272", nullptr));
+        addReader->setText(QCoreApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\321\217", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "\320\230\320\267\320\274\320\265\320\275\320\270\321\202\321\214 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\321\217", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "\320\243\320\264\320\260\320\273\320\270\321\202\321\214 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\321\217", nullptr));
     } // retranslateUi
 
 };

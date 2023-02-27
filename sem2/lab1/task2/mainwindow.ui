@@ -163,6 +163,45 @@
      <string>Поиск</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="addReader">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>151</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить читателя</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>290</y>
+      <width>151</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Изменить читателя</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>9</x>
+      <y>320</y>
+      <width>151</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Удалить читателя</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

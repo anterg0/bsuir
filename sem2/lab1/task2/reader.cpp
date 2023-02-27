@@ -4,6 +4,18 @@ void Reader::setName(QString name) {
     fullName = name;
 }
 
+void Reader::setNumber(QString number) {
+    phoneNumber = number;
+}
+
+void Reader::setReaderID(int id) {
+    ID = id;
+}
+
+void Reader::setContantAddress(QString address) {
+    contactAddress = address;
+}
+
 void Reader::addBorrowedBook(Book book) {
     borrowedBooks.append(book);
 }

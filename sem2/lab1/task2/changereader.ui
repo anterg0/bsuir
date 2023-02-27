@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>changeReader</class>
+ <widget class="QDialog" name="changeReader">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLineEdit" name="id">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>ID</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="name">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>ФИО</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="phone">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Номер телефона</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="address">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>160</y>
+     <width>113</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="placeholderText">
+    <string>Адрес</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>200</y>
+     <width>100</width>
+     <height>32</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Изменить</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>40</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

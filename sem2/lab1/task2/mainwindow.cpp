@@ -5,11 +5,15 @@
 #include "ui_addbooks.h"
 #include "findname.h"
 #include "ui_findname.h"
+#include "changereader.h"
+#include "ui_changereader.h"
 #include <QRandomGenerator>
 #include <QFile>
 #include <QFileDialog>
 
-Reader *readers = new Reader[1000];
+
+//Reader *readers = new Reader[1000];
+QList<Reader> readers;
 QList<Book> books;
 
 MainWindow::MainWindow(QWidget *parent)
@@ -27,7 +31,6 @@ QComboBox* MainWindow::getComboBox() {
 MainWindow::~MainWindow()
 {
     delete ui;
-    delete[] readers;
 }
 
 void MainWindow::on_pushButton_clicked() {
@@ -52,7 +55,7 @@ void MainWindow::on_pushButton_clicked() {
         for (int i = 5; i < parts.size(); i++) contactAddress += parts[i] + ' ';
         contactAddress.erase(contactAddress.end(),contactAddress.end());
         int count = ui->comboBox->count();
-        readers[count] = Reader(id, fullName, phoneNumber, contactAddress);
+        readers.append(Reader(id, fullName, phoneNumber, contactAddress));
         ui->comboBox->addItem(readers[count].getName());
     }
     file.close();
@@ -61,17 +64,19 @@ void MainWindow::on_pushButton_clicked() {
 
 
 void MainWindow::on_comboBox_activated(int index) {
-    int id = readers[index].getID();
-    QString address = readers[index].getAddress();
-    QString number = readers[index].getNumber();
-    ui->addr->setText(address);
-    ui->phone->setText(number);
-    ui->id->setText(QString::number(id));
-    QList<Book> list = readers[index].getBorrowedBooks();
-    for (int i = 0; i < list.size(); i++) {
-        ui->listWidget->clear();
-        QListWidgetItem *item = new QListWidgetItem(list[i].name);
-        ui->listWidget->addItem(item);
+    if (ui->comboBox->count() > 0) {
+        int id = readers[index].getID();
+        QString address = readers[index].getAddress();
+        QString number = readers[index].getNumber();
+        ui->addr->setText(address);
+        ui->phone->setText(number);
+        ui->id->setText(QString::number(id));
+        QList<Book> list = readers[index].getBorrowedBooks();
+        for (int i = 0; i < list.size(); i++) {
+            ui->listWidget->clear();
+            QListWidgetItem *item = new QListWidgetItem(list[i].name);
+            ui->listWidget->addItem(item);
+        }
     }
 }
 
@@ -130,17 +135,66 @@ void MainWindow::on_pushButton_2_clicked() {
 
 
 void MainWindow::on_comboBox_currentIndexChanged(int index) {
-    int id = readers[index].getID();
-    QString address = readers[index].getAddress();
-    QString number = readers[index].getNumber();
-    ui->addr->setText(address);
-    ui->phone->setText(number);
-    ui->id->setText(QString::number(id));
-    QList<Book> list = readers[index].getBorrowedBooks();
-    for (int i = 0; i < list.size(); i++) {
-        ui->listWidget->clear();
-        QListWidgetItem *item = new QListWidgetItem(list[i].name);
-        ui->listWidget->addItem(item);
+    if (ui->comboBox->count() > 0) {
+        int id = readers[index].getID();
+        QString address = readers[index].getAddress();
+        QString number = readers[index].getNumber();
+        ui->addr->setText(address);
+        ui->phone->setText(number);
+        ui->id->setText(QString::number(id));
+        QList<Book> list = readers[index].getBorrowedBooks();
+        for (int i = 0; i < list.size(); i++) {
+            ui->listWidget->clear();
+            QListWidgetItem *item = new QListWidgetItem(list[i].name);
+            ui->listWidget->addItem(item);
+        }
+    } else {
+        ui->id->clear();
+        ui->addr->clear();
+        ui->phone->clear();
     }
+}
+
+
+void MainWindow::on_pushButton_4_clicked() {
+    QString selName = ui->comboBox->currentText();
+    int remove = -1;
+    for (int i = 0; i < readers.size(); i++) {
+        if (selName == readers[i].getName()) {
+            remove = i;
+            break;
+        }
+    }
+    if (remove != -1) {
+        readers.removeAt(remove);
+        ui->comboBox->removeItem(remove);
+        for (int i = remove; i < readers.size(); i++) {
+            ui->comboBox->setItemText(i, readers[i].getName());
+        }
+    }
+}
+
+
+
+void MainWindow::on_pushButton_3_clicked()  {
+    changeReader *bruh = new changeReader(this);
+    bruh->ui->id->setReadOnly(true);
+    bruh->ui->name->setText(ui->comboBox->currentText());
+    bruh->ui->address->setText(ui->addr->text());
+    bruh->ui->phone->setText(ui->phone->text());
+    bruh->show();
+}
+
+void changeReader::on_pushButton_clicked()  {
+    QString text2 = ui->name->text();
+    QString text3 = ui->phone->text();
+    QString text4 = ui->address->text();
+    QComboBox *comboBox = m_mainWindow->getComboBox();
+    int sel = comboBox->currentIndex();
+    readers[sel].setName(text2);
+    readers[sel].setNumber(text3);
+    readers[sel].setContantAddress(text4);
+    comboBox->setItemText(sel,readers[sel].getName());
+    this->close();
 }
 
