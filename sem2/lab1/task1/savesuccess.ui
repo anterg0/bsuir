@@ -28,10 +28,10 @@
   <widget class="QWidget" name="verticalLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>140</x>
+     <x>0</x>
      <y>-10</y>
-     <width>130</width>
-     <height>201</height>
+     <width>401</width>
+     <height>211</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">

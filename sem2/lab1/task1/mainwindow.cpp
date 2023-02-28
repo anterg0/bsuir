@@ -23,10 +23,14 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::on_pushButton_clicked() {
+    QString check = fileName;
     QFileDialog dialog;
     fileName = dialog.getOpenFileName(this,nullptr,QDir::homePath(),tr("Text files (*.txt)"));
     std::ifstream file;
     file.open(fileName.toStdString());
+    if (file.eof()) {
+
+    }
     if (file.is_open()) {
         ui->tableWidget->setRowCount(0);
         ui->tableWidget->clearContents();
@@ -52,6 +56,13 @@ void MainWindow::on_pushButton_clicked() {
         }
     }
     ui->spinBox->setMaximum(ui->tableWidget->rowCount());
+    if (ui->tableWidget->rowCount() == 0) {
+        if (check.isEmpty()) fileName = "";
+        else fileName = check;
+        saveSuccess *window = new saveSuccess();
+        window->ui->label->setText("Неправильный формат файла.");
+        window->show();
+    }
 }
 
 
@@ -64,36 +75,51 @@ void MainWindow::on_pushButton_2_clicked() {
                 QTableWidgetItem *item = ui->tableWidget->item(j,0);
                 if (item) {
                     QString textDate = item->text();
-                    QDate qNewDate = bruh[j].NextDay(QDate::fromString(textDate,"dd.MM.yyyy"));
-                    QString newDate = qNewDate.toString("dd.MM.yyyy");
-                    QTableWidgetItem *newItem = new QTableWidgetItem(newDate);
-                    ui->tableWidget->setItem(j,1,newItem);
+                    if (QDate::fromString(textDate, "dd.MM.yyyy") <= QDate(1,1,1)) {
+                        QTableWidgetItem *newItem = new QTableWidgetItem("До нашей эры");
+                        ui->tableWidget->setItem(j,1,newItem);
+                    } else {
+                        QDate qNewDate = bruh[j].PreviousDay(QDate::fromString(textDate,"dd.MM.yyyy"));
+                        QString newDate = qNewDate.toString("dd.MM.yyyy");
+                        QTableWidgetItem *newItem = new QTableWidgetItem(newDate);
+                        ui->tableWidget->setItem(j,1,newItem);
+                    }
                 }
             }
             if (i == 2) {
+                QTableWidgetItem *item = ui->tableWidget->item(j,0);
+                if (item) {
+                    QString textDate = item->text();
+                    QDate qNewDate = bruh[j].NextDay(QDate::fromString(textDate,"dd.MM.yyyy"));
+                    QString newDate = qNewDate.toString("dd.MM.yyyy");
+                    QTableWidgetItem *newItem = new QTableWidgetItem(newDate);
+                    ui->tableWidget->setItem(j,2,newItem);
+                }
+            }
+            if (i == 3) {
                 QTableWidgetItem *item = ui->tableWidget->item(j + 1,0);
                 if (item) {
                     QString textDate = item->text();
                     int diff = bruh[j].Duration(QDate::fromString(textDate, "dd.MM.yyyy"));
                     QString newDate = QString::number(diff);
                     QTableWidgetItem *newItem = new QTableWidgetItem(newDate);
-                    ui->tableWidget->setItem(j,2,newItem);
+                    ui->tableWidget->setItem(j,3,newItem);
                 } else {
                     QTableWidgetItem *item = new QTableWidgetItem("-");
-                    ui->tableWidget->setItem(j,2,item);
+                    ui->tableWidget->setItem(j,3,item);
                 }
             }
-            if (i == 3) {
+            if (i == 4) {
                 QTableWidgetItem *item = ui->tableWidget->item(j,0);
                 if (item) {
                     QString textDate = item->text();
                     QDate date = QDate::fromString(textDate, "dd.MM.yyyy");
                     if (date.isLeapYear(date.year())) {
                         QTableWidgetItem *newItem = new QTableWidgetItem("+");
-                        ui->tableWidget->setItem(j,3,newItem);
+                        ui->tableWidget->setItem(j,4,newItem);
                     } else {
                         QTableWidgetItem *newItem = new QTableWidgetItem("-");
-                        ui->tableWidget->setItem(j,3,newItem);
+                        ui->tableWidget->setItem(j,4,newItem);
                     }
                 }
             }
@@ -138,10 +164,10 @@ void MainWindow::on_pushButton_6_clicked() {
         QDate dr = ui->dateEdit_2->date();
         int days = bruh[i].DaysTillYourBirthday(dr);
         QTableWidgetItem *item = new QTableWidgetItem(QString::number(days));
-        ui->tableWidget->setItem(i,4,item);
+        ui->tableWidget->setItem(i,5,item);
         int daysSince = bruh[i].birthdayDuration(dr);
         item = new QTableWidgetItem(QString::number(daysSince));
-        ui->tableWidget->setItem(i,5,item);
+        ui->tableWidget->setItem(i,6,item);
     }
 }
 
@@ -163,17 +189,9 @@ void MainWindow::on_pushButton_5_clicked() {
 
         QTextStream out(&file);
         for (int i = 0; i < ui->tableWidget->rowCount();i++) {
-            for (int j = 0; j < ui->tableWidget->columnCount();j++) {
-                QTableWidgetItem *item = ui->tableWidget->item(i,j);
-                if (!item) {
-                    out << '\t';
-                    continue;
-                }
-                QVariant data = item->data(Qt::DisplayRole);
-                QString text = data.toString();
-                out << text << '\t';
-            }
-            out << '\n';
+            QString text = ui->tableWidget->item(i,0)->text();
+            if (i != ui->tableWidget->rowCount() - 1) out << text + '\n';
+            else out << text;
         }
         file.close();
         newWindow->ui->label->setText("Файл был сохранен.");
@@ -183,11 +201,9 @@ void MainWindow::on_pushButton_5_clicked() {
         if (!file.open(QIODevice::WriteOnly | QIODevice::Text)) return;
         QTextStream out(&file);
         for (int i = 0; i < ui->tableWidget->rowCount();i++) {
-            for (int j = 0; j < ui->tableWidget->columnCount();j++) {
-                QTableWidgetItem *item = ui->tableWidget->item(i,j);
-                out << item->text() << '\t';
-            }
-            out << '\n';
+            QString text = ui->tableWidget->item(i,0)->text();
+            if (i != ui->tableWidget->rowCount() - 1) out << text + '\n';
+            else out << text;
         }
         file.close();
         newWindow->ui->label->setText("Файл был сохранен.");

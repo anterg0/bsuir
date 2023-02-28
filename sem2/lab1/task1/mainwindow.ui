@@ -35,9 +35,17 @@
       <height>381</height>
      </rect>
     </property>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>120</number>
+    </attribute>
     <column>
      <property name="text">
       <string>Дата</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Предыдущий день</string>
      </property>
     </column>
     <column>
@@ -162,7 +170,7 @@
       <x>330</x>
       <y>380</y>
       <width>203</width>
-      <height>103</height>
+      <height>114</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_4">
