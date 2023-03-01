@@ -169,15 +169,18 @@ public:
         pushButton = new QPushButton(addBooks);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(240, 110, 100, 32));
+        pushButton->setAutoDefault(false);
         pushButton_2 = new QPushButton(addBooks);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(440, 110, 100, 32));
+        pushButton_2->setAutoDefault(false);
         label_7 = new QLabel(addBooks);
         label_7->setObjectName("label_7");
         label_7->setGeometry(QRect(550, 115, 341, 21));
         editButton = new QPushButton(addBooks);
         editButton->setObjectName("editButton");
         editButton->setGeometry(QRect(440, 110, 100, 32));
+        editButton->setAutoDefault(false);
         editButton->raise();
         horizontalLayoutWidget->raise();
         pushButton->raise();
@@ -185,6 +188,10 @@ public:
         label_7->raise();
 
         retranslateUi(addBooks);
+
+        pushButton_2->setDefault(true);
+        editButton->setDefault(false);
+
 
         QMetaObject::connectSlotsByName(addBooks);
     } // setupUi

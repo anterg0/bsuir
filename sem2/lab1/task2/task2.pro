@@ -12,6 +12,7 @@ SOURCES += \
     addbooks.cpp \
     bookinfo.cpp \
     changereader.cpp \
+    dialog.cpp \
     findname.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -21,6 +22,7 @@ HEADERS += \
     addbooks.h \
     bookinfo.h \
     changereader.h \
+    dialog.h \
     findname.h \
     mainwindow.h \
     reader.h
@@ -29,6 +31,7 @@ FORMS += \
     addbooks.ui \
     bookinfo.ui \
     changereader.ui \
+    dialog.ui \
     findname.ui \
     mainwindow.ui
 

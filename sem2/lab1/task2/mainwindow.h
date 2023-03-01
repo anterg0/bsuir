@@ -54,6 +54,10 @@ private slots:
 
     void on_pushButton_10_clicked();
 
+    void on_lineEdit_textChanged(const QString &arg1);
+
+    void on_pushButton_11_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

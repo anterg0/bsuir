@@ -9,6 +9,8 @@
 #include "ui_changereader.h"
 #include "bookinfo.h"
 #include "ui_bookinfo.h"
+#include "dialog.h"
+#include "ui_dialog.h"
 #include <QRandomGenerator>
 #include <QFile>
 #include <QFileDialog>
@@ -329,8 +331,22 @@ void MainWindow::on_bookList_triggered() {
 
 
 void MainWindow::on_pushButton_7_clicked()  {
+    dialog *bebra = new dialog();
     int row = ui->listWidget->currentRow();
     int ind = ui->comboBox->currentIndex();
+    if (row == -1 && ind == -1) {
+        bebra->ui->label->setText("Не выбраны читатель и книга.");
+        bebra->show();
+        return;
+    } else if (row == -1) {
+        bebra->ui->label->setText("Не выбрана книга.");
+        bebra->show();
+        return;
+    } else if (ind == -1) {
+        bebra->ui->label->setText("Не выбран читатель.");
+        bebra->show();
+        return;
+    }
     readers[ind].delBorrowedBook(row);
     ui->listWidget->clear();
     QList<Book> list = readers[ind].getBorrowedBooks();
@@ -353,6 +369,8 @@ void MainWindow::on_pushButton_8_clicked() {
         bruh->ui->bookName->setText(books[row].name);
         bruh->ui->bookLanguage->setText(books[row].language);
         bruh->ui->bookYear->setDate(QDate(books[row].year,1,1));
+        bruh->ui->editButton->setDefault(true);
+        bruh->ui->pushButton_2->setDefault(false);
         bruh->show();
     }
 }
@@ -373,6 +391,7 @@ void addBooks::on_editButton_clicked()  {
         QListWidgetItem *item = new QListWidgetItem(books[i].name);
         list->addItem(item);
     }
+    this->close();
 }
 
 void MainWindow::on_pushButton_9_clicked()  {
@@ -418,5 +437,89 @@ void MainWindow::on_pushButton_10_clicked() {
         out << books[i].bookID << " " << books[i].author << " " << books[i].language << " " << books[i].year << " " << books[i].name << "\n";
     }
     file.close();
+}
+
+
+void MainWindow::on_lineEdit_textChanged(const QString &arg1)   {
+    if (ui->comboBox_2->currentIndex() == 1) {
+        for (int i = 0; i < ui->listWidget_2->count(); i++) {
+            QListWidgetItem *item = ui->listWidget_2->item(i);
+            QString itemText = item->text();
+            if (itemText.contains(arg1, Qt::CaseInsensitive)) {
+                item->setHidden(false);
+            } else {
+                item->setHidden(true);
+            }
+        }
+    } else if (ui->comboBox_2->currentIndex() == 0) {
+        for (int i = 0; i < ui->listWidget_2->count(); i++) {
+            QListWidgetItem *item = ui->listWidget_2->item(i);
+            QString itemText = books[i].author;
+            if (itemText.contains(arg1, Qt::CaseInsensitive)) {
+                item->setHidden(false);
+            } else {
+                item->setHidden(true);
+            }
+        }
+    }
+}
+
+bool compareByID (Book a, Book b) {
+    return a.bookID < b.bookID;
+}
+
+bool compareByName (Book a, Book b) {
+    return a.name < b.name;
+}
+
+bool compareByAuthor (Book a, Book b) {
+    return a.author < b.author;
+}
+
+bool compareByLanguage (Book a, Book b) {
+    return a.language < b.language;
+}
+
+bool compareByYear (Book a, Book b) {
+    return a.year < b.year;
+}
+
+void MainWindow::on_pushButton_11_clicked()
+{
+    if (ui->comboBox_3->currentIndex() == 0) {
+        std::sort(books.begin(),books.end(),compareByID);
+        ui->listWidget_2->clear();
+        for (int i = 0; i < books.size(); i++) {
+            ui->listWidget_2->addItem(books[i].name);
+        }
+    }
+    if (ui->comboBox_3->currentIndex() == 1) {
+        std::sort(books.begin(),books.end(),compareByName);
+        ui->listWidget_2->clear();
+        for (int i = 0; i < books.size(); i++) {
+            ui->listWidget_2->addItem(books[i].name);
+        }
+    }
+    if (ui->comboBox_3->currentIndex() == 2) {
+        std::sort(books.begin(),books.end(),compareByAuthor);
+        ui->listWidget_2->clear();
+        for (int i = 0; i < books.size(); i++) {
+            ui->listWidget_2->addItem(books[i].name);
+        }
+    }
+    if (ui->comboBox_3->currentIndex() == 3) {
+        std::sort(books.begin(),books.end(),compareByLanguage);
+        ui->listWidget_2->clear();
+        for (int i = 0; i < books.size(); i++) {
+            ui->listWidget_2->addItem(books[i].name);
+        }
+    }
+    if (ui->comboBox_3->currentIndex() == 4) {
+        std::sort(books.begin(),books.end(),compareByYear);
+        ui->listWidget_2->clear();
+        for (int i = 0; i < books.size(); i++) {
+            ui->listWidget_2->addItem(books[i].name);
+        }
+    }
 }
 

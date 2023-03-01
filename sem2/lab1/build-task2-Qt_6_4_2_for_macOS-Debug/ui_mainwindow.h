@@ -60,6 +60,18 @@ public:
     QPushButton *pushButton_8;
     QPushButton *pushButton_9;
     QPushButton *pushButton_10;
+    QLabel *label_4;
+    QLabel *label_5;
+    QWidget *verticalLayoutWidget_2;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_6;
+    QLineEdit *lineEdit;
+    QComboBox *comboBox_2;
+    QWidget *verticalLayoutWidget_3;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *label_7;
+    QPushButton *pushButton_11;
+    QComboBox *comboBox_3;
     QMenuBar *menubar;
     QMenu *menu;
     QStatusBar *statusbar;
@@ -68,9 +80,9 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(547, 598);
+        MainWindow->resize(729, 598);
         MainWindow->setMinimumSize(QSize(547, 598));
-        MainWindow->setMaximumSize(QSize(547, 598));
+        MainWindow->setMaximumSize(QSize(729, 598));
         Debters = new QAction(MainWindow);
         Debters->setObjectName("Debters");
         bookList = new QAction(MainWindow);
@@ -146,7 +158,7 @@ public:
         pushButton_4->setGeometry(QRect(9, 320, 251, 32));
         pushButton_5 = new QPushButton(centralwidget);
         pushButton_5->setObjectName("pushButton_5");
-        pushButton_5->setGeometry(QRect(420, 400, 111, 32));
+        pushButton_5->setGeometry(QRect(410, 400, 121, 32));
         dateEdit = new QDateEdit(centralwidget);
         dateEdit->setObjectName("dateEdit");
         dateEdit->setGeometry(QRect(10, 370, 251, 22));
@@ -167,14 +179,71 @@ public:
         pushButton_8->setGeometry(QRect(280, 430, 121, 32));
         pushButton_9 = new QPushButton(centralwidget);
         pushButton_9->setObjectName("pushButton_9");
-        pushButton_9->setGeometry(QRect(420, 430, 121, 32));
+        pushButton_9->setGeometry(QRect(410, 430, 121, 32));
         pushButton_10 = new QPushButton(centralwidget);
         pushButton_10->setObjectName("pushButton_10");
         pushButton_10->setGeometry(QRect(280, 460, 121, 32));
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(540, -10, 161, 41));
+        label_5 = new QLabel(centralwidget);
+        label_5->setObjectName("label_5");
+        label_5->setGeometry(QRect(540, 190, 101, 41));
+        verticalLayoutWidget_2 = new QWidget(centralwidget);
+        verticalLayoutWidget_2->setObjectName("verticalLayoutWidget_2");
+        verticalLayoutWidget_2->setGeometry(QRect(540, 230, 177, 91));
+        verticalLayout_2 = new QVBoxLayout(verticalLayoutWidget_2);
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_6 = new QLabel(verticalLayoutWidget_2);
+        label_6->setObjectName("label_6");
+        label_6->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
+
+        verticalLayout_2->addWidget(label_6);
+
+        lineEdit = new QLineEdit(verticalLayoutWidget_2);
+        lineEdit->setObjectName("lineEdit");
+
+        verticalLayout_2->addWidget(lineEdit);
+
+        comboBox_2 = new QComboBox(verticalLayoutWidget_2);
+        comboBox_2->addItem(QString());
+        comboBox_2->addItem(QString());
+        comboBox_2->setObjectName("comboBox_2");
+
+        verticalLayout_2->addWidget(comboBox_2);
+
+        verticalLayoutWidget_3 = new QWidget(centralwidget);
+        verticalLayoutWidget_3->setObjectName("verticalLayoutWidget_3");
+        verticalLayoutWidget_3->setGeometry(QRect(540, 330, 177, 95));
+        verticalLayout_4 = new QVBoxLayout(verticalLayoutWidget_3);
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
+        label_7 = new QLabel(verticalLayoutWidget_3);
+        label_7->setObjectName("label_7");
+        label_7->setAlignment(Qt::AlignBottom|Qt::AlignHCenter);
+
+        verticalLayout_4->addWidget(label_7);
+
+        pushButton_11 = new QPushButton(verticalLayoutWidget_3);
+        pushButton_11->setObjectName("pushButton_11");
+
+        verticalLayout_4->addWidget(pushButton_11);
+
+        comboBox_3 = new QComboBox(verticalLayoutWidget_3);
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->addItem(QString());
+        comboBox_3->setObjectName("comboBox_3");
+
+        verticalLayout_4->addWidget(comboBox_3);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
-        menubar->setGeometry(QRect(0, 0, 547, 24));
+        menubar->setGeometry(QRect(0, 0, 729, 24));
         menu = new QMenu(menubar);
         menu->setObjectName("menu");
         MainWindow->setMenuBar(menubar);
@@ -214,6 +283,20 @@ public:
         pushButton_8->setText(QCoreApplication::translate("MainWindow", "\320\230\320\267\320\274\320\265\320\275\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\321\203", nullptr));
         pushButton_9->setText(QCoreApplication::translate("MainWindow", "\320\227\320\260\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\320\270", nullptr));
         pushButton_10->setText(QCoreApplication::translate("MainWindow", "\320\222\321\213\320\263\321\200\321\203\320\267\320\270\321\202\321\214 \320\272\320\275\320\270\320\263\320\270", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "<- \320\241\320\277\320\270\321\201\320\276\320\272 \320\272\320\275\320\270\320\263 \321\207\320\270\321\202\320\260\321\202\320\265\320\273\321\217", nullptr));
+        label_5->setText(QCoreApplication::translate("MainWindow", "<- \320\241\320\277\320\270\321\201\320\276\320\272 \320\272\320\275\320\270\320\263", nullptr));
+        label_6->setText(QCoreApplication::translate("MainWindow", "\320\237\320\276\320\270\321\201\320\272 \320\272\320\275\320\270\320\263", nullptr));
+        comboBox_2->setItemText(0, QCoreApplication::translate("MainWindow", "\320\237\320\276 \321\204\320\260\320\274\320\270\320\273\320\270\320\270 \320\260\320\262\321\202\320\276\321\200\320\260", nullptr));
+        comboBox_2->setItemText(1, QCoreApplication::translate("MainWindow", "\320\237\320\276 \320\275\320\260\320\267\320\262\320\260\320\275\320\270\321\216", nullptr));
+
+        label_7->setText(QCoreApplication::translate("MainWindow", "\320\241\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\272\320\260 \320\272\320\275\320\270\320\263", nullptr));
+        pushButton_11->setText(QCoreApplication::translate("MainWindow", "\320\241\320\276\321\200\321\202\320\270\321\200\320\276\320\262\320\260\321\202\321\214", nullptr));
+        comboBox_3->setItemText(0, QCoreApplication::translate("MainWindow", "\320\237\320\276 \320\272\320\276\320\264\321\203 \320\272\320\275\320\270\320\263\320\270", nullptr));
+        comboBox_3->setItemText(1, QCoreApplication::translate("MainWindow", "\320\237\320\276 \320\275\320\260\320\267\320\262\320\260\320\275\320\270\321\216", nullptr));
+        comboBox_3->setItemText(2, QCoreApplication::translate("MainWindow", "\320\237\320\276 \320\260\320\262\321\202\320\276\321\200\321\203", nullptr));
+        comboBox_3->setItemText(3, QCoreApplication::translate("MainWindow", "\320\237\320\276 \321\217\320\267\321\213\320\272\321\203", nullptr));
+        comboBox_3->setItemText(4, QCoreApplication::translate("MainWindow", "\320\237\320\276 \320\263\320\276\320\264\321\203", nullptr));
+
         menu->setTitle(QCoreApplication::translate("MainWindow", "\320\241\320\277\320\270\321\201\320\272\320\270", nullptr));
     } // retranslateUi
 
