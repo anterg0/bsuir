@@ -1,0 +1,15 @@
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/bin/Debug/net7.0/task3
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/bin/Debug/net7.0/task3.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/bin/Debug/net7.0/task3.runtimeconfig.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/bin/Debug/net7.0/task3.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/bin/Debug/net7.0/task3.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/refint/task3.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/task3.genruntimeconfig.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab3/task3/obj/Debug/net7.0/ref/task3.dll
