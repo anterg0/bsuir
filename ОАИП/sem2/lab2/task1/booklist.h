@@ -27,10 +27,11 @@ struct Node {
 class BookList
 {
 private:
-    Node* head;
+//    Node* head;
     Node* tail;
     int size;
 public:
+    Node* head;
     BookList();
     void add(Node* book);
     bool ins(Node* book, int index);

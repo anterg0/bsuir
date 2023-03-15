@@ -152,61 +152,48 @@ int BookList::getPages(int index) {
     return current->bookPageAmount;
 }
 
-bool compareBookID(Node* a, Node* b) {
-    return a->bookID < b->bookID;
-}
-
 Node* merge(Node* left, Node* right, bool (*compare)(Node*, Node*)) {
-    Node* result = NULL;
-    if (left == NULL)
+    if (left == NULL) {
         return right;
-    else if (right == NULL)
+    }
+    if (right == NULL) {
         return left;
-
+    }
     if (compare(left, right)) {
-        result = left;
-        result->next = merge(left->next, right, compare);
+        left->next = merge(left->next, right, compare);
+        left->next->prev = left;
+        left->prev = NULL;
+        return left;
+    } else {
+        right->next = merge(left, right->next, compare);
+        right->next->prev = right;
+        right->prev = NULL;
+        return right;
     }
-    else {
-        result = right;
-        result->next = merge(left, right->next, compare);
-    }
-
-    return result;
 }
 
-void split(Node* head, Node** left, Node** right) {
-    Node* fast = head->next;
-    Node* slow = head;
-
-    while (fast != NULL) {
-        fast = fast->next;
-        if (fast != NULL) {
-            slow = slow->next;
-            fast = fast->next;
-        }
-    }
-
-    *left = head;
-    *right = slow->next;
-    slow->next = NULL;
-}
 
 void BookList::Sort(Node** head, bool (*compare)(Node*, Node*)) {
-    Node* cur = *head;
-    Node* left = NULL;
-    Node* right = NULL;
-
-    if (cur == NULL || cur->next == NULL)
+    if (*head == NULL || (*head)->next == NULL) {
         return;
-
-    split(cur, &left, &right);
-
+    }
+    Node* left = *head;
+    Node* right = (*head)->next;
+    while (right != NULL) {
+        right = right->next;
+        if (right != NULL) {
+            left = left->next;
+            right = right->next;
+        }
+    }
+    right = left->next;
+    left->next = NULL;
+    left = *head;
     Sort(&left, compare);
     Sort(&right, compare);
-
     *head = merge(left, right, compare);
 }
+
 
 int BookList::capacity() {
     return size;

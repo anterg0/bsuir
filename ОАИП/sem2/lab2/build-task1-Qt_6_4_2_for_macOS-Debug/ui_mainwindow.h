@@ -12,14 +12,19 @@
 #include <QtCore/QVariant>
 #include <QtGui/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
+#include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -31,19 +36,36 @@ public:
     QAction *actionSave_File;
     QAction *actionClose_File;
     QWidget *centralwidget;
-    QPushButton *add;
-    QLineEdit *delIndex;
-    QPushButton *del;
-    QPushButton *ins;
     QPushButton *pushButton;
     QTableWidget *tableWidget;
+    QWidget *horizontalLayoutWidget;
+    QHBoxLayout *horizontalLayout;
+    QVBoxLayout *verticalLayout;
+    QPushButton *add;
+    QPushButton *ins;
     QPushButton *edit;
-    QPushButton *pushButton_2;
-    QLineEdit *findID;
-    QLineEdit *search;
+    QSpacerItem *horizontalSpacer;
+    QVBoxLayout *verticalLayout_3;
+    QLineEdit *delIndex;
+    QPushButton *del;
+    QSpacerItem *horizontalSpacer_2;
+    QVBoxLayout *verticalLayout_2;
     QLineEdit *searchName;
     QLineEdit *searchYear;
     QPushButton *pushButton_3;
+    QSpacerItem *horizontalSpacer_3;
+    QVBoxLayout *verticalLayout_4;
+    QLineEdit *findID;
+    QPushButton *pushButton_2;
+    QWidget *horizontalLayoutWidget_2;
+    QHBoxLayout *horizontalLayout_2;
+    QHBoxLayout *horizontalLayout_4;
+    QLabel *label;
+    QLineEdit *search;
+    QSpacerItem *horizontalSpacer_4;
+    QHBoxLayout *horizontalLayout_3;
+    QPushButton *sortButton;
+    QComboBox *sortOption;
     QMenuBar *menubar;
     QMenu *menuFile;
     QStatusBar *statusbar;
@@ -61,19 +83,6 @@ public:
         actionClose_File->setObjectName("actionClose_File");
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        add = new QPushButton(centralwidget);
-        add->setObjectName("add");
-        add->setGeometry(QRect(390, 430, 100, 32));
-        delIndex = new QLineEdit(centralwidget);
-        delIndex->setObjectName("delIndex");
-        delIndex->setGeometry(QRect(520, 480, 113, 21));
-        delIndex->setFocusPolicy(Qt::ClickFocus);
-        del = new QPushButton(centralwidget);
-        del->setObjectName("del");
-        del->setGeometry(QRect(530, 500, 100, 32));
-        ins = new QPushButton(centralwidget);
-        ins->setObjectName("ins");
-        ins->setGeometry(QRect(390, 470, 100, 32));
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(700, 520, 100, 32));
@@ -95,27 +104,141 @@ public:
         tableWidget->setObjectName("tableWidget");
         tableWidget->setGeometry(QRect(0, 30, 791, 391));
         tableWidget->horizontalHeader()->setDefaultSectionSize(126);
-        edit = new QPushButton(centralwidget);
+        horizontalLayoutWidget = new QWidget(centralwidget);
+        horizontalLayoutWidget->setObjectName("horizontalLayoutWidget");
+        horizontalLayoutWidget->setGeometry(QRect(0, 430, 791, 102));
+        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName("verticalLayout");
+        add = new QPushButton(horizontalLayoutWidget);
+        add->setObjectName("add");
+
+        verticalLayout->addWidget(add);
+
+        ins = new QPushButton(horizontalLayoutWidget);
+        ins->setObjectName("ins");
+
+        verticalLayout->addWidget(ins);
+
+        edit = new QPushButton(horizontalLayoutWidget);
         edit->setObjectName("edit");
-        edit->setGeometry(QRect(390, 510, 100, 32));
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setGeometry(QRect(570, 430, 100, 32));
-        findID = new QLineEdit(centralwidget);
-        findID->setObjectName("findID");
-        findID->setGeometry(QRect(680, 430, 113, 21));
-        search = new QLineEdit(centralwidget);
-        search->setObjectName("search");
-        search->setGeometry(QRect(325, 0, 113, 21));
-        searchName = new QLineEdit(centralwidget);
+
+        verticalLayout->addWidget(edit);
+
+
+        horizontalLayout->addLayout(verticalLayout);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName("verticalLayout_3");
+        delIndex = new QLineEdit(horizontalLayoutWidget);
+        delIndex->setObjectName("delIndex");
+        delIndex->setFocusPolicy(Qt::ClickFocus);
+
+        verticalLayout_3->addWidget(delIndex);
+
+        del = new QPushButton(horizontalLayoutWidget);
+        del->setObjectName("del");
+
+        verticalLayout_3->addWidget(del);
+
+
+        horizontalLayout->addLayout(verticalLayout_3);
+
+        horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_2);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        searchName = new QLineEdit(horizontalLayoutWidget);
         searchName->setObjectName("searchName");
-        searchName->setGeometry(QRect(10, 440, 113, 21));
-        searchYear = new QLineEdit(centralwidget);
+
+        verticalLayout_2->addWidget(searchName);
+
+        searchYear = new QLineEdit(horizontalLayoutWidget);
         searchYear->setObjectName("searchYear");
-        searchYear->setGeometry(QRect(10, 470, 113, 21));
-        pushButton_3 = new QPushButton(centralwidget);
+
+        verticalLayout_2->addWidget(searchYear);
+
+        pushButton_3 = new QPushButton(horizontalLayoutWidget);
         pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setGeometry(QRect(10, 500, 100, 32));
+
+        verticalLayout_2->addWidget(pushButton_3);
+
+
+        horizontalLayout->addLayout(verticalLayout_2);
+
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_3);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        findID = new QLineEdit(horizontalLayoutWidget);
+        findID->setObjectName("findID");
+
+        verticalLayout_4->addWidget(findID);
+
+        pushButton_2 = new QPushButton(horizontalLayoutWidget);
+        pushButton_2->setObjectName("pushButton_2");
+
+        verticalLayout_4->addWidget(pushButton_2);
+
+
+        horizontalLayout->addLayout(verticalLayout_4);
+
+        horizontalLayoutWidget_2 = new QWidget(centralwidget);
+        horizontalLayoutWidget_2->setObjectName("horizontalLayoutWidget_2");
+        horizontalLayoutWidget_2->setGeometry(QRect(9, 0, 781, 41));
+        horizontalLayout_2 = new QHBoxLayout(horizontalLayoutWidget_2);
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName("horizontalLayout_4");
+        label = new QLabel(horizontalLayoutWidget_2);
+        label->setObjectName("label");
+
+        horizontalLayout_4->addWidget(label);
+
+        search = new QLineEdit(horizontalLayoutWidget_2);
+        search->setObjectName("search");
+
+        horizontalLayout_4->addWidget(search);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout_4);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_4);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        sortButton = new QPushButton(horizontalLayoutWidget_2);
+        sortButton->setObjectName("sortButton");
+
+        horizontalLayout_3->addWidget(sortButton);
+
+        sortOption = new QComboBox(horizontalLayoutWidget_2);
+        sortOption->addItem(QString());
+        sortOption->addItem(QString());
+        sortOption->addItem(QString());
+        sortOption->addItem(QString());
+        sortOption->addItem(QString());
+        sortOption->addItem(QString());
+        sortOption->setObjectName("sortOption");
+
+        horizontalLayout_3->addWidget(sortOption);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout_3);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -143,9 +266,6 @@ public:
         actionOpen_File->setText(QCoreApplication::translate("MainWindow", "Open File", nullptr));
         actionSave_File->setText(QCoreApplication::translate("MainWindow", "Save File", nullptr));
         actionClose_File->setText(QCoreApplication::translate("MainWindow", "Close and Save File", nullptr));
-        add->setText(QCoreApplication::translate("MainWindow", "add", nullptr));
-        del->setText(QCoreApplication::translate("MainWindow", "del", nullptr));
-        ins->setText(QCoreApplication::translate("MainWindow", "ins", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "debug", nullptr));
         QTableWidgetItem *___qtablewidgetitem = tableWidget->horizontalHeaderItem(0);
         ___qtablewidgetitem->setText(QCoreApplication::translate("MainWindow", "ID", nullptr));
@@ -159,11 +279,26 @@ public:
         ___qtablewidgetitem4->setText(QCoreApplication::translate("MainWindow", "Year", nullptr));
         QTableWidgetItem *___qtablewidgetitem5 = tableWidget->horizontalHeaderItem(5);
         ___qtablewidgetitem5->setText(QCoreApplication::translate("MainWindow", "Page Count", nullptr));
-        edit->setText(QCoreApplication::translate("MainWindow", "edit", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "find info", nullptr));
+        add->setText(QCoreApplication::translate("MainWindow", "Add Book", nullptr));
+        ins->setText(QCoreApplication::translate("MainWindow", "Insert Book", nullptr));
+        edit->setText(QCoreApplication::translate("MainWindow", "Edit Book", nullptr));
+        delIndex->setText(QString());
+        delIndex->setPlaceholderText(QCoreApplication::translate("MainWindow", "Row Number", nullptr));
+        del->setText(QCoreApplication::translate("MainWindow", "Delete Book", nullptr));
         searchName->setPlaceholderText(QCoreApplication::translate("MainWindow", "Name", nullptr));
         searchYear->setPlaceholderText(QCoreApplication::translate("MainWindow", "Year", nullptr));
         pushButton_3->setText(QCoreApplication::translate("MainWindow", "Search", nullptr));
+        findID->setPlaceholderText(QCoreApplication::translate("MainWindow", "Book ID", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Find Info", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "Search by Author:", nullptr));
+        sortButton->setText(QCoreApplication::translate("MainWindow", "Sort", nullptr));
+        sortOption->setItemText(0, QCoreApplication::translate("MainWindow", "By ID", nullptr));
+        sortOption->setItemText(1, QCoreApplication::translate("MainWindow", "By Name", nullptr));
+        sortOption->setItemText(2, QCoreApplication::translate("MainWindow", "By Author", nullptr));
+        sortOption->setItemText(3, QCoreApplication::translate("MainWindow", "By Publisher", nullptr));
+        sortOption->setItemText(4, QCoreApplication::translate("MainWindow", "By Year", nullptr));
+        sortOption->setItemText(5, QCoreApplication::translate("MainWindow", "By Page Count", nullptr));
+
         menuFile->setTitle(QCoreApplication::translate("MainWindow", "File", nullptr));
     } // retranslateUi
 

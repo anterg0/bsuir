@@ -516,3 +516,102 @@ void MainWindow::on_pushButton_3_clicked()
         }
 }
 
+bool compareByName(Node* a, Node* b) {
+    return a->bookName < b->bookName;
+}
+
+bool compareByID(Node* a, Node* b) {
+    return a->bookID < b->bookID;
+}
+
+bool compareByAuthor(Node* a, Node* b) {
+    return a->bookAuthor < b->bookAuthor;
+}
+
+bool compareByPublisher(Node* a, Node* b) {
+    return a->bookPublisher < b->bookPublisher;
+}
+
+bool compareByYear(Node* a, Node* b) {
+    return a->bookYear < b->bookYear;
+}
+
+bool compareByPages(Node* a, Node* b) {
+    return a->bookPageAmount < b->bookPageAmount;
+}
+
+
+void MainWindow::on_sortButton_clicked()
+{
+    if (bebra.capacity() == 0) return;
+    if (ui->sortOption->currentIndex() == 0) {
+        bebra.Sort(&bebra.head, compareByID);
+    }
+    if (ui->sortOption->currentIndex() == 1) {
+        bebra.Sort(&bebra.head, compareByName);
+    }
+    if (ui->sortOption->currentIndex() == 2) {
+        bebra.Sort(&bebra.head, compareByAuthor);
+    }
+    if (ui->sortOption->currentIndex() == 3) {
+        bebra.Sort(&bebra.head, compareByPublisher);
+    }
+    if (ui->sortOption->currentIndex() == 4) {
+        bebra.Sort(&bebra.head, compareByYear);
+    }
+    if (ui->sortOption->currentIndex() == 5) {
+        bebra.Sort(&bebra.head, compareByPages);
+    }
+    int rows = ui->tableWidget->rowCount();
+    int cols = ui->tableWidget->columnCount();
+    for (int i = 0; i <= cols;i++) {
+        for (int j = 0; j < rows; j++) {
+            if (i == 0) {
+                QTableWidgetItem *item = new QTableWidgetItem(QString::number(bebra.getID(j)));
+                ui->tableWidget->setItem(j,0,item);
+            }
+            if (i == 1) {
+                QTableWidgetItem *item = new QTableWidgetItem(bebra.getName(j));
+                ui->tableWidget->setItem(j,1,item);
+            }
+            if (i == 2) {
+                QTableWidgetItem *item = new QTableWidgetItem(bebra.getAuthor(j));
+                ui->tableWidget->setItem(j,2,item);
+            }
+            if (i == 3) {
+                QTableWidgetItem *item = new QTableWidgetItem(bebra.getPublisher(j));
+                ui->tableWidget->setItem(j,3,item);
+            }
+            if (i == 4) {
+                QTableWidgetItem *item = new QTableWidgetItem(QString::number(bebra.getYear(j)));
+                ui->tableWidget->setItem(j,4,item);
+            }
+            if (i == 5) {
+                QTableWidgetItem *item = new QTableWidgetItem(QString::number(bebra.getPages(j)));
+                ui->tableWidget->setItem(j,5,item);
+            }
+        }
+    }
+    for (int i = 0; i <= ui->tableWidget->rowCount();i++) {
+        for (int j = 0; j <= ui->tableWidget->columnCount();j++) {
+            QTableWidgetItem *item = ui->tableWidget->item(i, j);
+            if (item) {
+                item->setFlags(item->flags() & ~Qt::ItemIsEditable);
+            }
+        }
+    }
+    if (!fileName.isEmpty()) {
+        std::ofstream file(fileName.toStdString(), std::ios::trunc);
+        for (int i = 0; i < bebra.capacity(); i++) {
+            file << std::to_string(bebra.getID(i)) + '\n';
+            file << bebra.getName(i).toStdString() + '\n';
+            file << bebra.getAuthor(i).toStdString() + '\n';
+            file << bebra.getPublisher(i).toStdString() + '\n';
+            file << std::to_string(bebra.getYear(i)) + '\n';
+            if (i != bebra.capacity() - 1) file << std::to_string(bebra.getPages(i)) + '\n';
+            else file << std::to_string(bebra.getPages(i));
+        }
+        file.close();
+        ui->statusbar->showMessage("File auto-saved.", 3000);
+    }
+}
