@@ -33,6 +33,7 @@ public:
     QLabel *label_2;
     QLabel *label_3;
     QPushButton *pushButton;
+    QPushButton *findFile;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -40,7 +41,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(800, 600);
+        MainWindow->resize(800, 623);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
         plainTextEdit = new QPlainTextEdit(centralwidget);
@@ -82,6 +83,9 @@ public:
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName("pushButton");
         pushButton->setGeometry(QRect(350, 510, 100, 32));
+        findFile = new QPushButton(centralwidget);
+        findFile->setObjectName("findFile");
+        findFile->setGeometry(QRect(350, 540, 100, 32));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -103,6 +107,7 @@ public:
         label_2->setText(QCoreApplication::translate("MainWindow", "That probably will help you", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Find the missing/wrong bracket", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Find", nullptr));
+        findFile->setText(QCoreApplication::translate("MainWindow", "Find in file", nullptr));
     } // retranslateUi
 
 };
