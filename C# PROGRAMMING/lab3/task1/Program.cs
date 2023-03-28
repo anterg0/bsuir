@@ -1,4 +1,4 @@
 ﻿using task1;
 
-hi bruh = new hi();
-Console.WriteLine(bruh.f(2) + bruh.f(3) + bruh.f(4));
+hi hello = new hi();
+Console.WriteLine(hello.f(2) + hello.f(3) + hello.f(4));

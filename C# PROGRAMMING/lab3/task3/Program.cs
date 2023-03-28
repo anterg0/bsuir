@@ -4,7 +4,7 @@ using task3;
 bool flag = true;
 while (flag)
 {
-    DateService bruh = new DateService();
+    DateService dates = new DateService();
     DateTime entDate = new DateTime();
     bool flag1 = true;
     while (flag1)
@@ -24,7 +24,7 @@ while (flag)
     }
 
     Console.WriteLine("{0} is {1}.\nIt's {2} days from now.", entDate.Date.ToShortDateString(),
-        bruh.GetDay(entDate.ToString()), Math.Abs(bruh.GetDaysSpan(entDate.Day, entDate.Month, entDate.Year)));
+        dates.GetDay(entDate.ToString()), Math.Abs(dates.GetDaysSpan(entDate.Day, entDate.Month, entDate.Year)));
     bool choi = true;
     int choice;
     while (choi)

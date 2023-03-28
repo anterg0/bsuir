@@ -7,68 +7,59 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cccd3efe-ec25-486c-bdf5-392aa328611d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/task2/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/Services/functions.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/ref/task2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/refint/task2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/task2.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/task2.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/obj/task2.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task2/task2.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/DateService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/Program.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/bin/Debug/net7.0/task3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/bin/Debug/net7.0/task3.deps.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/bin/Debug/net7.0/task3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/bin/Debug/net7.0/task3.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/bin/Debug/net7.0/task3.runtimeconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/apphost" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/ref/task3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/refint/task3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.AssemblyInfo.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.AssemblyInfoInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.GlobalUsings.g.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.assets.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.csproj.AssemblyReference.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.dll" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.genruntimeconfig.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/Debug/net7.0/task3.pdb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/project.assets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/project.nuget.cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/project.packagespec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/rider.project.restore.info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/task3.csproj.nuget.dgspec.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/task3.csproj.nuget.g.props" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/obj/task3.csproj.nuget.g.targets" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task3/task3.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/.idea/.idea.Lab4/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/.idea/.idea.Lab4/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/.idea/.idea.Lab4/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/.idea/.idea.Lab4/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/AirportTickets.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/bin/Debug/net7.0/Lab4" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/bin/Debug/net7.0/Lab4.deps.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/bin/Debug/net7.0/Lab4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/bin/Debug/net7.0/Lab4.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/bin/Debug/net7.0/Lab4.runtimeconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/.NETCoreApp,Version=v7.0.AssemblyAttributes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.AssemblyInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.AssemblyInfoInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.GlobalUsings.g.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.assets.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.csproj.AssemblyReference.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.genruntimeconfig.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/Lab4.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/apphost" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/ref/Lab4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Debug/net7.0/refint/Lab4.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Lab4.csproj.nuget.dgspec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Lab4.csproj.nuget.g.props" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/Lab4.csproj.nuget.g.targets" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/project.assets.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/project.nuget.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/project.packagespec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Lab4/Lab4/obj/rider.project.restore.info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/mainwindow.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/mainwindow.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/mainwindow.ui" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/stack.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/stack.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ОАИП/sem2/lab2/task3/task3.pro" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.lab3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab3.sln" beforeDir="false" afterPath="$PROJECT_DIR$/lab3.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/task1/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/bin/Debug/net7.0/task1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/task1/bin/Debug/net7.0/task1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/bin/Debug/net7.0/task1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/task1/bin/Debug/net7.0/task1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/obj/Debug/net7.0/task1.dll" beforeDir="false" afterPath="$PROJECT_DIR$/task1/obj/Debug/net7.0/task1.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task1/obj/Debug/net7.0/task1.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/task1/obj/Debug/net7.0/task1.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/task2/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/Services/functions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/task2/Services/functions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/task2/bin/Debug/net7.0/task2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.dll" beforeDir="false" afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/task2/obj/Debug/net7.0/task2.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/task3/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/task3/Program.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +166,9 @@
       <workItem from="1677853243336" duration="589000" />
       <workItem from="1677853990605" duration="2119000" />
       <workItem from="1677860967262" duration="3070000" />
+      <workItem from="1679638499044" duration="86000" />
+      <workItem from="1679643555032" duration="377000" />
+      <workItem from="1679644865881" duration="481000" />
     </task>
     <servers />
   </component>

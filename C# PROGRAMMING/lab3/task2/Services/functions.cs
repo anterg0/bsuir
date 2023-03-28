@@ -1,4 +1,4 @@
-namespace task2;
+namespace task2.Services;
 
 public class Functions
 {
@@ -14,7 +14,7 @@ public class Functions
             x = Math.Sqrt(z);
         }
 
-        double result = (1 / Math.Cos(x)) + Math.Log(Math.Tan(x / 2));
-        return result;
+        return  (1 / Math.Cos(x)) + Math.Log(Math.Tan(x / 2));
+        //return result;
     }
 }

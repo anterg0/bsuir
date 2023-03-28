@@ -1,4 +1,4 @@
-﻿using task2;
+﻿using task2.Services;
 
 bool flag = true;
 while (flag)
@@ -54,7 +54,17 @@ while (flag)
     while (ch)
     {
         Console.WriteLine("Продолжить (y) или закончить (n)? ");
-        char choice = Convert.ToChar(Console.ReadLine());
+        char choice;
+        try
+        {
+            choice = Convert.ToChar(Console.ReadLine());
+        }
+        catch (Exception)
+        {
+            Console.WriteLine("Неверный ввод. Попробуйте ещё раз.");
+            continue;
+        }
+
         switch (choice)
         {
             case 'y':
