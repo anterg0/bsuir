@@ -54,7 +54,7 @@ bool BookList::del(int index) {
 }
 bool BookList::ins(Node* book, int index) {
     if (index < 0 || index > size) {
-        return false;;
+        return false;
     }
     Node* newNode = new Node(*book);
     if (size == 0) {
