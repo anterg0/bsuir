@@ -13,11 +13,8 @@ struct pair
 template<class MyVector>
 class vectorIterator {
 public:
-    using valueType = typename MyVector::valueType;
-    using pointerType = valueType*;
-    using referenceType = valueType&;
 
-    vectorIterator(pointerType ptr) : memberPtr(ptr) {}
+    vectorIterator(MyVector* ptr) : memberPtr(ptr) {}
 
     vectorIterator& operator++() {
         memberPtr++;
@@ -38,11 +35,11 @@ public:
         return iterator;
     }
 
-    referenceType operator[](int index) {return *(memberPtr + index);}
+    MyVector& operator[](int index) {return *(memberPtr + index);}
 
-    pointerType operator->() {return memberPtr;}
+    MyVector* operator->() {return memberPtr;}
 
-    referenceType operator*() {return *memberPtr;}
+    MyVector& operator*() {return *memberPtr;}
 
     bool operator ==(const vectorIterator& other) const {return memberPtr == other.memberPtr;}
 
@@ -54,7 +51,7 @@ public:
     vectorIterator operator+(int offset) {return *(memberPtr + offset);}
     vectorIterator operator-(int offset) {return *(memberPtr - offset);}
 private:
-    pointerType memberPtr;
+    MyVector* memberPtr;
 };
 
 template<typename T>
@@ -64,8 +61,6 @@ private:
     size_t _size;
     size_t _capacity;
 public:
-    using valueType = T;
-    using Iterator = vectorIterator<MyVector<T>>;
     MyVector() {
         _size = 0;
         _capacity = 0;
@@ -117,20 +112,20 @@ public:
         return _data[_size - 1];
     }
 
-    Iterator begin() {
-        return Iterator(_data);
+    vectorIterator<MyVector<T>> begin() {
+        return vectorIterator<MyVector<T>>(_data);
     }
 
-    Iterator begin() const {
-        return Iterator(_data);
+    vectorIterator<MyVector<T>> begin() const {
+        return vectorIterator<MyVector<T>>(_data);
     }
 
     size_t capacity() {
         return _capacity;
     }
 
-    Iterator cbegin() const {
-        return Iterator(_data);
+    vectorIterator<MyVector<T>> cbegin() const {
+        return vectorIterator<MyVector<T>>(_data);
     }
 
     void clear() {
@@ -167,12 +162,12 @@ public:
         return _size == 0;
     }
 
-    Iterator end() {
-        return Iterator(_data + _size);
+    vectorIterator<MyVector<T>> end() {
+        return vectorIterator<MyVector<T>>(_data + _size);
     }
 
-    Iterator end() const {
-        return Iterator(_data + _size);
+    vectorIterator<MyVector<T>> end() const {
+        return vectorIterator<MyVector<T>>(_data + _size);
     }
 
     void erase(int position, int amount) {
@@ -238,12 +233,12 @@ public:
         _size++;
     }
 
-    Iterator rbegin() {
-        return Iterator(_data + _size - 1);
+    vectorIterator<MyVector<T>> rbegin() {
+        return vectorIterator<MyVector<T>>(_data + _size - 1);
     }
 
-    Iterator rend() {
-        return Iterator(_data);
+    vectorIterator<MyVector<T>> rend() {
+        return vectorIterator<MyVector<T>>(_data);
     }
 
     void reserve(size_t newCapacity) {
@@ -265,6 +260,7 @@ public:
                 _data[i] = {};
             }
             _size = newSize;
+            _capacity = newSize;
         }
         else {
             reserve(newSize);
