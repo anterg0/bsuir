@@ -4,8 +4,6 @@ public class AirportTicketContainer
     private static AirportTicketContainer instance = null;
     private List<AirportTicket> tickets = new List<AirportTicket>();
     private int SoldTickets = 0;
-    // public string AirportName { get; set; } 
-    // public int TicketCost { get; set; }
     public int AvailableSeats { get; set; }
 
     private AirportTicketContainer() {}
@@ -79,7 +77,7 @@ public class AirportTicket
     }
 }
 
-public class TicketInterface
+public class TicketController
 {
     public void IncreaseCost(AirportTicket ticket, int amount)
     {
