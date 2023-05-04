@@ -159,7 +159,7 @@ public:
         string2Label->setText(QCoreApplication::translate("MainWindow", "String2", nullptr));
         strlen2label->setText(QCoreApplication::translate("MainWindow", "mystrlen2:", nullptr));
         strlen2->setText(QString());
-        changeStringLine->setPlaceholderText(QCoreApplication::translate("MainWindow", "CHANGE STRING", nullptr));
+        changeStringLine->setPlaceholderText(QCoreApplication::translate("MainWindow", "strcpy", nullptr));
         changeString1->setText(QCoreApplication::translate("MainWindow", "string1", nullptr));
         changeString2->setText(QCoreApplication::translate("MainWindow", "string2", nullptr));
     } // retranslateUi

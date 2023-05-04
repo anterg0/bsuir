@@ -123,7 +123,7 @@
      </rect>
     </property>
     <property name="placeholderText">
-     <string>CHANGE STRING</string>
+     <string>strcpy</string>
     </property>
    </widget>
    <widget class="QPushButton" name="changeString1">

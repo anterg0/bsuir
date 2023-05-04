@@ -32,7 +32,8 @@ void MainWindow::Refresh() {
 void MainWindow::on_changeString1_clicked()
 {
     QString text = ui->changeStringLine->text();
-    string1 = text.toStdString();
+    mystrcpy(string1.c_str(),text.toStdString().c_str());
+
     Refresh();
 }
 

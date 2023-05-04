@@ -21,6 +21,20 @@ char* MyString::c_str() const {
     return str_;
 }
 
+char& MyString::operator[](size_t index) {
+    if (index >= size_) {
+        throw "Index out of range";
+    }
+    return str_[index];
+}
+
+const char& MyString::operator[](size_t index) const {
+    if (index >= size_) {
+        throw "Index out of range";
+    }
+    return str_[index];
+}
+
 std::ostream& operator<<(std::ostream& os, const MyString& s) {
     return os << s.str_;
 }
@@ -71,34 +85,45 @@ void* mymemmove(void* s1, const void* s2, size_t n) {
 }
 
 char* mystrcpy(char* s1, const char* s2) {
-    for (size_t i = 0; s2[i] != '\0'; ++i) {
-        s1[i] = s2[i];
+    char* s1_ptr = s1;
+    while (*s2 != '\0') {
+        *s1_ptr++ = *s2++;
     }
+    *s1_ptr = '\0';
     return s1;
 }
 
+
 char* mystrncpy(char* s1, const char* s2, size_t n) {
-    for (size_t i = 0; i < n; ++i) {
-        s1[i] = s2[i];
+    char* s1_ptr = s1;
+    for (int i = 0; i < n && *s2 != '\0'; ++i) {
+        *s1_ptr++ = *s2++;
     }
+    *s1_ptr++ = '\0';
     return s1;
 }
 
 char* mystrcat(char* s1, const char* s2) {
-    size_t i = mystrlen(s1);
-    for (size_t j = 0; s2[j] != '\0'; ++j) {
-        s1[i++] = s2[j];
+    char* s1_ptr = s1;
+    while (*s1_ptr != '\0') {
+        ++s1_ptr;
     }
-    s1[i] = '\0';
+    while (*s2 != '\0') {
+        *s1_ptr++ = *s2++;
+    }
+    *s1_ptr = '\0';
     return s1;
 }
 
 char* mystrncat(char* s1, const char* s2, size_t n) {
-    size_t i = mystrlen(s1);
-    for (size_t j = 0; j < n; ++j) {
-        s1[i++] = s2[j];
+    char* s1_ptr = s1;
+    while (*s1_ptr != '\0') {
+        ++s1_ptr;
     }
-    s1[i] = '\0';
+    for (int i = 0; i < n && *s2 != '\0'; ++i) {
+        *s1_ptr++ = *s2++;
+    }
+    *s1_ptr = '\0';
     return s1;
 }
 
@@ -140,20 +165,40 @@ int mystrcoll(const char* s1, const char* s2) {
     return 0;
 }
 
-size_t mystrxfrm(char* s1, const char* s2, size_t n) {
-
-}
-
 char* mystrtok(char* s1, const char* s2) {
+    static char* lastToken = nullptr;
+    if (s1 != nullptr) {
+        lastToken = s1;
+    }
+    if (lastToken == nullptr) {
+        return nullptr;
+    }
+    const size_t str1len = mystrlen(lastToken);
+    const size_t str2len = mystrlen(s2);
+    size_t i = 0, j = 0;
+    for (i = 0; i < str1len-1; i++) {
+        for (j = 0; j < str2len-1; j++) {
+            if (lastToken[i] == s2[j]) {
 
+                lastToken[i] = '\0';
+                const char* result = lastToken;
+                lastToken += i + 1;
+                return const_cast<char*>(result);
+            }
+        }
+    }
+    const char* result = lastToken;
+    lastToken = nullptr;
+    return const_cast<char*>(result);
 }
 
 void* mymemset(void* s, int c, size_t n) {
-
-}
-
-char* mystrerror(int errnum) {
-
+    unsigned char* p = static_cast<unsigned char*>(s);
+    unsigned char v = static_cast<unsigned char>(c);
+    for (size_t i = 0; i < n; ++i) {
+        *p++ = v;
+    }
+    return s;
 }
 
 size_t mystrlen(const char* s) {

@@ -22,6 +22,8 @@ public:
     QString toQString();
     MyString& operator=(const MyString& other);
     MyString& operator=(const std::string& str);
+    char& operator[](size_t index);
+    const char& operator[](size_t index) const;
 };
 
 void* mymemcpy(void* s1, const void* s2, size_t n);
