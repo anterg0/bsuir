@@ -1,3 +1,4 @@
+
 #include "mystring.h"
 
 MyString::MyString() : str_(nullptr), size_(0) {}

@@ -35,6 +35,18 @@ private slots:
 
     void on_strncatString2_clicked();
 
+    void on_memsetString1_clicked();
+
+    void on_memsetString2_clicked();
+
+    void on_strcmpString1_clicked();
+
+    void on_strcmpString2_clicked();
+
+    void on_strncmpString1_clicked();
+
+    void on_strncmpString2_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

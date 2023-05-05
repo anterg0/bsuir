@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "mystring.h"
+#include <QMessageBox>
 MyString string1 = "Bebra";
 MyString string2 = "Aboba";
 
@@ -101,5 +102,54 @@ void MainWindow::on_strncatString2_clicked()
     std::string str = ui->strncatLine->text().toStdString();
     mystrncat(string2.c_str(),str.c_str(),num);
     Refresh();
+}
+
+
+void MainWindow::on_memsetString1_clicked()
+{
+    int num = ui->memsetNum->value();
+    std::string str = ui->memsetLine->text().toStdString();
+    mymemset(string1.c_str(),str.front(),num);
+    Refresh();
+}
+
+
+void MainWindow::on_memsetString2_clicked()
+{
+    int num = ui->memsetNum->value();
+    std::string str = ui->memsetLine->text().toStdString();
+    mymemset(string2.c_str(),str.front(),num);
+    Refresh();
+}
+
+
+void MainWindow::on_strcmpString1_clicked()
+{
+    std::string str = ui->strcmpLine->text().toStdString();
+    QMessageBox::information(this,"Result","Result: " + QString::number(mystrcmp(string1.c_str(),str.c_str())));
+}
+
+
+void MainWindow::on_strcmpString2_clicked()
+{
+    std::string str = ui->strcmpLine->text().toStdString();
+    QMessageBox::information(this,"Result","Result: " + QString::number(mystrcmp(string2.c_str(),str.c_str())));
+}
+
+
+void MainWindow::on_strncmpString1_clicked()
+{
+    int num = ui->strncmpNum->value();
+    std::string str = ui->strcmpLine->text().toStdString();
+    QMessageBox::information(this,"Result","Result: " + QString::number(mystrncmp(string1.c_str(),str.c_str(),num)));
+}
+
+
+void MainWindow::on_strncmpString2_clicked()
+{
+    int num = ui->strncmpNum->value();
+    std::string str = ui->strcmpLine->text().toStdString();
+    QMessageBox::information(this,"Result","Result: " + QString::number(mystrncmp(string2.c_str(),str.c_str(),num)));
+    qDebug() << strncmp(string2.c_str(),str.c_str(),num);
 }
 
