@@ -150,6 +150,6 @@ void MainWindow::on_strncmpString2_clicked()
     int num = ui->strncmpNum->value();
     std::string str = ui->strcmpLine->text().toStdString();
     QMessageBox::information(this,"Result","Result: " + QString::number(mystrncmp(string2.c_str(),str.c_str(),num)));
-    qDebug() << strncmp(string2.c_str(),str.c_str(),num);
+//    qDebug() << strncmp(string2.c_str(),str.c_str(),num);
 }
 
