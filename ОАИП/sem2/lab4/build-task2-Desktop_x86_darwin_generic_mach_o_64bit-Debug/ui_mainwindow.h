@@ -17,6 +17,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -44,6 +45,18 @@ public:
     QLineEdit *changeStringLine;
     QPushButton *changeString1;
     QPushButton *changeString2;
+    QPushButton *strncpyString1;
+    QPushButton *strncpyString2;
+    QLineEdit *strncpyLine;
+    QSpinBox *strncpyNum;
+    QPushButton *strcatString1;
+    QPushButton *strcatString2;
+    QLineEdit *strcatLine;
+    QPushButton *pushButton;
+    QPushButton *strncatString2;
+    QLineEdit *strncatLine;
+    QPushButton *strncatString1;
+    QSpinBox *strncatNum;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -135,6 +148,42 @@ public:
         changeString2 = new QPushButton(centralwidget);
         changeString2->setObjectName("changeString2");
         changeString2->setGeometry(QRect(50, 200, 100, 32));
+        strncpyString1 = new QPushButton(centralwidget);
+        strncpyString1->setObjectName("strncpyString1");
+        strncpyString1->setGeometry(QRect(200, 160, 100, 32));
+        strncpyString2 = new QPushButton(centralwidget);
+        strncpyString2->setObjectName("strncpyString2");
+        strncpyString2->setGeometry(QRect(200, 200, 100, 32));
+        strncpyLine = new QLineEdit(centralwidget);
+        strncpyLine->setObjectName("strncpyLine");
+        strncpyLine->setGeometry(QRect(190, 130, 121, 21));
+        strncpyNum = new QSpinBox(centralwidget);
+        strncpyNum->setObjectName("strncpyNum");
+        strncpyNum->setGeometry(QRect(310, 180, 42, 22));
+        strcatString1 = new QPushButton(centralwidget);
+        strcatString1->setObjectName("strcatString1");
+        strcatString1->setGeometry(QRect(420, 160, 100, 32));
+        strcatString2 = new QPushButton(centralwidget);
+        strcatString2->setObjectName("strcatString2");
+        strcatString2->setGeometry(QRect(420, 200, 100, 32));
+        strcatLine = new QLineEdit(centralwidget);
+        strcatLine->setObjectName("strcatLine");
+        strcatLine->setGeometry(QRect(410, 130, 121, 21));
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(660, 500, 100, 32));
+        strncatString2 = new QPushButton(centralwidget);
+        strncatString2->setObjectName("strncatString2");
+        strncatString2->setGeometry(QRect(600, 200, 100, 32));
+        strncatLine = new QLineEdit(centralwidget);
+        strncatLine->setObjectName("strncatLine");
+        strncatLine->setGeometry(QRect(590, 130, 121, 21));
+        strncatString1 = new QPushButton(centralwidget);
+        strncatString1->setObjectName("strncatString1");
+        strncatString1->setGeometry(QRect(600, 160, 100, 32));
+        strncatNum = new QSpinBox(centralwidget);
+        strncatNum->setObjectName("strncatNum");
+        strncatNum->setGeometry(QRect(720, 180, 42, 22));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -162,6 +211,16 @@ public:
         changeStringLine->setPlaceholderText(QCoreApplication::translate("MainWindow", "strcpy", nullptr));
         changeString1->setText(QCoreApplication::translate("MainWindow", "string1", nullptr));
         changeString2->setText(QCoreApplication::translate("MainWindow", "string2", nullptr));
+        strncpyString1->setText(QCoreApplication::translate("MainWindow", "string1", nullptr));
+        strncpyString2->setText(QCoreApplication::translate("MainWindow", "string2", nullptr));
+        strncpyLine->setPlaceholderText(QCoreApplication::translate("MainWindow", "strncpy", nullptr));
+        strcatString1->setText(QCoreApplication::translate("MainWindow", "string1", nullptr));
+        strcatString2->setText(QCoreApplication::translate("MainWindow", "string2", nullptr));
+        strcatLine->setPlaceholderText(QCoreApplication::translate("MainWindow", "strcat", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "debug", nullptr));
+        strncatString2->setText(QCoreApplication::translate("MainWindow", "string2", nullptr));
+        strncatLine->setPlaceholderText(QCoreApplication::translate("MainWindow", "strncat", nullptr));
+        strncatString1->setText(QCoreApplication::translate("MainWindow", "string1", nullptr));
     } // retranslateUi
 
 };

@@ -21,6 +21,20 @@ private slots:
 
     void on_changeString2_clicked();
 
+    void on_strncpyString1_clicked();
+
+    void on_strncpyString2_clicked();
+
+    void on_strcatString1_clicked();
+
+    void on_strcatString2_clicked();
+
+    void on_pushButton_clicked();
+
+    void on_strncatString1_clicked();
+
+    void on_strncatString2_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

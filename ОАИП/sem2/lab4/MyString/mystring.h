@@ -36,10 +36,8 @@ int mymemcmp(const void* s1, const void* s2, size_t n);
 int mystrcmp(const char* s1, const char* s2);
 int mystrncmp(const char* s1, const char* s2, size_t n);
 int mystrcoll(const char* s1, const char* s2);
-size_t mystrxfrm(char* s1, const char* s2, size_t n);
 char* mystrtok(char* s1, const char* s2);
 void* mymemset(void* s, int c, size_t n);
-char* mystrerror(int errnum);
 size_t mystrlen(const char* s);
 
 #endif // MYSTRING_H
