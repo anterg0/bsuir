@@ -1,152 +1,191 @@
 #include <iostream>
+#include <memory>
+#include <QApplication>
+template<class T>
+class Shared_ptr {
+public:
+    Shared_ptr() : ptr_(nullptr), count_(new int(0)) {}
+    explicit Shared_ptr(T* ptr) : ptr_(ptr), count_(new int(1)) {}
+    Shared_ptr(const Shared_ptr<T>& other) : ptr_(other.ptr_), count_(other.count_) {
+        (*count_)++;
+    }
+    operator bool() const {
+        return ptr_ != nullptr;
+    }
+    Shared_ptr<T>& operator=(const Shared_ptr<T>& other) {
+        if (this != &other) {
+            if (--(*count_) == 0) {
+                delete ptr_;
+                delete count_;
+            }
+            ptr_ = other.ptr_;
+            count_ = other.count_;
+            (*count_)++;
+        }
+        return *this;
+    }
+    Shared_ptr<T>& operator=(std::nullptr_t) {
+        if (--(*count_) == 0) {
+            delete ptr_;
+            delete count_;
+            ptr_ = nullptr;
+            count_ = new int(0);
+        }
+        return *this;
+    }
+    ~Shared_ptr() {
+        if (--(*count_) == 0) {
+            delete ptr_;
+            delete count_;
+        }
+    }
+    T& operator*() const {
+        return *ptr_;
+    }
+    T* operator->() const {
+        return ptr_;
+    }
+private:
+    T* ptr_;
+    int* count_;
+};
+
 
 struct Node {
-    Node* next;
     std::string data;
-    Node(const std::string& data) : next(nullptr), data(data) {}
+    Shared_ptr<Node> next;
+    Shared_ptr<Node> prev;
+    Node(std::string d) : data(d), next(nullptr), prev(nullptr) {}
+    Node(char d) : data(1, d), next(nullptr), prev(nullptr) {}
 };
 
 class queue {
-private:
-    Node* tail;
-    size_t _size;
 public:
-    queue() {
-        tail = nullptr;
-        _size = 0;
+    queue() : tail(nullptr), _size(0) {}
+    ~queue() {}
+
+    queue(queue&& other) : tail(std::move(other.tail)), _size(other._size) {
+        other._size = 0;
     }
+    queue(const queue& other) : tail(nullptr), _size(0) {
+        Shared_ptr<Node> otherTail = other.tail;
+        while (otherTail) {
+            enqueue(otherTail->data);
+            otherTail = otherTail->next;
+        }
+    }
+    queue& operator=(queue&& other) {
+        tail = other.tail;
+        _size = other._size;
+        other._size = 0;
+        return *this;
+    }
+
     void enqueue(std::string data) {
-        Node* newNode = new Node(data);
-        if (tail == nullptr) {
+        Shared_ptr<Node> newNode(new Node(data));
+        if (!tail) {
             tail = newNode;
-            _size++;
+        } else {
+            tail->next = newNode;
+            tail = tail->next;
         }
-        else {
-            Node* check = tail;
-            while (check->next != nullptr) {
-                check = check->next;
-            }
-            check->next = newNode;
-            _size++;
-        }
+        _size++;
     }
+
     std::string dequeue() {
-        if (tail == nullptr) {
-            throw std::out_of_range("Queue is empty");
+        if (!tail) {
+            throw std::out_of_range("queue is empty");
         }
-        Node* check = tail;
-        tail = tail->next;
-        std::string data = check->data;
-        delete check;
+        Shared_ptr<Node> check = tail;
+        tail = check->next;
         _size--;
-        return data;
+        return check->data;
     }
-    size_t size() {
+
+    int size() const {
         return _size;
     }
-    void clear() {
-        while (tail != nullptr) {
-            Node* check = tail;
-            tail = tail->next;
-            delete check;
-        }
-        _size = 0;
-    }
-    std::string front() {
-        if (tail == nullptr) {
-            throw std::out_of_range("Queue is empty");
-        }
-        return tail->data;
-    }
-    bool empty() {
-        return tail == nullptr;
-    }
-    bool operator==(const queue& other) {
-        Node* check = tail;
-        Node* otherCheck = other.tail;
-        while (check != nullptr && otherCheck != nullptr) {
-            if (check->data != otherCheck->data) {
-                return false;
-            }
-            check = check->next;
-            otherCheck = otherCheck->next;
-        }
-        return true;
-    }
-    bool operator!=(const queue& other) const {
-        Node* check = tail;
-        Node* otherCheck = other.tail;
-        while (check != nullptr && otherCheck != nullptr) {
-            if (check->data != otherCheck->data) {
-                return true;
-            }
-            check = check->next;
-            otherCheck = otherCheck->next;
-        }
-        return false;
-    }
+
+private:
+    Shared_ptr<Node> tail;
+    int _size;
 };
 
-class circular_queue : public queue {
+class circular_queue {
 private:
-    Node* head;
-    Node* tail;
+    Shared_ptr<Node> head;
+    Shared_ptr<Node> tail;
     size_t _capacity;
+    size_t _size;
 public:
-    circular_queue(size_t capacity) : queue(), head(nullptr), tail(nullptr), _capacity(capacity) {}
-
-    ~circular_queue() {
-        while (!is_empty()) {
-            dequeue();
+    circular_queue(size_t capacity) : head(nullptr), tail(nullptr), _capacity(capacity), _size(0) {}
+    circular_queue& operator=(QString bebra) {
+        QStringList beb = bebra.split("");
+        _capacity = beb.size() - 2;
+        for (int i = 1; i < beb.size() - 1; i++) {
+            enqueue(beb[i]);
         }
+        return *this;
+    }
+    void enqueue(QString bebra) {
+        Shared_ptr<Node> beb(new Node(bebra.toStdString()));
+        if (_size == _capacity) {
+            del();
+        }
+        if (_size == 0) {
+            head = beb;
+            tail = beb;
+            head->next = tail;
+            head->prev = tail;
+        } else {
+            tail->next = beb;
+            beb->prev = tail;
+            tail = beb;
+            tail->next = head;
+            head->prev = tail;
+        }
+        _size++;
     }
 
-    void enqueue(std::string data) {
-        if (is_full()) {
-            Node* temp = head;
-            head = head->next;
-            delete temp;
-            _size--;
+    QString func() {
+        if (_size != _capacity) {
+            throw std::out_of_range("It is not circular yet.");
+        } else {
         }
-        Node* newNode = new Node(data);
-        if (tail == nullptr) {
-            tail = newNode;
-            head = newNode;
-            _size++;
-        }
-        else {
-            tail->next = newNode;
-            tail = newNode;
-            _size++;
-        }
-        tail->next = head;
     }
-
-    std::string dequeue() {
-        if (is_empty()) {
-            throw std::out_of_range("Circular queue is empty");
+    QString dequeue() {
+        if (_size == 0) {
+            throw std::out_of_range("queue is empty");
         }
-        Node* temp = head;
-        std::string data = temp->data;
+        QString data = head->data.c_str();
         head = head->next;
         tail->next = head;
-        delete temp;
+        head->prev = tail;
         _size--;
         return data;
     }
-
-    std::string front() {
-        if (is_empty()) {
-            throw std::out_of_range("Circular queue is empty");
+    void del() {
+        if (_size == 0) {
+            throw std::out_of_range("Queue is empty");
         }
-        return head->data;
+        Shared_ptr<Node> temp = head;
+        head = head->next;
+        head->prev = tail;
+        _size--;
     }
-
-    bool is_full() {
-        return _size == _capacity;
+    QString front() {
+        if (_size == 0) throw std::out_of_range("Queue is empty");
+        return QString::fromStdString(head->data);
     }
-
-    bool is_empty() {
-        return _size == 0;
+    QString print() {
+        if (_size == _capacity) {
+            QString result;
+            Shared_ptr<Node> check = head;
+            for (size_t i = 0; i < _size; i++) {
+                result += QString::fromStdString(check->data);
+                check = check->next;
+            }
+            return result;
+        }
     }
 };

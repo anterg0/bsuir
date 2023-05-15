@@ -38,3 +38,10 @@ else:unix: LIBS += -L$$PWD/../build-MyString-Desktop_x86_darwin_generic_mach_o_6
 
 INCLUDEPATH += $$PWD/../build-MyString-Desktop_x86_darwin_generic_mach_o_64bit-Debug
 DEPENDPATH += $$PWD/../build-MyString-Desktop_x86_darwin_generic_mach_o_64bit-Debug
+
+win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../../../../ОАИП/sem2/lab4/build-MyString-Desktop_x86_darwin_generic_mach_o_64bit-Debug/release/ -lMyString.1.0.0
+else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../../../../ОАИП/sem2/lab4/build-MyString-Desktop_x86_darwin_generic_mach_o_64bit-Debug/debug/ -lMyString.1.0.0
+else:unix: LIBS += -L$$PWD/../../../../ОАИП/sem2/lab4/build-MyString-Desktop_x86_darwin_generic_mach_o_64bit-Debug/ -lMyString.1.0.0
+
+INCLUDEPATH += $$PWD/../../../../ОАИП/sem2/lab4/build-MyString-Desktop_x86_darwin_generic_mach_o_64bit-Debug
+DEPENDPATH += $$PWD/../../../../ОАИП/sem2/lab4/build-MyString-Desktop_x86_darwin_generic_mach_o_64bit-Debug

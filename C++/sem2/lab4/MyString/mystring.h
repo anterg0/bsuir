@@ -6,6 +6,50 @@
 #include <iostream>
 #include <QString>
 
+template<class MyString>
+class Iterator {
+public:
+
+    Iterator(MyString* ptr) : memberPtr(ptr) {}
+
+    Iterator& operator++() {
+        memberPtr++;
+        return *this;
+    }
+
+    Iterator operator++(int) {
+        Iterator iterator = *this;
+        ++(*this);
+        return iterator;
+    }
+
+    Iterator& operator--() {return *(memberPtr - 1);}
+
+    Iterator operator--(int) {
+        Iterator iterator = *this;
+        --(*this);
+        return iterator;
+    }
+
+    MyString& operator[](int index) {return *(memberPtr + index);}
+
+    MyString* operator->() {return memberPtr;}
+
+    MyString& operator*() {return *memberPtr;}
+
+    bool operator ==(const Iterator& other) const {return memberPtr == other.memberPtr;}
+
+    bool operator !=(const Iterator& other) const {return !(*this == other);}
+    Iterator operator+=(int value) {
+        memberPtr += value;
+        return *this;
+    }
+    Iterator operator+(int offset) {return *(memberPtr + offset);}
+    Iterator operator-(int offset) {return *(memberPtr - offset);}
+private:
+    MyString* memberPtr;
+};
+
 class MYSTRING_EXPORT MyString
 {
 private:
@@ -24,6 +68,8 @@ public:
     MyString& operator=(const std::string& str);
     char& operator[](size_t index);
     const char& operator[](size_t index) const;
+//    Iterator<MyString> begin();
+//    Iterator<MyString> begin() const;
 };
 
 void* mymemcpy(void* s1, const void* s2, size_t n);

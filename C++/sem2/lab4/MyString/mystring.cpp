@@ -209,3 +209,11 @@ size_t mystrlen(const char* s) {
     }
     return i;
 }
+
+//Iterator<MyString> MyString::begin() {
+//    return Iterator<MyString>(str_);
+//}
+
+//Iterator<MyString> MyString::begin() const {
+//    return Iterator<MyString>(str_);
+//}
