@@ -1,0 +1,15 @@
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/bin/Debug/net7.0/lab8
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/bin/Debug/net7.0/lab8.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/bin/Debug/net7.0/lab8.runtimeconfig.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/bin/Debug/net7.0/lab8.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/bin/Debug/net7.0/lab8.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/refint/lab8.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/lab8.genruntimeconfig.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/lab8/lab8/obj/Debug/net7.0/ref/lab8.dll
