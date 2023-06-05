@@ -73,6 +73,7 @@ void MainWindow::on_addSet_clicked()
         int key = ui->addValSet->text().toInt();
         myset.InsertNode(key);
         UpdateSetTable();
+        ui->addValSet->clear();
     } else {
         QMessageBox::warning(this,"Error","That's not an int.");
     }
@@ -85,6 +86,7 @@ void MainWindow::on_delSet_clicked()
         int key = ui->delValSet->text().toInt();
         myset.remove(key);
         UpdateSetTable();
+        ui->delValSet->clear();
     } else {
         QMessageBox::warning(this,"Error","That's not an int.");
     }
@@ -96,6 +98,7 @@ void MainWindow::on_findSet_clicked()
     if (ui->findValSet->text().toInt()) {
         int key = ui->findValSet->text().toInt();
         Node<int>* search = myset.search(key);
+        ui->findValSet->clear();
         if (search) QMessageBox::information(this,"Found element!", "Here's your element: " + QString::number(search->key));
         else QMessageBox::warning(this,"Error","That element doesn't exist.");
     } else {
@@ -131,6 +134,56 @@ void MainWindow::on_addMap_clicked()
         pair<int,int> temp(ui->addKeyMap->text().toInt(),ui->addValMap->text().toInt());
         mymap.insert_map(temp);
         UpdateMapTable();
+        ui->addKeyMap->clear();
+        ui->addValMap->clear();
+    } else {
+        QMessageBox::warning(this,"Error","That's not an int.");
     }
+}
+
+
+void MainWindow::on_delMap_clicked()
+{
+    if (ui->delKeyMap->text().toInt()) {
+        mymap.remove_map(ui->delKeyMap->text().toInt());
+        UpdateMapTable();
+        ui->delKeyMap->clear();
+    } else {
+        QMessageBox::warning(this,"Error","That's not an int.");
+    }
+}
+
+
+void MainWindow::on_findMap_clicked()
+{
+    if (ui->findKeyMap->text().toInt()) {
+        NodeMap<int,int>* search = mymap.search_map(ui->findKeyMap->text().toInt());
+        ui->findKeyMap->clear();
+        if (search) QMessageBox::information(this,"Found element","Here's the value of the element: " + QString::number(search->p.second));
+        else QMessageBox::warning(this,"Error","That element doesn't exist.");
+    } else {
+        QMessageBox::warning(this,"Error","That's not an int.");
+    }
+}
+
+
+void MainWindow::on_outputMap_clicked()
+{
+    QString bebra;
+    if (mymap.isEmpty()) {
+        QMessageBox::warning(this,"error","The map is empty.");
+        return;
+    }
+    for (auto i : mymap) {
+        bebra += (QString::number(i.second) + " ");
+    }
+    ui->outputLabelMap->setText(bebra);
+}
+
+
+void MainWindow::on_clearMap_clicked()
+{
+    mymap.clear();
+    UpdateMapTable();
 }
 

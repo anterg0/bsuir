@@ -30,6 +30,14 @@ private slots:
 
     void on_addMap_clicked();
 
+    void on_delMap_clicked();
+
+    void on_findMap_clicked();
+
+    void on_outputMap_clicked();
+
+    void on_clearMap_clicked();
+
 private:
     Ui::MainWindow *ui;
 };

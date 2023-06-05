@@ -25,14 +25,14 @@ class MyMap {
 private:
     NodeMap<T1, T2>* root;
     list<NodeMap<T1, T2>*> tree_list;
-    void in_list(NodeMap<T1, T2>* node)
+    void clearNodes(NodeMap<T1, T2>* node)
     {
-        if (node) {
+        if (node == nullptr)
+            return;
 
-            in_list(node->left);
-            tree_list.push_back(node);
-            in_list(node->right);
-        }
+        clearNodes(node->left);
+        clearNodes(node->right);
+        delete node;
     }
 
 public:
@@ -195,9 +195,17 @@ public:
     NodeMap<T1, T2>* getRoot_map() { return root; }
     int getHeight_map(NodeMap<T1, T2>* tmp) { return ((tmp == nullptr) ? -1 : tmp->height); }
     int getBalance_map(NodeMap<T1, T2>* temp) { return (getHeight_map(temp->right) - getHeight_map(temp->left)); }
+
     bool isEmpty() {
         return root == nullptr;
     }
+
+    void clear()
+    {
+        clearNodes(root);
+        root = nullptr;
+    }
+
     void insert_map(pair<T1, T2> elem_node)
     {
         if (root == nullptr)

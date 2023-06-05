@@ -12,7 +12,8 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     map.cpp \
-    set.cpp
+    set.cpp \
+    unordered_map.cpp
 
 HEADERS += \
     mainwindow.h
