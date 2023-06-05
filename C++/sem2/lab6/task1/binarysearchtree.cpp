@@ -129,7 +129,7 @@ private:
         return std::max(leftHeight, rightHeight) + 1;
     }
 
-    void balanceTree(Node*& node) {
+    void balanceTree(Node* node) {
         if (node == nullptr) {
             return;
         }

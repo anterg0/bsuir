@@ -3,7 +3,7 @@
 #include <chrono>
 #include "hashtable.cpp"
 #include <QMessageBox>
-HashTable table(128);
+HashTable table(2048);
 int attempts = 0;
 
 MainWindow::MainWindow(QWidget *parent)
@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     int bebra;
-    for (int i = 0; i <= 100; i++) {
+    for (int i = 0; i <= 1500; i++) {
         bebra = 150 * i;
         bebra += 11;
         table.insert(bebra);
