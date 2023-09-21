@@ -18,6 +18,7 @@ public class Client
     public void SubToTariff(Tariff tariff)
     {
         _subscribedTariffs.Add(tariff);
+        _subscribedTariffs.Reset();
     }
 
     public decimal EvalCost()

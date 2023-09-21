@@ -25,6 +25,7 @@ public class ISP
 
     public void SetClientTraffic(Client client, decimal traffic)
     {
+        clientList.Reset();
         while (clientList.Current() != client) clientList.Next();
         clientList.Current().SetTraffic(traffic);
         clientList.Reset();
@@ -32,6 +33,8 @@ public class ISP
 
     public decimal EvalTariff(Tariff tariff)
     {
+        tariffList.Reset();
+        clientList.Reset();
         Tariff currentTariff = null;
         while (tariffList.Current() != tariff)
         {
@@ -59,8 +62,16 @@ public class ISP
                 tariffCount++;
                 clientTariffs.Next();
             }
-            if (!validClient) continue;
+
+            if (!validClient)
+            {
+                clientList.Next();
+                clientTariffs.Reset();
+                continue;
+            }
             sumTraffic += currentClient.Traffic;
+            clientTariffs.Reset();
+            clientList.Next();
         }
         clientList.Reset();
         tariffList.Reset();
@@ -69,29 +80,48 @@ public class ISP
 
     public Client GetRichClient()
     {
+        tariffList.Reset();
+        clientList.Reset();
         int count = 0;
         decimal Max = 0;
         Client RichClient = null;
         while (count != clientList.Count)
         {
             count++;
-            decimal totalPrice = 0;
-            int tariffcount = 0;
-            MyCustomCollection<Tariff> currentTariffList = clientList.Current().GetTariffList();
-            while (tariffcount != currentTariffList.Count)
-            {
-                tariffcount++;
-                totalPrice += currentTariffList.Current().Price;
-            }
+            // decimal totalPrice = 0;
+            // int tariffcount = 0;
+            // MyCustomCollection<Tariff> currentTariffList = clientList.Current().GetTariffList();
+            // while (tariffcount != currentTariffList.Count)
+            // {
+            //     tariffcount++;
+            //     totalPrice += currentTariffList.Current().Price;
+            // }
 
-            decimal totalPayment = totalPrice * clientList.Current().Traffic;
+            decimal totalPayment = clientList.Current().EvalCost();
             if (totalPayment > Max)
             {
                 Max = totalPayment;
                 RichClient = clientList.Current();
             }
+            clientList.Next();
         }
-
+        clientList.Reset();
         return RichClient;
+    }
+
+    public decimal GetTotalPaymentForAllTraffic()
+    {
+        tariffList.Reset();
+        clientList.Reset();
+        decimal totalpayment = 0;
+        int count = 0;
+        while (count != clientList.Count)
+        {
+            count++;
+            totalpayment += clientList.Current().EvalCost();
+            clientList.Next();
+        }
+        clientList.Reset();
+        return totalpayment;
     }
 }
