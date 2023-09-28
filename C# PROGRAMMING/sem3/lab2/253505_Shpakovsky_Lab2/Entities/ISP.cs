@@ -1,12 +1,23 @@
 using collections;
-using inter;
 
 namespace _253505_Shpakovsky_Lab1.Entities;
 
-public class ISP : IISP
+public class ISP
 {
     private MyCustomCollection<Client> clientList;
     private MyCustomCollection<Tariff> tariffList;
+
+    public delegate void TariffChangeHandler(string message);
+
+    public delegate void ClientChangeHandler(string message);
+
+    public delegate void SetTrafficHandler(string message);
+
+    public event SetTrafficHandler TrafficSet;
+
+    public event TariffChangeHandler TariffChange;
+    
+    public event ClientChangeHandler ClientChange;
 
     public ISP()
     {
@@ -17,11 +28,14 @@ public class ISP : IISP
     public void AddClient(Client newClient)
     {
         clientList.Add(newClient);
+        
+        ClientChange?.Invoke($"Client {newClient.Name} was added.");
     }
 
     public void AddTariff(Tariff newTariff)
     {
         tariffList.Add(newTariff);
+        TariffChange?.Invoke($"Tariff {newTariff.Name} was added.");
     }
 
     public void SetClientTraffic(Client client, decimal traffic)
@@ -29,6 +43,7 @@ public class ISP : IISP
         clientList.Reset();
         while (clientList.Current() != client) clientList.Next();
         clientList.Current().SetTraffic(traffic);
+        TrafficSet?.Invoke($"Traffic amount of {traffic} was set to client {clientList.Current().Name}");
         clientList.Reset();
     }
 
