@@ -7,17 +7,13 @@ public class ISP
     private MyCustomCollection<Client> clientList;
     private MyCustomCollection<Tariff> tariffList;
 
-    public delegate void TariffChangeHandler(string message);
+    public delegate void ISPEventHandler(string message);
 
-    public delegate void ClientChangeHandler(string message);
+    public event ISPEventHandler TrafficSet;
 
-    public delegate void SetTrafficHandler(string message);
-
-    public event SetTrafficHandler TrafficSet;
-
-    public event TariffChangeHandler TariffChange;
+    public event ISPEventHandler TariffChange;
     
-    public event ClientChangeHandler ClientChange;
+    public event ISPEventHandler ClientChange;
 
     public ISP()
     {

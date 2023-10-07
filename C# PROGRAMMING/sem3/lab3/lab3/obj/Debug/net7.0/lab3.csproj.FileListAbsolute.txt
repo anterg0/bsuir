@@ -1,0 +1,15 @@
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/bin/Debug/net7.0/lab3
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/bin/Debug/net7.0/lab3.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/bin/Debug/net7.0/lab3.runtimeconfig.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/bin/Debug/net7.0/lab3.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/bin/Debug/net7.0/lab3.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/refint/lab3.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/lab3.genruntimeconfig.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab3/lab3/obj/Debug/net7.0/ref/lab3.dll
