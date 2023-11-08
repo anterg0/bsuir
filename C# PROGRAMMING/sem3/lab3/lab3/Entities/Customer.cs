@@ -10,4 +10,6 @@ public class Customer
     {
         Tariffs = new List<Tariff>();
     }
+
+    public decimal GetTotal() => Tariffs.Sum(t => t.Cost) * Traffic;
 }

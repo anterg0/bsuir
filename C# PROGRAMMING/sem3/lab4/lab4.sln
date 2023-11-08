@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "253505_Shpakovsky_Lab4", "253505_Shpakovsky_Lab4\253505_Shpakovsky_Lab4.csproj", "{42FC20CA-F5BC-4F96-B511-0BD6E3EBA7EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42FC20CA-F5BC-4F96-B511-0BD6E3EBA7EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42FC20CA-F5BC-4F96-B511-0BD6E3EBA7EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42FC20CA-F5BC-4F96-B511-0BD6E3EBA7EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42FC20CA-F5BC-4F96-B511-0BD6E3EBA7EC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<person>
+  <name>John</name>
+  <id>123</id>
+  <gender>male</gender>
+  <address>
+    <street>Main Street</street>
+    <number>123</number>
+    <city>New York</city>
+  </address>
+</person>

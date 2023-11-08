@@ -1,0 +1,15 @@
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/bin/Debug/net7.0/253505_Shpakovsky_Lab4
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/bin/Debug/net7.0/253505_Shpakovsky_Lab4.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/bin/Debug/net7.0/253505_Shpakovsky_Lab4.runtimeconfig.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/bin/Debug/net7.0/253505_Shpakovsky_Lab4.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/bin/Debug/net7.0/253505_Shpakovsky_Lab4.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/refint/253505_Shpakovsky_Lab4.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/253505_Shpakovsky_Lab4.genruntimeconfig.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab4/253505_Shpakovsky_Lab4/obj/Debug/net7.0/ref/253505_Shpakovsky_Lab4.dll
