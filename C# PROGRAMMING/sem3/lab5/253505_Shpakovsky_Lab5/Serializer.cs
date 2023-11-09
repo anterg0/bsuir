@@ -1,4 +1,3 @@
-using System.Xml;
 using System.Xml.Linq;
 
 namespace _253505_Shpakovsky_Lab5;
@@ -29,7 +28,7 @@ public class Serializer : ISerializer<Book>
         using (var stream = new FileStream(fileName, FileMode.Open))
         {
             var serializer = new XmlSerializer(typeof(List<Book>));
-            return (List<Book>)serializer.Deserialize(stream);
+            return serializer.Deserialize(stream) as List<Book>;
         }
     }
 
