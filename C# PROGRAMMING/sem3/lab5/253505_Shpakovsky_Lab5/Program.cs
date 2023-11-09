@@ -19,3 +19,21 @@ var deserializedBooksByLINQ = serializer.DeSerializeByLINQ("booksByLINQ.xml");
 var deserializedBooksXML = serializer.DeSerializeXML("booksXML.xml");
 var deserializedBooksJSON = serializer.DeSerializeJSON("booksJSON.json");
 
+foreach (var book in deserializedBooksXML)
+{
+    Console.WriteLine(book.Author);
+    Console.WriteLine(book.Title);
+}
+Console.WriteLine('\n');
+foreach (var book in deserializedBooksByLINQ)
+{
+    Console.WriteLine(book.Author);
+    Console.WriteLine(book.Title);
+}
+Console.WriteLine('\n');
+foreach (var book in deserializedBooksJSON)
+{
+    Console.WriteLine(book.Author);
+    Console.WriteLine(book.Title);
+}
+Console.WriteLine('\n');
