@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Classes/1.0.0": {
+        "dependencies": {
+          "253505_Shpakovsky_Lab6": "1.0.0"
+        },
+        "runtime": {
+          "Classes.dll": {}
+        }
+      },
+      "253505_Shpakovsky_Lab6/1.0.0": {
+        "runtime": {
+          "253505_Shpakovsky_Lab6.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Classes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "253505_Shpakovsky_Lab6/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

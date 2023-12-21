@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab7", "lab7\lab7.csproj", "{47E78C81-98E5-4C0F-9028-0E6408DFE4B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IntegrationLib", "IntegrationLib\IntegrationLib.csproj", "{D2F7E094-CE6B-46EC-9FE8-3CC3640D1B94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47E78C81-98E5-4C0F-9028-0E6408DFE4B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E78C81-98E5-4C0F-9028-0E6408DFE4B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E78C81-98E5-4C0F-9028-0E6408DFE4B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E78C81-98E5-4C0F-9028-0E6408DFE4B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2F7E094-CE6B-46EC-9FE8-3CC3640D1B94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2F7E094-CE6B-46EC-9FE8-3CC3640D1B94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2F7E094-CE6B-46EC-9FE8-3CC3640D1B94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2F7E094-CE6B-46EC-9FE8-3CC3640D1B94}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

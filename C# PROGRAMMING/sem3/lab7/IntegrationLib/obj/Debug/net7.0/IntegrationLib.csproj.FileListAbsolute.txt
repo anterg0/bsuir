@@ -1,0 +1,12 @@
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/IntegrationLib.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/IntegrationLib.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/IntegrationLib.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/IntegrationLib.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/IntegrationLib.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/IntegrationLib.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/IntegrationLib.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/IntegrationLib.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/IntegrationLib.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/refint/IntegrationLib.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/IntegrationLib.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/IntegrationLib/obj/Debug/net7.0/ref/IntegrationLib.dll

@@ -1,0 +1,17 @@
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/lab7
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/lab7.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/lab7.runtimeconfig.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/lab7.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/lab7.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/refint/lab7.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.genruntimeconfig.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/ref/lab7.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/bin/Debug/net7.0/IntegrationLib.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem3/lab7/lab7/obj/Debug/net7.0/lab7.csproj.CopyComplete
