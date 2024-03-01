@@ -15,11 +15,7 @@ public class StreamService<T> where T : class
         // double totalCount = data.Count();
         // double processedCount = 0;
         await Task.Delay(2000);
-        lock (stream)
-        {
-            JsonSerializer.SerializeAsync(stream, data);
-        }
-
+        JsonSerializer.SerializeAsync(stream, data);
         progress?.Report($"Finished writing. Thread: {Thread.CurrentThread.ManagedThreadId}");
         TaskProgressEvent?.Invoke(Thread.CurrentThread.ManagedThreadId, "Finished writing");
         sema.Release();
@@ -33,10 +29,7 @@ public class StreamService<T> where T : class
         await using (var file = File.Open(fileName, FileMode.Create, FileAccess.ReadWrite))
         {
             stream.Position = 0;
-            lock (stream)
-            {
-                stream.CopyToAsync(file);
-            }
+            stream.CopyToAsync(file);
         }
         progress?.Report($"Finished copying to file. Thread: {Thread.CurrentThread.ManagedThreadId}");
         TaskProgressEvent?.Invoke(Thread.CurrentThread.ManagedThreadId,"Finished copying");

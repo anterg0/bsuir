@@ -19,7 +19,7 @@ calculator.ProgressChanged += (sender, progress) =>
     lock (Console.Out)
     {
         Console.SetCursorPosition(0, Console.CursorTop);
-        Console.Write($"\rПоток {Thread.CurrentThread.ManagedThreadId}: [");
+        Console.Write($"Поток {Thread.CurrentThread.ManagedThreadId}: [");
         Console.Write(new string('=', progress / 2));
         Console.Write(new string(' ', 50 - progress / 2));
         Console.Write($"] {progress}%");

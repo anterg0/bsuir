@@ -30,7 +30,7 @@ class Program
             Console.WriteLine($"[Progress Report] Thread {Thread.CurrentThread.ManagedThreadId}: {report}"));
 
         var task1 = streamService.WriteToStreamAsync(memoryStream, passengers, progress);
-        // await Task.WhenAny(task1);
+        //await Task.WhenAny(task1);
         var task2 = streamService.CopyFromStreamAsync(memoryStream, "file.txt",progress);
         await Task.WhenAll(task1, task2);
         
