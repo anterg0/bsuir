@@ -19,5 +19,9 @@
         Title="Progress Bar"
         ContentTemplate="{DataTemplate local:Progress}"
         Route="Progress" />
+    <ShellContent
+        Title="SQLite"
+        ContentTemplate="{DataTemplate local:SQL}"
+        Route="SQL" />
 
 </Shell>

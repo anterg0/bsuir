@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:lab1="clr-namespace:lab1"
+             x:Class="lab1.SQL">
+    <StackLayout>
+        <Label Text="Select Brand:" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center"/>
+        <Picker x:Name="BrandPicker" 
+                Title="SelectBrand"
+                VerticalOptions="Start"
+                HorizontalOptions="Center"
+                FontAttributes="Bold"
+                FontSize="20"
+                SelectedIndexChanged="BrandPicker_SelectedIndexChanged"
+                Loaded="BrandPicker_Loaded"
+                ItemDisplayBinding="{Binding Name}"
+                ItemsSource="{Binding Brands}"/>
+        <Label Text="Products:" FontAttributes="Bold" FontSize="16" HorizontalOptions="Center" />
+        
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <CollectionView x:Name="ProductCollectionView"
+                            ItemsSource="{Binding Products}"
+                            VerticalOptions="Fill"
+                            HorizontalOptions="Fill">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <VerticalStackLayout>
+                            <Frame BorderColor="MediumSpringGreen" BackgroundColor="Black" CornerRadius="40" HorizontalOptions="Center" WidthRequest="300" Margin="0,0,0,10">
+                                <StackLayout>
+                                    <Label FontAttributes="Bold" HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding Name}"/>
+                                </StackLayout>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </ScrollView>
+
+ 
+    </StackLayout>
+</ContentPage>

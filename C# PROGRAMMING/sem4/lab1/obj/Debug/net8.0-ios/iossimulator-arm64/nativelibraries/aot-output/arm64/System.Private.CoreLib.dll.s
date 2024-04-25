@@ -51916,7 +51916,7 @@ _mono_aot_file_info:
 	.long 0,0,0,296,296,296,296,296
 	.long 296,0,0,0,0,0,0,24
 	.long 24,60,24,0,24
-	.byte 215,189,13,61,93,65,141,55,99,184,158,224,217,160,221,78
+	.byte 169,246,176,11,61,57,152,102,101,15,136,110,127,125,148,255
 	.globl _mono_aot_module_System_Private_CoreLib_info
 	.align 3
 _mono_aot_module_System_Private_CoreLib_info:

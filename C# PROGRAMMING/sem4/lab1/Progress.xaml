@@ -4,11 +4,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="lab1.Progress">
     <Grid RowDefinitions="*,*,*" ColumnDefinitions="*">
-        <Label x:Name="ProgressLabel" Text="Welcome to .NET MAUI!" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
-        <ProgressBar x:Name="PBar"  WidthRequest="300" Grid.Row="1"></ProgressBar>
+        <Label x:Name="labelStatus" Text="Welcome to .NET MAUI!" Grid.Row="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        <HorizontalStackLayout Grid.Row="1" WidthRequest="300" Spacing="10">
+            <ProgressBar x:Name="PBar" WidthRequest="250"></ProgressBar>
+            <Label x:Name="PercentageProgress" Text="0.0%" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"></Label>
+        </HorizontalStackLayout>
         <HorizontalStackLayout Grid.Row="2" HorizontalOptions="Center" Spacing="20">
-            <Button Text="Start" FontSize="40" HeightRequest="75" WidthRequest="150"></Button>
-            <Button Text="Stop" FontSize="40" HeightRequest="75" WidthRequest="150"></Button>
+            <Button x:Name="startButton" Text="Start" FontSize="40" HeightRequest="75" WidthRequest="150" Clicked="OnStartClicked"></Button>
+            <Button x:Name="stopButton" Text="Stop" FontSize="40" HeightRequest="75" WidthRequest="150" Clicked="OnCancelClicked" IsEnabled="false"></Button>
         </HorizontalStackLayout>    
     </Grid>    
 </ContentPage>

@@ -57,3 +57,9 @@ build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = lab1.Resources.Styles.Styles.xaml
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem4/lab1/SQL.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = lab1.SQL.xaml
+build_metadata.AdditionalFiles.TargetPath = SQL.xaml
+build_metadata.AdditionalFiles.RelativePath = SQL.xaml

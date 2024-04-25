@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /Users/anterg0/Documents/bsuir/C++/sem1/lab8/task1 Select CMakeLists.txt

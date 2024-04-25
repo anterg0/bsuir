@@ -39,8 +39,13 @@
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-      <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
-      <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+      <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+      <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+      <AndroidUseSharedRuntime>true</AndroidUseSharedRuntime>
+      <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
     </PropertyGroup>
 
     <ItemGroup>
@@ -62,9 +67,12 @@
     </ItemGroup>
 
     <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.0-preview.3.24172.9" />
         <PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)"/>
         <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0"/>
+        <PackageReference Include="sqlite-net-pcl" Version="1.9.172" />
+        <PackageReference Include="Syncfusion.Maui.Picker" Version="25.1.41" />
     </ItemGroup>
 
 </Project>
