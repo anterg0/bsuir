@@ -23,5 +23,9 @@
         Title="SQLite"
         ContentTemplate="{DataTemplate local:SQL}"
         Route="SQL" />
+    <ShellContent
+        Title="Currency Converter"
+        ContentTemplate="{DataTemplate local:CurrencyConverter}"
+        Route="CurrencyConverter" />
 
 </Shell>

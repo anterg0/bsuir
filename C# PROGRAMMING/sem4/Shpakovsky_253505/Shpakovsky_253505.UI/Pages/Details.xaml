@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shpakovsky_253505.UI.Pages.Details"
+             xmlns:models="clr-namespace:Shpakovsky_253505.UI.ViewModels"
+             x:DataType="models:DetailsViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Details"
+             xmlns:converter="clr-namespace:Shpakovsky_253505.UI.ValueConverters">
+
+    <ScrollView>
+
+        <VerticalStackLayout
+            Padding="10">
+
+            <Image Source="{Binding Work.Id, Converter={converter:IdToImageValueConverter}}"
+                WidthRequest="200" HeightRequest="200" Margin="0,0,0,15"/>
+
+            <Frame HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand" 
+                   HeightRequest="150"
+                   BorderColor="Blue"
+                   WidthRequest="350"
+                   CornerRadius="5"
+                   BackgroundColor="{Binding Work.Quality, Converter={converter:QualityToColorValueConverter}}"
+                   Margin="10">
+                <StackLayout>
+                    <Label Text="{Binding Work.PersonalData.Name, StringFormat='Название: {0}'}" FontSize="20" FontAttributes="Bold"/>
+                    <BoxView Color="Black"
+                        HeightRequest="2.5"
+                        HorizontalOptions="Fill" />
+                    <Label Text="{Binding Work.BrigadeId, StringFormat='ID бригады: {0}'}" FontSize="16"/>
+                    <Label Text="{Binding Work.DeadLine, StringFormat='Дата окончания: {0}'}" FontSize="16"/>
+                    <Label Text="{Binding Work.Quality, StringFormat='Оценка: {0}'}" FontSize="16"/>
+                </StackLayout>
+            </Frame>
+
+            <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+                
+                <Button Text="Edit" HorizontalOptions="Center" WidthRequest="200" Command="{Binding EditCommand}"/>
+                <Button Text="Delete" HorizontalOptions="Center" WidthRequest="200" Command="{Binding DeleteCommand}"/>
+                
+            </HorizontalStackLayout>
+            
+            
+        </VerticalStackLayout>
+        
+        
+    </ScrollView>
+  
+  
+    
+</ContentPage>

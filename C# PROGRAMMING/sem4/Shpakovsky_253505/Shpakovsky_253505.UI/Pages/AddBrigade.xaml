@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shpakovsky_253505.UI.Pages.AddBrigade"
+             xmlns:models="clr-namespace:Shpakovsky_253505.UI.ViewModels"
+             x:DataType="models:AddBrigadeViewModel"
+             Title="AddBrigade">
+
+    <VerticalStackLayout>
+        <Label Text="Название бригады" 
+               HorizontalOptions="CenterAndExpand"
+               FontAttributes="Bold"
+               Margin="0,0,0,10"/>
+        <Entry Text="{Binding BrigadeName}"
+                HeightRequest="50"
+                Placeholder="Название"
+                WidthRequest="150"/>
+        <Label Text="Дата создания"
+               HorizontalOptions="CenterAndExpand"
+               Margin="0,20,0,10"
+               FontAttributes="Bold"/>
+        <Entry Text="{Binding BrigadeDate}"
+                Placeholder="Дата"
+                HeightRequest="50"
+                WidthRequest="150" />
+        <Label Text="Количество человек"
+                HorizontalOptions="CenterAndExpand"
+                Margin="0,20,0,10"
+                FontAttributes="Bold"/>
+        <Entry Text="{Binding BrigadeNumber}"
+                 Placeholder="Количество"
+                 HeightRequest="50"
+                 WidthRequest="150" />
+        <Button Text="Добавить"
+             Margin="0,30,0,0"
+             WidthRequest="200"
+             Command="{Binding AddBrigadeCommand}"/>
+    </VerticalStackLayout>
+</ContentPage>

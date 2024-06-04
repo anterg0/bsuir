@@ -1,0 +1,766 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.UI/Shpakovsky_253505.UI.csproj": {}
+  },
+  "projects": {
+    "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj",
+        "projectName": "Shpakovsky_253505.Application",
+        "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj",
+        "packagesPath": "/Users/anterg0/.nuget/packages/",
+        "outputPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anterg0/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj",
+        "projectName": "Shpakovsky_253505.Domain",
+        "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj",
+        "packagesPath": "/Users/anterg0/.nuget/packages/",
+        "outputPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anterg0/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj",
+        "projectName": "Shpakovsky_253505.Persistense",
+        "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj",
+        "packagesPath": "/Users/anterg0/.nuget/packages/",
+        "outputPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/anterg0/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.17, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.UI/Shpakovsky_253505.UI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.UI/Shpakovsky_253505.UI.csproj",
+        "projectName": "Shpakovsky_253505.UI",
+        "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.UI/Shpakovsky_253505.UI.csproj",
+        "packagesPath": "/Users/anterg0/.nuget/packages/",
+        "outputPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.UI/obj/",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "/Users/anterg0/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0-android",
+          "net7.0-ios",
+          "net7.0-maccatalyst"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0-android33.0": {
+            "targetAlias": "net7.0-android",
+            "projectReferences": {
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj"
+              },
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj"
+              },
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj"
+              }
+            }
+          },
+          "net7.0-ios16.1": {
+            "targetAlias": "net7.0-ios",
+            "projectReferences": {
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj"
+              },
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj"
+              },
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj"
+              }
+            }
+          },
+          "net7.0-maccatalyst16.1": {
+            "targetAlias": "net7.0-maccatalyst",
+            "projectReferences": {
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/Shpakovsky_253505.Application.csproj"
+              },
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj"
+              },
+              "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj": {
+                "projectPath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/Shpakovsky_253505.Persistense.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0-android33.0": {
+          "targetAlias": "net7.0-android",
+          "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[7.0.101, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Android.Glide": {
+              "target": "Package",
+              "version": "[4.13.2.2, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Browser": {
+              "target": "Package",
+              "version": "[1.4.0.3, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Legacy.Support.V4": {
+              "target": "Package",
+              "version": "[1.0.0.15, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Lifecycle.LiveData": {
+              "target": "Package",
+              "version": "[2.5.1.1, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Navigation.Common": {
+              "target": "Package",
+              "version": "[2.5.2.1, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Navigation.Fragment": {
+              "target": "Package",
+              "version": "[2.5.2.1, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Navigation.Runtime": {
+              "target": "Package",
+              "version": "[2.5.2.1, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Navigation.UI": {
+              "target": "Package",
+              "version": "[2.5.2.1, )",
+              "autoReferenced": true
+            },
+            "Xamarin.AndroidX.Security.SecurityCrypto": {
+              "target": "Package",
+              "version": "[1.1.0-alpha03, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Google.Android.Material": {
+              "target": "Package",
+              "version": "[1.7.0, )",
+              "autoReferenced": true
+            },
+            "Xamarin.Google.Crypto.Tink.Android": {
+              "target": "Package",
+              "version": "[1.7.0.1, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.Android.Ref.33",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-arm",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-arm64",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-x64",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.Android.Runtime.33.android-x86",
+              "version": "[33.0.95, 33.0.95]"
+            },
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Ref.android",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.android",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.android",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.android",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.android",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.android",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.Android": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Controls": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Core": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Essentials": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        },
+        "net7.0-ios16.1": {
+          "targetAlias": "net7.0-ios",
+          "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[7.0.101, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.iOS.Ref",
+              "version": "[16.4.7133, 16.4.7133]"
+            },
+            {
+              "name": "Microsoft.iOS.Runtime.iossimulator-x64",
+              "version": "[16.4.7133, 16.4.7133]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Ref.ios",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.ios",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.ios",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.ios",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.ios",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.ios",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.iOS": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Controls": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Core": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Essentials": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        },
+        "net7.0-maccatalyst16.1": {
+          "targetAlias": "net7.0-maccatalyst",
+          "dependencies": {
+            "CommunityToolkit.Maui": {
+              "target": "Package",
+              "version": "[6.1.0, )"
+            },
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.2.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging": {
+              "target": "Package",
+              "version": "[7.0.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.Extensions.Logging.Debug": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Maui.Graphics": {
+              "target": "Package",
+              "version": "[7.0.101, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Analyzers": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            },
+            "Microsoft.NET.ILLink.Tasks": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.100-1.23211.1, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "xamarinios10",
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            },
+            {
+              "name": "Microsoft.MacCatalyst.Ref",
+              "version": "[16.4.7133, 16.4.7133]"
+            },
+            {
+              "name": "Microsoft.MacCatalyst.Runtime.maccatalyst-x64",
+              "version": "[16.4.7133, 16.4.7133]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Ref.maccatalyst",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Controls.Runtime.maccatalyst",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Ref.maccatalyst",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Core.Runtime.maccatalyst",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Ref.maccatalyst",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.Maui.Essentials.Runtime.maccatalyst",
+              "version": "[7.0.101, 7.0.101]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.16, 7.0.16]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.MacCatalyst": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Controls": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Core": {
+              "privateAssets": "all"
+            },
+            "Microsoft.Maui.Essentials": {
+              "privateAssets": "all"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "android-arm": {
+          "#import": []
+        },
+        "android-arm64": {
+          "#import": []
+        },
+        "android-x64": {
+          "#import": []
+        },
+        "android-x86": {
+          "#import": []
+        },
+        "iossimulator-x64": {
+          "#import": []
+        },
+        "maccatalyst-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

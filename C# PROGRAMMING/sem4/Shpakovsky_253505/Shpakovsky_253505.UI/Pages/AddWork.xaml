@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shpakovsky_253505.UI.Pages.AddWork"
+             xmlns:models="clr-namespace:Shpakovsky_253505.UI.ViewModels"
+             x:DataType="models:AddWorkViewModel"
+             Title="AddWork">
+
+    <VerticalStackLayout>
+        <Label Text="Название" 
+               HorizontalOptions="CenterAndExpand"
+               FontAttributes="Bold"
+               Margin="0,0,0,5"/>
+        <Entry WidthRequest="200" 
+               VerticalOptions="Center"
+               Text="{Binding Name}"
+               Margin="0,0,0,20"/>
+        <Label Text="Дата сдачи работы" 
+               HorizontalOptions="CenterAndExpand"
+               FontAttributes="Bold"
+               Margin="0,0,0,5"/>
+        <Entry WidthRequest="200" 
+               VerticalOptions="Center"
+               Text="{Binding Date}"
+               Margin="0,0,0,20"/>
+        <Label Text="Оценка" 
+               HorizontalOptions="CenterAndExpand"
+               FontAttributes="Bold"
+               Margin="0,0,0,5"/>
+        <Entry WidthRequest="200" 
+               VerticalOptions="Center"
+               Text="{Binding Quality}"
+               Margin="0,0,0,20"/>
+        <Button VerticalOptions="Center" 
+                HorizontalOptions="Center"
+                Text="Add" Command="{Binding AddWorkCommand}"
+                Margin="0,0,0,20"
+                WidthRequest="150"/>
+    </VerticalStackLayout>
+    
+</ContentPage>

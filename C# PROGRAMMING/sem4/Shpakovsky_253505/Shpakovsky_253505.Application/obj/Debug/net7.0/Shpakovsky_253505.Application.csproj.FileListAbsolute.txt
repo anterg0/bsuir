@@ -1,0 +1,31 @@
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Application.deps.json
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Application.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Application.pdb
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Domain.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Domain.pdb
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.csproj.AssemblyReference.cache
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.AssemblyInfoInputs.cache
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.AssemblyInfo.cs
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.csproj.CoreCompileInputs.cache
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovs.58C3BB4B.Up2Date
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/refint/Shpakovsky_253505.Application.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.pdb
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Application/obj/Debug/net7.0/ref/Shpakovsky_253505.Application.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Application.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Application.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Application.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Domain.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/bin/Debug/net7.0/Shpakovsky_253505.Domain.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.sourcelink.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovs.58C3BB4B.Up2Date
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/refint/Shpakovsky_253505.Application.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/Shpakovsky_253505.Application.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Application/obj/Debug/net7.0/ref/Shpakovsky_253505.Application.dll

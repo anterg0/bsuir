@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shpakovsky_253505.UI.Pages.Brigades"
+             xmlns:entities="clr-namespace:Shpakovsky_253505.Domain.Entities;assembly=Shpakovsky_253505.Domain"
+             x:DataType="models:BrigadesViewModel"
+             xmlns:models="clr-namespace:Shpakovsky_253505.UI.ViewModels"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:converter="clr-namespace:Shpakovsky_253505.UI.ValueConverters"
+             Title="Brigades">
+
+    <ContentPage.Behaviors>
+        <toolkit:EventToCommandBehavior EventName="Loaded"
+        Command="{Binding UpdateBrigadesListCommand }"/>
+    </ContentPage.Behaviors>
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="5">
+            <Picker x:Name="SetPicker"
+                    FontAttributes="Bold"
+                    HorizontalOptions="CenterAndExpand"
+                    TitleColor="#512BD4"
+                    ItemsSource="{Binding Brigades}"
+                    SelectedItem="{Binding SelectedBrigade}"
+                    ItemDisplayBinding="{Binding Name}">
+                <Picker.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="SelectedIndexChanged"
+                                    Command="{Binding UpdateWorksListCommand}" />
+                </Picker.Behaviors>
+            </Picker>
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center">
+               
+                <Button Text="Обновить бригады">
+                    <Button.Behaviors>
+                        <toolkit:EventToCommandBehavior EventName="Clicked"
+                    Command="{Binding UpdateBrigadesListCommand }"/>
+                    </Button.Behaviors>
+
+                </Button>
+
+            </HorizontalStackLayout>
+
+            <Label
+               HorizontalOptions="Center">
+
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Дата создания: "/>
+                        <Span Text="{Binding SelectedBrigade.CommenceFrom}"/>
+                        <Span Text=" | Кол-во людей в бригаде: "/>
+                        <Span Text="{Binding SelectedBrigade.NumberOfPeople}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            
+
+            <CollectionView x:Name="BookView"
+                            ItemsSource="{Binding Works}"
+                            HorizontalOptions="Center"
+                            VerticalOptions="Fill">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:Name="BookItem"
+                              x:DataType="entities:Work">
+                        <VerticalStackLayout>
+                            <Frame CornerRadius="5" HorizontalOptions="Start" WidthRequest="400"
+                                   HeightRequest="150"
+                                   BackgroundColor="{Binding Quality, Converter={converter:QualityToColorValueConverter}}"
+                                   BorderColor="DarkSlateGrey"
+                                   Margin="0,0,0,10"
+                                   HasShadow="True">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding Source={RelativeSource AncestorType={x:Type models:BrigadesViewModel}},
+                                        Path=ShowDetailsCommand}" CommandParameter="{Binding}"/>
+                                </Frame.GestureRecognizers>
+
+                                
+                                
+                                <StackLayout>
+
+                                    <HorizontalStackLayout Spacing="15">
+
+                                        <Border 
+                                            
+                                            Stroke="#512BD4"
+                                            StrokeThickness="1"
+                                            StrokeShape="RoundRectangle 10" >
+                                            <Image Source="{Binding Id, Converter={converter:IdToImageValueConverter}}"
+                                                    VerticalOptions="Center"
+                                                   MaximumHeightRequest="50"
+                                                   MaximumWidthRequest="50"
+                                                   Aspect="AspectFill"/>
+                                        </Border>
+
+                                        <Label
+                                            Text="{Binding PersonalData.Name}"
+                                            FontAttributes="Bold"
+                                            VerticalOptions="Center"
+                                            FontSize="20"/>
+
+                                    </HorizontalStackLayout>
+
+                                    <StackLayout Orientation="Vertical">
+                                        <Label FontSize="14" Text="{Binding DeadLine, StringFormat='Дата окончания: {0}'}"/>
+                                        <Label FontSize="14" Text="{Binding Quality, StringFormat='Оценка: {0}'}"/>
+                                        <Label FontSize="14" Text="{Binding BrigadeId, StringFormat='ID бригады: {0}'}"/>
+                                    </StackLayout>
+                                    
+                                </StackLayout>
+                            </Frame>
+                        </VerticalStackLayout>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+            
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button Text="Добавить бригаду" TextColor="White" Command="{Binding AddBrigadeCommand}"></Button>
+                <Label Text="_____" TextColor="White"/>
+                <Button Text="Добавить работу" TextColor="White" Command="{Binding AddWorkCommand}"></Button>
+                <Label Text="_____" TextColor="White"/>
+                <Button Text="Удалить бригаду" TextColor="White" Command="{Binding DeleteBrigadeCommand}"></Button>
+                
+                
+            </HorizontalStackLayout>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

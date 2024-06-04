@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="lab1.CurrencyConverter"
+             Title="CurrencyConverter"
+             Loaded="OnLoaded">
+    <VerticalStackLayout>
+        <DatePicker
+            x:Name="dataPicker"
+            Format="dd/mm/yyyy"
+            MaximumDate="{Binding TodayDate}"
+            TextColor="Black"
+            HorizontalOptions="Center"
+            DateSelected="DateSelected"
+            FontAttributes="Bold"
+            FontSize="16"
+            MinimumDate="1995.12.29"
+            />
+        <CollectionView
+            x:Name="CollView"
+            Margin="0,10,0,10"
+            HorizontalOptions="Center"
+            WidthRequest="380">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame HeightRequest="45" BorderColor="BurlyWood" CornerRadius="15">
+                        <HorizontalStackLayout Spacing="30">
+                            <Label Text="{Binding Cur_Abbreviation}" HeightRequest="20"/>
+                            <Label Text="{Binding Cur_Scale}" HeightRequest="20"/>
+                            <Label Text="{Binding Cur_Name}" HeightRequest="20"/>
+                            <Label Text="{Binding Cur_OfficialRate}" HeightRequest="20"/>
+                        </HorizontalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        <HorizontalStackLayout HorizontalOptions="Center">
+            <Entry
+            x:Name="CurrencyEntry"
+            Margin="10,0"
+            FontSize="14"
+            Keyboard="Numeric"
+            TextChanged="OnCurrencyEntryTextChanged"
+            WidthRequest="150"
+            />
+            <Picker
+                x:Name="CurrencyPicker"
+                ItemDisplayBinding="{Binding Cur_Name}"               
+                SelectedIndexChanged="OnCurrentRateChanged"
+                />
+            <Label Text="&#x2190;&#x2192;" Margin="20, 7" HorizontalOptions="Center" FontSize="30"/>
+            <Entry
+            x:Name="BynEntry"
+            FontSize="14"
+            TextChanged="OnBynTextChanged"
+            WidthRequest="150"         
+            />
+            <Entry
+                x:Name="BYN" 
+                Text="BYN"
+                FontSize="25"
+                Margin="-1.7,0"
+                IsReadOnly="True"
+                />
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

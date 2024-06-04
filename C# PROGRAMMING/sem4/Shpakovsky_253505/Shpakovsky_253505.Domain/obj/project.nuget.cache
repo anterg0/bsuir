@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "ZgHp8/QaDV4gRjnBQZ8IpJfDLlVGj5J9NIu7PQbKishN72PHr+4cDP6Vj8eFM08lMpkP0IgyBxdKQ03zQFnNCw==",
+  "success": true,
+  "projectFilePath": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Domain/Shpakovsky_253505.Domain.csproj",
+  "expectedPackageFiles": [
+    "/Users/anterg0/.nuget/packages/microsoft.netcore.app.ref/7.0.16/microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "/Users/anterg0/.nuget/packages/microsoft.aspnetcore.app.ref/7.0.16/microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

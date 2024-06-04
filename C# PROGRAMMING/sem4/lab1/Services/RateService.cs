@@ -11,7 +11,7 @@ public class RateService : IRateService
     {
         _httpClient = httpClient;
     }
-    public IEnumerable<Rate>? GetRates(DateTime date)
+    public IEnumerable<Rate> GetRates(DateTime date)
     {
         List<Rate> rates = new();
         string uri = $"{_httpClient.BaseAddress}?ondate={date:yyyy-MM-dd}&periodicity=0";

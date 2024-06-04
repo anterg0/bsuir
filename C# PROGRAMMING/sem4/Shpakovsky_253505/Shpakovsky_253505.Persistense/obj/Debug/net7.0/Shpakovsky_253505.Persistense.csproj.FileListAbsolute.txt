@@ -1,0 +1,31 @@
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Persistense.deps.json
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Persistense.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Persistense.pdb
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Domain.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Domain.pdb
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.csproj.AssemblyReference.cache
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.AssemblyInfoInputs.cache
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.AssemblyInfo.cs
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.csproj.CoreCompileInputs.cache
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovs.F54BFAF4.Up2Date
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/refint/Shpakovsky_253505.Persistense.dll
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.pdb
+/Users/anterg0/Downloads/исп5/Shpakovsky_253505.Persistense/obj/Debug/net7.0/ref/Shpakovsky_253505.Persistense.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Persistense.deps.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Persistense.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Persistense.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Domain.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/bin/Debug/net7.0/Shpakovsky_253505.Domain.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.csproj.AssemblyReference.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.AssemblyInfoInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.AssemblyInfo.cs
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.csproj.CoreCompileInputs.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.sourcelink.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovs.F54BFAF4.Up2Date
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/refint/Shpakovsky_253505.Persistense.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/Shpakovsky_253505.Persistense.pdb
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem4/Shpakovsky_253505/Shpakovsky_253505.Persistense/obj/Debug/net7.0/ref/Shpakovsky_253505.Persistense.dll

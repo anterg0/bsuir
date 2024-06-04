@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Shpakovsky_253505.UI.Pages.EditWork"
+             xmlns:models="clr-namespace:Shpakovsky_253505.UI.ViewModels"
+             x:DataType="models:EditWorkViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="EditWork">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label HorizontalOptions="Center" Text="Название" Margin="0,3,0,5" FontAttributes="Bold"/>
+            <Entry Text="{Binding Work.PersonalData.Name}" WidthRequest="200" HorizontalOptions="Center"/>
+
+            <Label HorizontalOptions="Center" Text="{Binding Work.DeadLine, StringFormat='Старая дата: {0}'}" Margin="0,15,0,5" FontAttributes="Bold"/>
+            <Label HorizontalOptions="Center" Text="Новая дата окончания" Margin="0,15,0,5" FontAttributes="Bold"/>
+            <Entry Text="{Binding Date}" WidthRequest="200" HorizontalOptions="Center"/>
+            
+            <Label HorizontalOptions="Center" Text="{Binding Work.Quality, StringFormat='Старая оценка: {0}'}" Margin="0,15,0,5" FontAttributes="Bold"/>
+            <Label HorizontalOptions="Center" Text="Новая Оценка" Margin="0,15,0,5" FontAttributes="Bold"/>
+            <Entry Text="{Binding Quality}" WidthRequest="200" HorizontalOptions="Center"/>
+            
+            <Label Text="Выберите группу:" HorizontalOptions="Center" Margin="0,15,0,5" FontAttributes="Bold"/>
+            <Picker x:Name="picker" FontSize="Title" FontAttributes="Bold"
+            ItemsSource="{Binding _brigades}" SelectedItem="{Binding SelectedBrigade}"
+            ItemDisplayBinding="{Binding Name}"
+            HorizontalOptions="Center" Margin="0,5,0,15">
+                <Picker.Behaviors>
+                    <toolkit:EventToCommandBehavior EventName="Loaded"
+                                           Command="{Binding UpdateBrigadesListCommand}"/>
+                </Picker.Behaviors>
+            </Picker>
+
+            <Button Text="Выбрать фотографию"
+            VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200"
+            Command="{Binding ChooseImageCommand}"
+                    Margin="0,7,0,10"/>
+
+            <Button VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200"
+            Text="Save" Command="{Binding EditWorkCommand}" 
+                    Margin="0,0,0,10"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
