@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
@@ -21,12 +22,12 @@
             <div class="dropdown ms-4">
                 <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
                     User@gmail.com
-                    <img src="~/images/default-profile-picture.png" width="30" alt="User" class="rounded-circle"/>
+                    <img src="~/images/def.jpg" width="30" alt="User" class="rounded-circle"/>
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
                     <li>
                         <span class="dropdown-item-text">
-                            <img src="~/images/default-profile-picture.png" width="50" alt="User" class="rounded-circle"/>
+                            <img src="~/images/def.jpg" width="50" alt="User" class="rounded-circle"/>
                             user@gmail.com
                         </span>
                     </li>
@@ -41,7 +42,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="container mt-5">
         @RenderBody()
     </main>
 
@@ -63,7 +64,8 @@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+@await RenderSectionAsync("Scripts", false)
 
 </body>
 </html>
