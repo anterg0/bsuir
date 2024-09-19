@@ -1,0 +1,61 @@
+@{
+    ViewBag.Title = "Index";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Лабораторная работа 1</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+</head>
+<body>
+<div class="container mt-5">
+<h1>Лабораторная работа 1</h1>
+
+<h3>Список</h3>
+<ol type="A">
+    <li>элемент 0 списка</li>
+    <li>элемент 1 списка</li>
+    <li>элемент 2 списка</li>
+    <li>элемент 3 списка</li>
+    <li>элемент 4 списка</li>
+</ol>
+<hr/>
+<h2>Форма</h2>
+<form method="POST">
+    <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+            <input type="checkbox" id="checkbox1" name="check" value="1"/> <label for="checkbox1">Чек-бокс 1</label><br>
+            <input type="checkbox" id="checkbox2" name="check" value="2"/> <label for="checkbox2">Чек-бокс 2</label>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-sm-10 offset-sm-2">
+            <input type="radio" id="radio1" name="radioGroup" value="1"/> <label for="radio1">Радио-1</label><br>
+            <input type="radio" id="radio2" name="radioGroup" value="2"/> <label for="radio2">Радио-2</label><br>
+            <input type="radio" id="radio3" name="radioGroup" value="3"/> <label for="radio3">Радио-3</label>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="login" class="col-sm-2 col-form-label">Логин:</label>
+        <div class="col-sm-10">
+            <input type="text" class="form-control" id="login" name="login_text" placeholder="Введите имя">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <label for="password" class="col-sm-2 col-form-label">Пароль:</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="password" name="pass" placeholder="Введите пароль">
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+</div>
+</body>
+</html>

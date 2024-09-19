@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+</head>
+<body>
+ <header class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">WebLabsV02</a>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Лб 1</a>
+                <a class="nav-item nav-link" href="#">Каталог</a>
+                <a class="nav-item nav-link" href="#">Администрирование</a>
+            </div>
+            <a href="#" class="navbar-text ms-auto">
+                00,0 руб <i class="fa-solid fa-cart-shopping"></i> (0)
+            </a>
+            <div class="dropdown ms-4">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                    User@gmail.com
+                    <img src="~/images/default-profile-picture.png" width="30" alt="User" class="rounded-circle"/>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
+                    <li>
+                        <span class="dropdown-item-text">
+                            <img src="~/images/default-profile-picture.png" width="50" alt="User" class="rounded-circle"/>
+                            user@gmail.com
+                        </span>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <form id="logoutForm" class="form-inline">
+                            <button id="logout" type="submit" class="nav-link btn btn-link text-dark">Logout</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="bg-dark text-light mt-5">
+        <div class="container">
+            <div class="d-flex justify-content-end py-3">
+                <a class="text-light me-3" href="http://www.facebook.com">
+                    <i class="fa-brands fa-facebook-f fa-2x"></i>
+                </a>
+                <a class="text-light me-3" href="http://www.vk.com">
+                    <i class="fa-brands fa-vk fa-2x"></i>
+                </a>
+                <a class="text-light" href="http://www.twitter.com">
+                    <i class="fa-brands fa-twitter fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+
+</body>
+</html>
