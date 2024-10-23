@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/images/dark_knight.jpg",
+      "PackagePath": "staticwebassets/images/dark_knight.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/images/def.jpg",
+      "PackagePath": "staticwebassets/images/def.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/images/inception.jpg",
+      "PackagePath": "staticwebassets/images/inception.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/images/interstellar.jpg",
+      "PackagePath": "staticwebassets/images/interstellar.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/images/matrix.jpg",
+      "PackagePath": "staticwebassets/images/matrix.jpg"
+    },
+    {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

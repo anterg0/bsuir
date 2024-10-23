@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/scopedcss/projectbundle/WEB_253505_Shpakovsky.Domain.bundle.scp.css",
+      "PackagePath": "staticwebassets/WEB_253505_Shpakovsky.Domain.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/background.png",
+      "PackagePath": "staticwebassets/background.png"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/exampleJsInterop.js",
+      "PackagePath": "staticwebassets/exampleJsInterop.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.Domain.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.WEB_253505_Shpakovsky.Domain.props",
+      "PackagePath": "build\\WEB_253505_Shpakovsky.Domain.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.WEB_253505_Shpakovsky.Domain.props",
+      "PackagePath": "buildMultiTargeting\\WEB_253505_Shpakovsky.Domain.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.WEB_253505_Shpakovsky.Domain.props",
+      "PackagePath": "buildTransitive\\WEB_253505_Shpakovsky.Domain.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

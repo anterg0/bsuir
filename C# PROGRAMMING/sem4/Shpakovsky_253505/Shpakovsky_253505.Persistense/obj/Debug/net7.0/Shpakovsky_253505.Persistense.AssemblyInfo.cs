@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Shpakovsky_253505.Persistense")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+21de715ec3590536f68eedb0350c7bdc46e3ad13")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+75f1cff370734f585590a9f066c925bf419558e8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Shpakovsky_253505.Persistense")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Shpakovsky_253505.Persistense")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
