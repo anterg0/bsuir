@@ -1,14 +1,17 @@
-using WEB_253505_Shpakovsky.UI.Extensions;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using WEB_253505_Shpakovsky.API.Services;
+using WEB_253505_Shpakovsky.UI;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<MovieContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("MovieContext") ?? throw new InvalidOperationException("Connection string 'MovieContext' not found.")));
 
-// Add services to the container.
+var uriData = builder.Configuration.GetSection("UriData").Get<UriData>();
+builder.Services.AddSingleton(uriData);
+builder.Services.AddHttpClient<IMovieService, ApiProductService>(opt=> opt.BaseAddress=new Uri(uriData.ApiUri));
+builder.Services.AddHttpClient<IGenreService, ApiCategoryService>(opt=> opt.BaseAddress=new Uri(uriData.ApiUri));
 builder.Services.AddControllersWithViews();
-builder.RegisterCustomServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

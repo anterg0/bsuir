@@ -1,0 +1,41 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/dark_knight.jpg",
+      "PackagePath": "staticwebassets/images/dark_knight.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/def.jpg",
+      "PackagePath": "staticwebassets/images/def.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/inception.jpg",
+      "PackagePath": "staticwebassets/images/inception.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/interstellar.jpg",
+      "PackagePath": "staticwebassets/images/interstellar.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/matrix.jpg",
+      "PackagePath": "staticwebassets/images/matrix.jpg"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.WEB_253505_Shpakovsky.API.props",
+      "PackagePath": "build\\WEB_253505_Shpakovsky.API.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.WEB_253505_Shpakovsky.API.props",
+      "PackagePath": "buildMultiTargeting\\WEB_253505_Shpakovsky.API.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.WEB_253505_Shpakovsky.API.props",
+      "PackagePath": "buildTransitive\\WEB_253505_Shpakovsky.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
