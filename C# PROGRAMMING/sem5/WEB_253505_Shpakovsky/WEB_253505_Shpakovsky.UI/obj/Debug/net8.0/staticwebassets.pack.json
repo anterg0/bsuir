@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/obj/Debug/net8.0/scopedcss/projectbundle/WEB_253505_Shpakovsky.UI.bundle.scp.css",
-      "PackagePath": "staticwebassets/WEB_253505_Shpakovsky.UI.bundle.scp.css"
+      "PackagePath": "staticwebassets/WEB_253505_Shpakovsky.UI.exsdq350cj.bundle.scp.css"
     },
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/css/site.css",
@@ -415,6 +415,10 @@
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/lib/jquery/dist/jquery.min.map",
       "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.UI.Microsoft.AspNetCore.StaticWebAssets.props",

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using WEB_253505_Shpakovsky.API.Services;
 using WEB_253505_Shpakovsky.UI.Models;
+using WEB_253505_Shpakovsky.UI.Services;
 
 namespace WEB_253505_Shpakovsky.UI.Controllers
 {

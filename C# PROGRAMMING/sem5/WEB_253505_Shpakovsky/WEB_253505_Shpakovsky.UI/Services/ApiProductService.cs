@@ -1,18 +1,18 @@
-using System.Net.Http.Json;
+using System.Security.AccessControl;
 using System.Text;
 using System.Text.Json;
-using Microsoft.Extensions.Logging;
-using WEB_253505_Shpakovsky.API.Services;
 using WEB_253505_Shpakovsky.Domain.Entities;
 using WEB_253505_Shpakovsky.Domain.Models;
+
+namespace WEB_253505_Shpakovsky.UI.Services;
 
 public class ApiProductService : IMovieService
 {
     private readonly HttpClient _httpClient;
     private readonly JsonSerializerOptions _serializerOptions;
     private readonly ILogger<ApiProductService> _logger;
-
-    public ApiProductService(HttpClient httpClient, ILogger<ApiProductService> logger)
+    private readonly IFileService _fileService;
+    public ApiProductService(HttpClient httpClient, ILogger<ApiProductService> logger, IFileService fileService)
     {
         _httpClient = httpClient;
         _serializerOptions = new JsonSerializerOptions
@@ -20,6 +20,7 @@ public class ApiProductService : IMovieService
             PropertyNamingPolicy = JsonNamingPolicy.CamelCase
         };
         _logger = logger;
+        _fileService = fileService;
     }
 
     public async Task<ResponseData<ListModel<Movie>>> GetMovieListAsync(string? categoryNormalizedName, int pageNo = 1)
@@ -37,7 +38,7 @@ public class ApiProductService : IMovieService
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadFromJsonAsync<ResponseData<ListModel<Movie>>>(_serializerOptions)
-                    ?? ResponseData<ListModel<Movie>>.Error("Не удалось обработать данные");
+                       ?? ResponseData<ListModel<Movie>>.Error("Не удалось обработать данные");
             }
 
             return ResponseData<ListModel<Movie>>.Error($"Ошибка API: {response.StatusCode}");
@@ -53,11 +54,11 @@ public class ApiProductService : IMovieService
     {
         try
         {
-            var response = await _httpClient.GetAsync($"Movies/id/{id}");
+            var response = await _httpClient.GetAsync($"Movies/{id}");
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadFromJsonAsync<ResponseData<Movie>>(_serializerOptions)
-                    ?? ResponseData<Movie>.Error("Не удалось обработать данные");
+                       ?? ResponseData<Movie>.Error("Не удалось обработать данные");
             }
 
             return ResponseData<Movie>.Error($"Ошибка API: {response.StatusCode}");
@@ -73,32 +74,39 @@ public class ApiProductService : IMovieService
     {
         try
         {
-            var content = new MultipartFormDataContent
-            {
-                { new StringContent(product.Name), "Name" },
-                { new StringContent(product.Description), "Description" },
-                { new StringContent(product.Duration.ToString()), "Duration" },
-                { new StringContent(product.Rating.ToString()), "Rating" }
-            };
 
             if (formFile != null)
             {
-                var fileStream = formFile.OpenReadStream();
-                content.Add(new StreamContent(fileStream), "FormFile", formFile.FileName);
-            }
 
-            var response = await _httpClient.PutAsync($"Movies/id/{id}", content);
+                if (!string.IsNullOrEmpty(product.Image))
+                {
+                    var existingFileName = Path.GetFileName(product.Image);
+                    await _fileService.DeleteFileAsync(existingFileName);
+                }
+                
+                var imageUrl = await _fileService.SaveFileAsync(formFile);
+                if (!string.IsNullOrEmpty(imageUrl))
+                {
+                    product.Image = imageUrl; 
+                }
+            }
+            
+            var response = await _httpClient.PutAsJsonAsync($"Movies/{id}", product);
 
             if (!response.IsSuccessStatusCode)
             {
-                _logger.LogError($"Ошибка обновления фильма: {response.StatusCode}");
-                throw new Exception($"Ошибка обновления фильма: {response.StatusCode}");
+                var errorContent = await response.Content.ReadAsStringAsync();
+                
+                Console.WriteLine($"Ошибка: {response.StatusCode}");
+                Console.WriteLine($"Тело ошибки: {errorContent}");
+                
+                throw new Exception($"Ошибка запроса: {response.StatusCode}, {errorContent}");
             }
         }
         catch (Exception ex)
         {
             _logger.LogError($"Ошибка обновления фильма: {ex.Message}");
-            throw;
+            throw new Exception($"Ошибка обновления фильма: {ex.Message}");
         }
     }
 
@@ -106,7 +114,7 @@ public class ApiProductService : IMovieService
     {
         try
         {
-            var response = await _httpClient.DeleteAsync($"Movies/id/{id}");
+            var response = await _httpClient.DeleteAsync($"Movies/{id}");
             if (!response.IsSuccessStatusCode)
             {
                 _logger.LogError($"Ошибка удаления фильма: {response.StatusCode}");
@@ -124,34 +132,43 @@ public class ApiProductService : IMovieService
     {
         try
         {
-            var content = new MultipartFormDataContent
-            {
-                { new StringContent(product.Name), "Name" },
-                { new StringContent(product.Description), "Description" },
-                { new StringContent(product.Duration.ToString()), "Duration" },
-                { new StringContent(product.Rating.ToString()), "Rating" }
-            };
-
             if (formFile != null)
             {
-                var fileStream = formFile.OpenReadStream();
-                content.Add(new StreamContent(fileStream), "FormFile", formFile.FileName);
+                var imageUrl = await _fileService.SaveFileAsync(formFile);
+                if (!string.IsNullOrEmpty(imageUrl))
+                {
+                    product.Image = imageUrl;
+                }
+
+                product.MimeType = formFile.ContentType;
             }
+            
+            var response = await _httpClient.PostAsJsonAsync("Movies", product);
 
-            var response = await _httpClient.PostAsync("Movies", content);
-
-            if (response.IsSuccessStatusCode)
+            if (!response.IsSuccessStatusCode)
             {
-                return await response.Content.ReadFromJsonAsync<ResponseData<Movie>>(_serializerOptions)
-                    ?? ResponseData<Movie>.Error("Не удалось обработать данные");
+                var errorContent = await response.Content.ReadAsStringAsync();
+                
+                Console.WriteLine($"Ошибка: {response.StatusCode}");
+                Console.WriteLine($"Тело ошибки: {errorContent}");
+
+                throw new Exception($"Ошибка запроса: {response.StatusCode}, {errorContent}");
+            }
+            else
+            {
+
+                var result = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("Фильм успешно создан: " + result);
             }
 
-            return ResponseData<Movie>.Error($"Ошибка API: {response.StatusCode}");
+            return await response.Content.ReadFromJsonAsync<ResponseData<Movie>>()
+                   ?? ResponseData<Movie>.Error("Не удалось обработать данные.");
         }
         catch (Exception ex)
         {
             _logger.LogError($"Ошибка создания фильма: {ex.Message}");
-            return ResponseData<Movie>.Error("Ошибка при создании фильма");
+            return ResponseData<Movie>.Error($"Ошибка при создании фильма: {ex.Message}");
         }
     }
+
 }

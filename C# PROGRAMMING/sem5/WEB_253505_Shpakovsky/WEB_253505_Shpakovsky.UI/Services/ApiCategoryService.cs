@@ -1,9 +1,8 @@
-using System.Net.Http.Json;
 using System.Text.Json;
-using Microsoft.Extensions.Logging;
-using WEB_253505_Shpakovsky.API.Services;
 using WEB_253505_Shpakovsky.Domain.Entities;
 using WEB_253505_Shpakovsky.Domain.Models;
+
+namespace WEB_253505_Shpakovsky.UI.Services;
 
 public class ApiCategoryService : IGenreService
 {
@@ -29,7 +28,7 @@ public class ApiCategoryService : IGenreService
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadFromJsonAsync<ResponseData<List<Genre>>>(_serializerOptions)
-                    ?? ResponseData<List<Genre>>.Error("Не удалось обработать данные");
+                       ?? ResponseData<List<Genre>>.Error("Не удалось обработать данные");
             }
 
             return ResponseData<List<Genre>>.Error($"Ошибка API: {response.StatusCode}");
@@ -49,7 +48,7 @@ public class ApiCategoryService : IGenreService
             if (response.IsSuccessStatusCode)
             {
                 return await response.Content.ReadFromJsonAsync<ResponseData<Genre>>(_serializerOptions)
-                    ?? ResponseData<Genre>.Error("Не удалось обработать данные");
+                       ?? ResponseData<Genre>.Error("Не удалось обработать данные");
             }
 
             return ResponseData<Genre>.Error($"Ошибка API: {response.StatusCode}");

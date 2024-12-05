@@ -73,14 +73,12 @@ public class MovieService : IMovieService
         existingMovie.Description = product.Description;
         existingMovie.Rating = product.Rating;
         existingMovie.Duration = product.Duration;
-
+        existingMovie.CategoryID = product.CategoryID;
+        existingMovie.Image = product.Image;
+        
         if (formFile != null)
         {
-            var filePath = $"wwwroot/images/{formFile.FileName}";
-            using var stream = new FileStream(filePath, FileMode.Create);
-            await formFile.CopyToAsync(stream);
-
-            existingMovie.Image = $"images/{formFile.FileName}";
+            existingMovie.Image = product.Image;
         }
 
         _context.Entry(existingMovie).State = EntityState.Modified;
@@ -102,14 +100,6 @@ public class MovieService : IMovieService
 
     public async Task<ResponseData<Movie>> CreateMovieAsync(Movie product, IFormFile? formFile)
     {
-        if (formFile != null)
-        {
-            var filePath = $"wwwroot/images/{formFile.FileName}";
-            using var stream = new FileStream(filePath, FileMode.Create);
-            await formFile.CopyToAsync(stream);
-
-            product.Image = $"images/{formFile.FileName}";
-        }
 
         _context.Movies.Add(product);
         await _context.SaveChangesAsync();

@@ -1,0 +1,88 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/0ikznwxi.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0ikznwxi.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"50800"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 10:23:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/0ikznwxi.zwyamm610v.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\0ikznwxi.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zwyamm610v"},{"Name":"integrity","Value":"sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="},{"Name":"label","Value":"_content/WEB_253505_Shpakovsky.API/images/0ikznwxi.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"50800"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 10:23:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/4imdb4ib.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4imdb4ib.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"50800"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 10:31:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/4imdb4ib.zwyamm610v.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\4imdb4ib.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"zwyamm610v"},{"Name":"integrity","Value":"sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="},{"Name":"label","Value":"_content/WEB_253505_Shpakovsky.API/images/4imdb4ib.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"50800"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\u0022"},{"Name":"Last-Modified","Value":"Thu, 05 Dec 2024 10:31:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/dark_knight.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dark_knight.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6aQ\u002BZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"677505"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226aQ\u002BZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:45:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/dark_knight.p0dswxj4sd.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\dark_knight.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"p0dswxj4sd"},{"Name":"integrity","Value":"sha256-6aQ\u002BZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI="},{"Name":"label","Value":"_content/WEB_253505_Shpakovsky.API/images/dark_knight.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"677505"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226aQ\u002BZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:45:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/def.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\def.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"107611"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 17 Apr 2024 06:30:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/def.kct3pdnszi.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\def.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"kct3pdnszi"},{"Name":"integrity","Value":"sha256-rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE="},{"Name":"label","Value":"_content/WEB_253505_Shpakovsky.API/images/def.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"107611"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE=\u0022"},{"Name":"Last-Modified","Value":"Wed, 17 Apr 2024 06:30:27 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/inception.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\inception.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6/Mm2cPbpfJEIo\u002BUY0vrcVwzA8x0zW4A\u002BLe\u002BZ3BupBM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"273022"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226/Mm2cPbpfJEIo\u002BUY0vrcVwzA8x0zW4A\u002BLe\u002BZ3BupBM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:45:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/inception.n52si6phjq.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\inception.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"n52si6phjq"},{"Name":"integrity","Value":"sha256-6/Mm2cPbpfJEIo\u002BUY0vrcVwzA8x0zW4A\u002BLe\u002BZ3BupBM="},{"Name":"label","Value":"_content/WEB_253505_Shpakovsky.API/images/inception.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"273022"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226/Mm2cPbpfJEIo\u002BUY0vrcVwzA8x0zW4A\u002BLe\u002BZ3BupBM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:45:21 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/interstellar.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\interstellar.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-6vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3583236"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:45:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/interstellar.m8yz3k4283.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\interstellar.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"m8yz3k4283"},{"Name":"integrity","Value":"sha256-6vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4="},{"Name":"label","Value":"_content/WEB_253505_Shpakovsky.API/images/interstellar.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3583236"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u00226vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:45:56 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/matrix.27bnmdz5or.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\matrix.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"27bnmdz5or"},{"Name":"integrity","Value":"sha256-ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw="},{"Name":"label","Value":"_content/WEB_253505_Shpakovsky.API/images/matrix.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3728582"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:46:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/WEB_253505_Shpakovsky.API/images/matrix.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\matrix.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"3728582"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 23 Oct 2024 21:46:04 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

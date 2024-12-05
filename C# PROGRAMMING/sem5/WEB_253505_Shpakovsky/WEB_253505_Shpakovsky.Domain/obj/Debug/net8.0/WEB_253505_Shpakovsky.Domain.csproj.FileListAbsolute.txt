@@ -24,3 +24,6 @@
 /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/ref/WEB_253505_Shpakovsky.Domain.dll
 /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/bin/Debug/net8.0/WEB_253505_Shpakovsky.Domain.runtimeconfig.json
 /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/WEB_253505_Shpakovsky.Domain.genruntimeconfig.cache
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/bin/Debug/net8.0/WEB_253505_Shpakovsky.Domain.staticwebassets.endpoints.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/staticwebassets.build.endpoints.json
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.Domain.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

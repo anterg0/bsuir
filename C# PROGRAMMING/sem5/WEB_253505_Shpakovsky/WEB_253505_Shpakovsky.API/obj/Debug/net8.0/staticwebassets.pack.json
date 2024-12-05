@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/0ikznwxi.png",
+      "PackagePath": "staticwebassets/images/0ikznwxi.png"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/4imdb4ib.png",
+      "PackagePath": "staticwebassets/images/4imdb4ib.png"
+    },
+    {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/dark_knight.jpg",
       "PackagePath": "staticwebassets/images/dark_knight.jpg"
     },
@@ -19,6 +27,10 @@
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/matrix.jpg",
       "PackagePath": "staticwebassets/images/matrix.jpg"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.API.Microsoft.AspNetCore.StaticWebAssets.props",

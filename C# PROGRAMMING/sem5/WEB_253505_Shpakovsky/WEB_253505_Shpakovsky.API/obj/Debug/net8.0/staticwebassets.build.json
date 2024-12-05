@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "KDJzd7wyUlasakf4Zu9GKgyCfmGD6XUGFUCh3ubCR5g=",
+  "Hash": "m3+Kh4AwaFrGtG48hwZo6u9wIVhnJWxKlZWUle4Dh7k=",
   "Source": "WEB_253505_Shpakovsky.API",
   "BasePath": "_content/WEB_253505_Shpakovsky.API",
   "Mode": "Default",
@@ -41,7 +41,7 @@
       "SourceType": "Computed",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/obj/Debug/net8.0/scopedcss/bundle/",
       "BasePath": "_content/WEB_253505_Shpakovsky.API",
-      "RelativePath": "WEB_253505_Shpakovsky.API.styles.css",
+      "RelativePath": "WEB_253505_Shpakovsky.API#[.{fingerprint}]?.styles.css",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Primary",
@@ -50,9 +50,53 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "l60191sd67",
+      "Integrity": "0/v8DpX5TrjLwABTVoswli2MMcdgyLEBsvfqTPy76Sg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/obj/Debug/net8.0/scopedcss/bundle/WEB_253505_Shpakovsky.API.styles.css"
+    },
+    {
+      "Identity": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/0ikznwxi.png",
+      "SourceId": "WEB_253505_Shpakovsky.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/",
+      "BasePath": "_content/WEB_253505_Shpakovsky.API",
+      "RelativePath": "images/0ikznwxi#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zwyamm610v",
+      "Integrity": "vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/0ikznwxi.png"
+    },
+    {
+      "Identity": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/4imdb4ib.png",
+      "SourceId": "WEB_253505_Shpakovsky.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/",
+      "BasePath": "_content/WEB_253505_Shpakovsky.API",
+      "RelativePath": "images/4imdb4ib#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zwyamm610v",
+      "Integrity": "vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/4imdb4ib.png"
     },
     {
       "Identity": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/dark_knight.jpg",
@@ -60,15 +104,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/",
       "BasePath": "_content/WEB_253505_Shpakovsky.API",
-      "RelativePath": "images/dark_knight.jpg",
+      "RelativePath": "images/dark_knight#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "p0dswxj4sd",
+      "Integrity": "6aQ+ZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/dark_knight.jpg"
@@ -79,15 +125,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/",
       "BasePath": "_content/WEB_253505_Shpakovsky.API",
-      "RelativePath": "images/def.jpg",
+      "RelativePath": "images/def#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "kct3pdnszi",
+      "Integrity": "rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/def.jpg"
@@ -98,15 +146,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/",
       "BasePath": "_content/WEB_253505_Shpakovsky.API",
-      "RelativePath": "images/inception.jpg",
+      "RelativePath": "images/inception#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "n52si6phjq",
+      "Integrity": "6/Mm2cPbpfJEIo+UY0vrcVwzA8x0zW4A+Le+Z3BupBM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/inception.jpg"
@@ -117,15 +167,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/",
       "BasePath": "_content/WEB_253505_Shpakovsky.API",
-      "RelativePath": "images/interstellar.jpg",
+      "RelativePath": "images/interstellar#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "m8yz3k4283",
+      "Integrity": "6vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/interstellar.jpg"
@@ -136,15 +188,17 @@
       "SourceType": "Discovered",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/",
       "BasePath": "_content/WEB_253505_Shpakovsky.API",
-      "RelativePath": "images/matrix.jpg",
+      "RelativePath": "images/matrix#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "27bnmdz5or",
+      "Integrity": "ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/images/matrix.jpg"
@@ -155,7 +209,7 @@
       "SourceType": "Project",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/scopedcss/projectbundle/",
       "BasePath": "_content/WEB_253505_Shpakovsky.Domain",
-      "RelativePath": "WEB_253505_Shpakovsky.Domain.bundle.scp.css",
+      "RelativePath": "WEB_253505_Shpakovsky.Domain#[.{fingerprint}]!.bundle.scp.css",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Primary",
@@ -164,6 +218,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "k4yz2ictag",
+      "Integrity": "fJ7X5/aZadiiOwRGDSLAdaisAQNxJ1rhGiIbUPhv39U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/scopedcss/projectbundle/WEB_253505_Shpakovsky.Domain.bundle.scp.css"
@@ -174,18 +230,20 @@
       "SourceType": "Project",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/",
       "BasePath": "_content/WEB_253505_Shpakovsky.Domain",
-      "RelativePath": "background.png",
+      "RelativePath": "background#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "x2rx4ajns0",
+      "Integrity": "WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/background.png"
+      "OriginalItemSpec": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/background.png"
     },
     {
       "Identity": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/exampleJsInterop.js",
@@ -193,18 +251,932 @@
       "SourceType": "Project",
       "ContentRoot": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/",
       "BasePath": "_content/WEB_253505_Shpakovsky.Domain",
-      "RelativePath": "exampleJsInterop.js",
+      "RelativePath": "exampleJsInterop#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "luzdqbu196",
+      "Integrity": "Q4NTLlisgAvNajNKkeD3c0qLXE5q8YduQMx9wE/SeNk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/exampleJsInterop.js"
+      "OriginalItemSpec": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/exampleJsInterop.js"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/WEB_253505_Shpakovsky.Domain/background.png",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 20:42:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="
+        }
+      ]
+    },
+    {
+      "Route": "_content/WEB_253505_Shpakovsky.Domain/background.x2rx4ajns0.png",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/background.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 20:42:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x2rx4ajns0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WeOKCkI7IdJHs2kCqsKgLfiWX4/sNPbaRUspOLefkCY="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/WEB_253505_Shpakovsky.Domain/background.png"
+        }
+      ]
+    },
+    {
+      "Route": "_content/WEB_253505_Shpakovsky.Domain/exampleJsInterop.js",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/exampleJsInterop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q4NTLlisgAvNajNKkeD3c0qLXE5q8YduQMx9wE/SeNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 20:42:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q4NTLlisgAvNajNKkeD3c0qLXE5q8YduQMx9wE/SeNk="
+        }
+      ]
+    },
+    {
+      "Route": "_content/WEB_253505_Shpakovsky.Domain/exampleJsInterop.luzdqbu196.js",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/exampleJsInterop.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "241"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Q4NTLlisgAvNajNKkeD3c0qLXE5q8YduQMx9wE/SeNk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 20:42:27 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "luzdqbu196"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Q4NTLlisgAvNajNKkeD3c0qLXE5q8YduQMx9wE/SeNk="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/WEB_253505_Shpakovsky.Domain/exampleJsInterop.js"
+        }
+      ]
+    },
+    {
+      "Route": "_content/WEB_253505_Shpakovsky.Domain/WEB_253505_Shpakovsky.Domain.bundle.scp.css",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/scopedcss/projectbundle/WEB_253505_Shpakovsky.Domain.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fJ7X5/aZadiiOwRGDSLAdaisAQNxJ1rhGiIbUPhv39U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 22:17:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fJ7X5/aZadiiOwRGDSLAdaisAQNxJ1rhGiIbUPhv39U="
+        }
+      ]
+    },
+    {
+      "Route": "_content/WEB_253505_Shpakovsky.Domain/WEB_253505_Shpakovsky.Domain.k4yz2ictag.bundle.scp.css",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/scopedcss/projectbundle/WEB_253505_Shpakovsky.Domain.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "214"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fJ7X5/aZadiiOwRGDSLAdaisAQNxJ1rhGiIbUPhv39U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 22:17:49 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k4yz2ictag"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fJ7X5/aZadiiOwRGDSLAdaisAQNxJ1rhGiIbUPhv39U="
+        },
+        {
+          "Name": "label",
+          "Value": "_content/WEB_253505_Shpakovsky.Domain/WEB_253505_Shpakovsky.Domain.bundle.scp.css"
+        }
+      ]
+    },
+    {
+      "Route": "images/0ikznwxi.png",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/0ikznwxi.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 10:23:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/0ikznwxi.zwyamm610v.png",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/0ikznwxi.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 10:23:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zwyamm610v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/0ikznwxi.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/4imdb4ib.png",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/4imdb4ib.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 10:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/4imdb4ib.zwyamm610v.png",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/4imdb4ib.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "50800"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 05 Dec 2024 10:31:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zwyamm610v"
+        },
+        {
+          "Name": "label",
+          "Value": "images/4imdb4ib.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-vaLFkZvSXurp7CGoxFZ3a99Ve3UPWsqiUQSgyGIacK8="
+        }
+      ]
+    },
+    {
+      "Route": "images/dark_knight.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/dark_knight.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "677505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6aQ+ZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:45:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6aQ+ZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI="
+        }
+      ]
+    },
+    {
+      "Route": "images/dark_knight.p0dswxj4sd.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/dark_knight.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "677505"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6aQ+ZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:45:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p0dswxj4sd"
+        },
+        {
+          "Name": "label",
+          "Value": "images/dark_knight.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6aQ+ZHsspw51o8CvBGxN/c1xI4CIl3nL3CxX2Uq2OQI="
+        }
+      ]
+    },
+    {
+      "Route": "images/def.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/def.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 17 Apr 2024 06:30:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE="
+        }
+      ]
+    },
+    {
+      "Route": "images/def.kct3pdnszi.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/def.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "107611"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 17 Apr 2024 06:30:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kct3pdnszi"
+        },
+        {
+          "Name": "label",
+          "Value": "images/def.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rMvNSaOPs/qBq479I4/LRepAt7eyzJMs86QEZeeeOYE="
+        }
+      ]
+    },
+    {
+      "Route": "images/inception.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/inception.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "273022"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6/Mm2cPbpfJEIo+UY0vrcVwzA8x0zW4A+Le+Z3BupBM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:45:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6/Mm2cPbpfJEIo+UY0vrcVwzA8x0zW4A+Le+Z3BupBM="
+        }
+      ]
+    },
+    {
+      "Route": "images/inception.n52si6phjq.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/inception.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "273022"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6/Mm2cPbpfJEIo+UY0vrcVwzA8x0zW4A+Le+Z3BupBM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:45:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "n52si6phjq"
+        },
+        {
+          "Name": "label",
+          "Value": "images/inception.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6/Mm2cPbpfJEIo+UY0vrcVwzA8x0zW4A+Le+Z3BupBM="
+        }
+      ]
+    },
+    {
+      "Route": "images/interstellar.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/interstellar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3583236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:45:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-6vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4="
+        }
+      ]
+    },
+    {
+      "Route": "images/interstellar.m8yz3k4283.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/interstellar.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3583236"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"6vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:45:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m8yz3k4283"
+        },
+        {
+          "Name": "label",
+          "Value": "images/interstellar.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-6vQXnlbNinX0G4ldBqwlJSDbFkEzkWVKzLn6eE9frW4="
+        }
+      ]
+    },
+    {
+      "Route": "images/matrix.27bnmdz5or.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/matrix.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3728582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:46:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "27bnmdz5or"
+        },
+        {
+          "Name": "label",
+          "Value": "images/matrix.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw="
+        }
+      ]
+    },
+    {
+      "Route": "images/matrix.jpg",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/matrix.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3728582"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 23 Oct 2024 21:46:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ks1GzC1NPDr3rQDuYN30QYArv3VNmUdhRjOxCKGyeQw="
+        }
+      ]
+    },
+    {
+      "Route": "WEB_253505_Shpakovsky.API.l60191sd67.styles.css",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/obj/Debug/net8.0/scopedcss/bundle/WEB_253505_Shpakovsky.API.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0/v8DpX5TrjLwABTVoswli2MMcdgyLEBsvfqTPy76Sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 27 Nov 2024 22:45:22 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/WEB_253505_Shpakovsky.Domain/WEB_253505_Shpakovsky.Domain.k4yz2ictag.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l60191sd67"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0/v8DpX5TrjLwABTVoswli2MMcdgyLEBsvfqTPy76Sg="
+        },
+        {
+          "Name": "label",
+          "Value": "WEB_253505_Shpakovsky.API.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "WEB_253505_Shpakovsky.API.styles.css",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/obj/Debug/net8.0/scopedcss/bundle/WEB_253505_Shpakovsky.API.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "105"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0/v8DpX5TrjLwABTVoswli2MMcdgyLEBsvfqTPy76Sg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 27 Nov 2024 22:45:22 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/WEB_253505_Shpakovsky.Domain/WEB_253505_Shpakovsky.Domain.k4yz2ictag.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0/v8DpX5TrjLwABTVoswli2MMcdgyLEBsvfqTPy76Sg="
+        }
+      ]
     }
   ]
 }

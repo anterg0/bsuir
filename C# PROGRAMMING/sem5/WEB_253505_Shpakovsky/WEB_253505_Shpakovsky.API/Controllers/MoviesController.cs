@@ -52,6 +52,15 @@ namespace WEB_253505_Shpakovsky.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutMovie(int id, [FromForm] Movie movie, [FromForm] IFormFile? formFile)
         {
+            if (movie.Duration < 0)
+            {
+                return BadRequest("Duration must be a positive integer.");
+            }
+
+            if (movie.Rating < 0)
+            {
+                return BadRequest("Rating must be a positive number.");
+            }
             try
             {
                 await _movieService.UpdateMovieAsync(id, movie, formFile);
@@ -68,9 +77,9 @@ namespace WEB_253505_Shpakovsky.API.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<ResponseData<Movie>>> PostMovie([FromForm] Movie movie, [FromForm] IFormFile? formFile)
+        public async Task<ActionResult<ResponseData<Movie>>> PostMovie([FromBody] Movie movie)
         {
-            var result = await _movieService.CreateMovieAsync(movie, formFile);
+            var result = await _movieService.CreateMovieAsync(movie, null);
             if (!result.Successfull)
             {
                 return BadRequest(result.ErrorMessage);

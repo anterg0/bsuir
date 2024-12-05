@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/obj/Debug/net8.0/scopedcss/projectbundle/WEB_253505_Shpakovsky.Domain.bundle.scp.css",
-      "PackagePath": "staticwebassets/WEB_253505_Shpakovsky.Domain.bundle.scp.css"
+      "PackagePath": "staticwebassets/WEB_253505_Shpakovsky.Domain.k4yz2ictag.bundle.scp.css"
     },
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/background.png",
@@ -11,6 +11,10 @@
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.Domain/wwwroot/exampleJsInterop.js",
       "PackagePath": "staticwebassets/exampleJsInterop.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.Domain.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.Domain.Microsoft.AspNetCore.StaticWebAssets.props",
