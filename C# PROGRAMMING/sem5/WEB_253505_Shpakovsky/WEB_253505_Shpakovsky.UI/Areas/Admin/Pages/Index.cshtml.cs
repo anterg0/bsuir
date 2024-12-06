@@ -20,13 +20,19 @@ namespace WEB_253505_Shpakovsky.UI.Areas.Admin.Pages
         }
 
         public List<Movie> Movies { get; set; } = new();
+        public int CurrentPage { get; set; }
+        public int TotalPages { get; set; }
 
-        public async Task OnGetAsync()
+
+        public async Task OnGetAsync(int pageNo = 1)
         {
-            var response = await _movieService.GetMovieListAsync(null, 1);
-            if (response.Successfull)
+            CurrentPage = pageNo;
+
+            var response = await _movieService.GetMovieListAsync(null, pageNo);
+            if (response.Successfull && response.Data != null)
             {
-                Movies = response.Data?.Items ?? new List<Movie>();
+                Movies = response.Data.Items ?? new List<Movie>();
+                TotalPages = response.Data.TotalPages;
             }
         }
     }

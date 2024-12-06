@@ -1,0 +1,43 @@
+@model CartContainer
+@using WEB_253505_Shpakovsky.Domain.Entities
+@{
+    <br />
+    <h1 class="text-center">Ваша корзина</h1>
+    <hr />
+    <table class="table">
+        <tbody>
+            @foreach (var item in Model.CartItems)
+            {
+                <tr>
+                    <td>
+                        <img src="@item.Value.Item.Image" class="card-img-top img-fluid" alt="@item.Value.Item.Name" style="height: 250px; width: auto" />
+                    </td>
+                    <td>
+                        @item.Value.Item.Category.Name
+                    </td>
+                    <td>
+                        @item.Value.Item.Name
+                    </td>
+                    <td>
+                        @item.Value.Item.Duration
+                    </td>
+                    <td>
+                        @item.Value.Amount
+                    </td>
+                    <td>
+                        <form asp-controller="Cart" asp-action="Remove" method="post">
+                            <input type="hidden" name="id" value="@item.Value.Item.ID" />
+                            <input type="hidden" name="returnUrl" value="@Url.Action("Index", "Cart")" />
+                            <button type="submit" class="btn btn-danger">Удалить</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <form asp-controller="Cart" asp-action="Clear" method="post" class="mx-auto">
+        <input type="hidden" name="returnUrl" value="@Url.Action("Index", "Cart")" />
+        <button type="submit" class="btn btn-danger">Очистить</button>
+    </form>
+    <br />
+}

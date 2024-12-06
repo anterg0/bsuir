@@ -301,3 +301,5 @@
 /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/bin/Debug/net8.0/WEB_253505_Shpakovsky.UI.staticwebassets.endpoints.json
 /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/obj/Debug/net8.0/staticwebassets.build.endpoints.json
 /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.UI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll

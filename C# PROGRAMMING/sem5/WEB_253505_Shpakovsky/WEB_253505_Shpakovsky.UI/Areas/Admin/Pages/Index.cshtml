@@ -1,8 +1,11 @@
-@page
+@page "{*path}"
 @model WEB_253505_Shpakovsky.UI.Areas.Admin.Pages.IndexModel
 
 @{
     ViewData["Title"] = "Movies";
+    var pageNo = Model.CurrentPage;
+    int prev = pageNo == 1 ? 1 : pageNo - 1;
+    int next = pageNo == Model.TotalPages ? Model.TotalPages : pageNo + 1;
 }
 
 <h1>Movies</h1>
@@ -39,3 +42,24 @@
     }
     </tbody>
 </table>
+
+<nav aria-label="Page navigation">
+    <ul class="pagination">
+        <li class="page-item @(pageNo == 1 ? "disabled" : "")">
+            <a class="page-link" asp-page="./Index" asp-route-pageNo="@prev" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+            </a>
+        </li>
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            <li class="page-item @(pageNo == i ? "active" : "")">
+                <a class="page-link" asp-page="./Index" asp-route-pageNo="@i">@i</a>
+            </li>
+        }
+        <li class="page-item @(pageNo == Model.TotalPages ? "disabled" : "")">
+            <a class="page-link" asp-page="./Index" asp-route-pageNo="@next" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+            </a>
+        </li>
+    </ul>
+</nav>

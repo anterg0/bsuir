@@ -1,0 +1,38 @@
+@model ListModel<Movie>
+
+
+@{
+    ViewData["Title"] = "Каталог блюд";
+    var categories = ViewData["categories"] as IEnumerable<Genre>;
+    var currentCategory = ViewData["currentCategory"] as string;
+    var request = ViewContext.HttpContext.Request;
+    var returnUrl = request.Path + request.QueryString.ToUriComponent();
+    int prev = Model.CurrentPage == 1 ? 1 : Model.CurrentPage - 1;
+    int next = Model.CurrentPage == Model.TotalPages ? Model.TotalPages : Model.CurrentPage + 1;
+    string? category = request.Query["category"].ToString();
+}
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+    @foreach (var item in Model.Items)
+    {
+        <div class="col">
+            <div class="card h-auto">
+                <img src="@item.Image" class="card-images" alt="@item.Name" />
+                <div class="card-body">
+                    <h5 class="card-title">@item.Name</h5>
+                    <p class="card-text">@item.Description</p>
+                    <form asp-controller="Cart" asp-action="Add">
+                        <input type="hidden" name="id" value="@item.ID" />
+                        <input type="hidden" name="returnUrl"
+                               value="@Url.Action("Index", "Product", new { pageNo = Model.CurrentPage, category = category ?? null })" />
+                        <button type="submit" class="btn btn-primary">В корзину</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<nav aria-label="Page navigation example">
+    <pager current-page="@Model.CurrentPage" total-pages="@Model.TotalPages" category="@category"></pager>
+</nav>

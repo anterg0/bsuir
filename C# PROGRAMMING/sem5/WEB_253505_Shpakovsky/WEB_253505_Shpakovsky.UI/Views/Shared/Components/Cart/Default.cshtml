@@ -1,3 +1,5 @@
+@model dynamic
+
 <a class="navbar-text ms-auto" asp-controller="Cart" asp-action="Index">
-    00,0 руб <i class="fa-solid fa-cart-shopping"></i> (0)
+     @Model.TotalPrice,0 мин <i class="fa-solid fa-cart-shopping"></i> (0)
 </a>

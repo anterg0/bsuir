@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WEB_253505_Shpakovsky.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c6dfcdeff08bb8ef79b7f5717f47ce177fc231f6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3f8efc74ec02296a0af3af658e79341b618906d4")]
 [assembly: System.Reflection.AssemblyProductAttribute("WEB_253505_Shpakovsky.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WEB_253505_Shpakovsky.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

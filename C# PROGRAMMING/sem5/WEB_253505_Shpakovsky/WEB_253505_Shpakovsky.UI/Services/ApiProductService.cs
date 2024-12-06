@@ -3,6 +3,7 @@ using System.Text;
 using System.Text.Json;
 using WEB_253505_Shpakovsky.Domain.Entities;
 using WEB_253505_Shpakovsky.Domain.Models;
+using WEB_253505_Shpakovsky.UI.Services.Authentication;
 
 namespace WEB_253505_Shpakovsky.UI.Services;
 
@@ -12,7 +13,8 @@ public class ApiProductService : IMovieService
     private readonly JsonSerializerOptions _serializerOptions;
     private readonly ILogger<ApiProductService> _logger;
     private readonly IFileService _fileService;
-    public ApiProductService(HttpClient httpClient, ILogger<ApiProductService> logger, IFileService fileService)
+    private readonly ITokenAccessor _tokenAccessor;
+    public ApiProductService(HttpClient httpClient, ILogger<ApiProductService> logger, IFileService fileService, ITokenAccessor tokenAccessor)
     {
         _httpClient = httpClient;
         _serializerOptions = new JsonSerializerOptions
@@ -21,6 +23,7 @@ public class ApiProductService : IMovieService
         };
         _logger = logger;
         _fileService = fileService;
+        _tokenAccessor = tokenAccessor;
     }
 
     public async Task<ResponseData<ListModel<Movie>>> GetMovieListAsync(string? categoryNormalizedName, int pageNo = 1)
@@ -30,10 +33,10 @@ public class ApiProductService : IMovieService
             var url = new StringBuilder("Movies");
             if (!string.IsNullOrEmpty(categoryNormalizedName))
             {
-                url.Append($"/category/{categoryNormalizedName}");
+                url.Append($"/genre/{categoryNormalizedName}");
             }
             url.Append($"?pageNo={pageNo}");
-
+            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
             var response = await _httpClient.GetAsync(url.ToString());
             if (response.IsSuccessStatusCode)
             {
@@ -54,6 +57,7 @@ public class ApiProductService : IMovieService
     {
         try
         {
+            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
             var response = await _httpClient.GetAsync($"Movies/{id}");
             if (response.IsSuccessStatusCode)
             {
@@ -142,7 +146,7 @@ public class ApiProductService : IMovieService
 
                 product.MimeType = formFile.ContentType;
             }
-            
+            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
             var response = await _httpClient.PostAsJsonAsync("Movies", product);
 
             if (!response.IsSuccessStatusCode)

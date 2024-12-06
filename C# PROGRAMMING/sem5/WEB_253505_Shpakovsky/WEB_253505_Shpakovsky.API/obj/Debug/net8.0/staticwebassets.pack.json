@@ -1,14 +1,6 @@
 {
   "Files": [
     {
-      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/0ikznwxi.png",
-      "PackagePath": "staticwebassets/images/0ikznwxi.png"
-    },
-    {
-      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/4imdb4ib.png",
-      "PackagePath": "staticwebassets/images/4imdb4ib.png"
-    },
-    {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/dark_knight.jpg",
       "PackagePath": "staticwebassets/images/dark_knight.jpg"
     },
@@ -27,6 +19,18 @@
     {
       "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/matrix.jpg",
       "PackagePath": "staticwebassets/images/matrix.jpg"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/ple25pxy.png",
+      "PackagePath": "staticwebassets/images/ple25pxy.png"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/qnzsmfgr.png",
+      "PackagePath": "staticwebassets/images/qnzsmfgr.png"
+    },
+    {
+      "Id": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.API/wwwroot/images/tmsm2f2x.png",
+      "PackagePath": "staticwebassets/images/tmsm2f2x.png"
     },
     {
       "Id": "obj/Debug/net8.0/staticwebassets/msbuild.WEB_253505_Shpakovsky.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

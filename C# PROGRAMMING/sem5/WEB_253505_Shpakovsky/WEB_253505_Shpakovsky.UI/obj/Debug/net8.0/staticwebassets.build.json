@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "mhLZw6r9iDP4Gms4ClmVb2tgy2fFwkahJd5BvuZQRhk=",
+  "Hash": "8Kjtqslb/VoBVutUMc2FgfQOaL9eIOQZ50bqH32BB8k=",
   "Source": "WEB_253505_Shpakovsky.UI",
   "BasePath": "_content/WEB_253505_Shpakovsky.UI",
   "Mode": "Default",
@@ -197,8 +197,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fr7q2aak1r",
-      "Integrity": "y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=",
+      "Fingerprint": "w7n9qai6nj",
+      "Integrity": "zD8TvxW8Y6sw/VjnowQdV4C9iuazbcxeN0MEv2qeyw8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/js/site.js"
@@ -2716,51 +2716,6 @@
       ]
     },
     {
-      "Route": "js/site.fr7q2aak1r.js",
-      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "227"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Sep 2024 06:55:20 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fr7q2aak1r"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
-        }
-      ]
-    },
-    {
       "Route": "js/site.js",
       "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/js/site.js",
       "Selectors": [],
@@ -2771,7 +2726,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "227"
+          "Value": "708"
         },
         {
           "Name": "Content-Type",
@@ -2779,11 +2734,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM=\""
+          "Value": "\"zD8TvxW8Y6sw/VjnowQdV4C9iuazbcxeN0MEv2qeyw8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Sep 2024 06:55:20 GMT"
+          "Value": "Fri, 06 Dec 2024 16:31:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2793,7 +2748,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-y/Ngd8W21UpuCUhEqGbUKDEqFnNfTjAfb24GhJJGUyM="
+          "Value": "sha256-zD8TvxW8Y6sw/VjnowQdV4C9iuazbcxeN0MEv2qeyw8="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.w7n9qai6nj.js",
+      "AssetFile": "/Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI/wwwroot/js/site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "708"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zD8TvxW8Y6sw/VjnowQdV4C9iuazbcxeN0MEv2qeyw8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 06 Dec 2024 16:31:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "w7n9qai6nj"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zD8TvxW8Y6sw/VjnowQdV4C9iuazbcxeN0MEv2qeyw8="
         }
       ]
     },

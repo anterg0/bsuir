@@ -1,12 +1,15 @@
+using WEB_253505_Shpakovsky.UI.Services.Authentication;
+
 namespace WEB_253505_Shpakovsky.UI.Services;
 
 public class ApiFileService : IFileService
 {
     private readonly HttpClient _httpClient;
-
-    public ApiFileService(HttpClient httpClient)
+    private readonly ITokenAccessor _tokenAccessor;
+    public ApiFileService(HttpClient httpClient, ITokenAccessor tokenAccessor)
     {
         _httpClient = httpClient;
+        _tokenAccessor = tokenAccessor;
     }
 
     public async Task<string> SaveFileAsync(IFormFile formFile)
@@ -18,7 +21,7 @@ public class ApiFileService : IFileService
         {
             { new StreamContent(formFile.OpenReadStream()), "file", newName }
         };
-
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
         var response = await _httpClient.PostAsync("", content);
         response.EnsureSuccessStatusCode();
 
@@ -27,6 +30,7 @@ public class ApiFileService : IFileService
 
     public async Task DeleteFileAsync(string fileName)
     {
+        await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
         var response = await _httpClient.DeleteAsync($"?fileName={fileName}");
         response.EnsureSuccessStatusCode();
     }

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WEB_253505_Shpakovsky.API.Services;
 using WEB_253505_Shpakovsky.Domain.Entities;
@@ -39,6 +40,7 @@ namespace WEB_253505_Shpakovsky.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Policy = "admin")]
         public async Task<ActionResult<ResponseData<Movie>>> GetMovie(int id)
         {
             var result = await _movieService.GetMovieByIdAsync(id);
@@ -48,9 +50,10 @@ namespace WEB_253505_Shpakovsky.API.Controllers
             }
             return Ok(result);
         }
-
+    
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutMovie(int id, [FromForm] Movie movie, [FromForm] IFormFile? formFile)
+        [Authorize(Policy = "admin")]
+        public async Task<IActionResult> PutMovie(int id, [FromBody] Movie movie)
         {
             if (movie.Duration < 0)
             {
@@ -63,7 +66,7 @@ namespace WEB_253505_Shpakovsky.API.Controllers
             }
             try
             {
-                await _movieService.UpdateMovieAsync(id, movie, formFile);
+                await _movieService.UpdateMovieAsync(id, movie, null);
                 return NoContent();
             }
             catch (KeyNotFoundException ex)
@@ -77,6 +80,7 @@ namespace WEB_253505_Shpakovsky.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Policy = "admin")]
         public async Task<ActionResult<ResponseData<Movie>>> PostMovie([FromBody] Movie movie)
         {
             var result = await _movieService.CreateMovieAsync(movie, null);
@@ -88,6 +92,7 @@ namespace WEB_253505_Shpakovsky.API.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Policy = "admin")]
         public async Task<IActionResult> DeleteMovie(int id)
         {
             try
