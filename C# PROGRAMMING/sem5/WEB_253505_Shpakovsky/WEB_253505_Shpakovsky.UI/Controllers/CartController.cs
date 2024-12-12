@@ -33,7 +33,7 @@ namespace WEB_253505_Shpakovsky.UI.Controllers
             if (response.Successfull && response.Data != null)
             {
                 _cart.AddToCart(response.Data);
-                HttpContext.Session.Set("cart", _cart);
+                // HttpContext.Session.Set("cart", _cart);
             }
             return Redirect(returnUrl);
         }
@@ -44,7 +44,7 @@ namespace WEB_253505_Shpakovsky.UI.Controllers
         {
             _cart.RemoveItems(id);
 
-            HttpContext.Session.Set("cart", _cart);
+            // HttpContext.Session.Set("cart", _cart);
             return Redirect(returnUrl);
         }
 
@@ -52,7 +52,8 @@ namespace WEB_253505_Shpakovsky.UI.Controllers
         [Authorize]
         public ActionResult Clear(string returnUrl)
         {
-            HttpContext.Session.Set("cart", _cart);
+            _cart.ClearAll();
+            // HttpContext.Session.Set("cart", _cart);
             return Redirect(returnUrl);
         }
     }

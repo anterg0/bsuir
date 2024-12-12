@@ -1,5 +1,6 @@
 @{
-    var name = User.Claims.FirstOrDefault(c => c.Type.Equals("preferred_username", StringComparison.OrdinalIgnoreCase))?.Value;
+    var name = User.Claims.FirstOrDefault(c => c.Type.Equals("name", StringComparison.OrdinalIgnoreCase))?.Value;
+    var email = User.Claims.FirstOrDefault(c => c.Type.Equals("preferred_username", StringComparison.OrdinalIgnoreCase))?.Value;
     var avatar = User.Claims.FirstOrDefault(c => c.Type.Equals("avatar", StringComparison.OrdinalIgnoreCase))?.Value;
 }
 <div class="d-flex align-items-center">
@@ -8,14 +9,14 @@
         @await Component.InvokeAsync("Cart")
         <div class="dropdown ms-4 nav-color">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                @name
                 <img src="@avatar" width="20" class="rounded nav-color" />
+                @name
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                 <li>
                     <div class="dropdown-item" href="#">
                         <img src="@avatar" width="30" />
-                        @name
+                        @email
                     </div>
                 </li>
                 <li><hr class="dropdown-divider" /></li>

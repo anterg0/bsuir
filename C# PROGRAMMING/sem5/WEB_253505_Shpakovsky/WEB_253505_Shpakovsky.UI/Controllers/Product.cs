@@ -6,7 +6,7 @@ using WEB_253505_Shpakovsky.UI.Services;
 
 namespace WEB_253505_Shpakovsky.UI.Controllers
 {
-    [Route("menu")]
+    [Route("catalog")]
     public class ProductController : Controller
     {
         private readonly IMovieService _movieService;

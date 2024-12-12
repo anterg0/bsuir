@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using Serilog;
 using WEB_253505_Shpakovsky.Domain.Entities;
 using WEB_253505_Shpakovsky.UI;
 using WEB_253505_Shpakovsky.UI.Components;
@@ -28,7 +29,13 @@ builder.Services.AddRazorComponents();
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddSession();
 builder.Services.AddScoped<CartContainer, SessionCart>();
-builder.Services.AddScoped<CartViewComponent>();
+builder.Services.AddSerilog();
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(new ConfigurationBuilder()
+        .AddJsonFile("appsettings.json")
+        .Build())
+    .CreateLogger();
+// builder.Services.AddScoped<CartViewComponent>();
 var keycloakData =
     builder.Configuration.GetSection("Keycloak").Get<KeycloakData>();
 builder.Services
@@ -74,7 +81,7 @@ app.UseRouting();
 
 app.UseAuthentication();
 app.UseAuthorization();
-
+app.UseMiddleware<LoggingMiddleware>();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

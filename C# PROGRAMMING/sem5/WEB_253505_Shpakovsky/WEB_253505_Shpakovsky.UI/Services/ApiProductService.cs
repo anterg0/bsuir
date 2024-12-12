@@ -94,7 +94,7 @@ public class ApiProductService : IMovieService
                     product.Image = imageUrl; 
                 }
             }
-            
+            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
             var response = await _httpClient.PutAsJsonAsync($"Movies/{id}", product);
 
             if (!response.IsSuccessStatusCode)
@@ -118,6 +118,7 @@ public class ApiProductService : IMovieService
     {
         try
         {
+            await _tokenAccessor.SetAuthorizationHeaderAsync(_httpClient);
             var response = await _httpClient.DeleteAsync($"Movies/{id}");
             if (!response.IsSuccessStatusCode)
             {

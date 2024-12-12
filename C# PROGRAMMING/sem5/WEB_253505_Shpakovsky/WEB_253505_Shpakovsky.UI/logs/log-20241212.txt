@@ -1,0 +1,236 @@
+2024-12-12 03:14:57.210 +03:00 [INF] User profile is available. Using '/Users/anterg0/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-12 03:14:57.591 +03:00 [INF] Now listening on: https://localhost:7001
+2024-12-12 03:14:57.592 +03:00 [INF] Now listening on: http://localhost:5001
+2024-12-12 03:14:57.593 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-12 03:14:57.594 +03:00 [INF] Hosting environment: Development
+2024-12-12 03:14:57.594 +03:00 [INF] Content root path: /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI
+2024-12-12 03:15:12.080 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog - null null
+2024-12-12 03:15:12.133 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:12.150 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:12.164 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:12.173 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:12.175 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:12.430 +03:00 [INF] Received HTTP response headers after 253.479ms - 200
+2024-12-12 03:15:12.432 +03:00 [INF] End processing HTTP request after 261.7252ms - 200
+2024-12-12 03:15:12.474 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:12.474 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:12.768 +03:00 [INF] Received HTTP response headers after 293.9617ms - 200
+2024-12-12 03:15:12.768 +03:00 [INF] End processing HTTP request after 294.4577ms - 200
+2024-12-12 03:15:12.801 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 634.241ms.
+2024-12-12 03:15:12.812 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:15:12.973 +03:00 [INF] Executed ViewResult - view Index executed in 165.5542ms.
+2024-12-12 03:15:12.975 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 824.8212ms
+2024-12-12 03:15:12.975 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:12.980 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog - 200 null text/html; charset=utf-8 901.3957ms
+2024-12-12 03:15:14.099 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Admin - null null
+2024-12-12 03:15:14.104 +03:00 [INF] Executing endpoint '/Index'
+2024-12-12 03:15:14.109 +03:00 [INF] Route matched with {page = "/Index", area = "Admin", action = "", controller = ""}. Executing page /Index
+2024-12-12 03:15:14.124 +03:00 [INF] Executing handler method WEB_253505_Shpakovsky.UI.Areas.Admin.Pages.IndexModel.OnGetAsync - ModelState is "Valid"
+2024-12-12 03:15:14.125 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:14.125 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:14.139 +03:00 [INF] Received HTTP response headers after 13.0138ms - 200
+2024-12-12 03:15:14.139 +03:00 [INF] End processing HTTP request after 13.322ms - 200
+2024-12-12 03:15:14.140 +03:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-12-12 03:15:14.142 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-12-12 03:15:14.143 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-12-12 03:15:14.170 +03:00 [INF] Executed page /Index in 60.0102ms
+2024-12-12 03:15:14.170 +03:00 [INF] Executed endpoint '/Index'
+2024-12-12 03:15:14.171 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Admin - 200 null text/html; charset=utf-8 71.4906ms
+2024-12-12 03:15:15.108 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog - null null
+2024-12-12 03:15:15.111 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:15.111 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:15.113 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:15.114 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:15.114 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:15.122 +03:00 [INF] Received HTTP response headers after 7.6901ms - 200
+2024-12-12 03:15:15.122 +03:00 [INF] End processing HTTP request after 8.2951ms - 200
+2024-12-12 03:15:15.123 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:15.123 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:15.137 +03:00 [INF] Received HTTP response headers after 13.7307ms - 200
+2024-12-12 03:15:15.137 +03:00 [INF] End processing HTTP request after 14.378ms - 200
+2024-12-12 03:15:15.138 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 24.0577ms.
+2024-12-12 03:15:15.138 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:15:15.146 +03:00 [INF] Executed ViewResult - view Index executed in 7.6234ms.
+2024-12-12 03:15:15.147 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 35.2575ms
+2024-12-12 03:15:15.147 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:15.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog - 200 null text/html; charset=utf-8 39.1539ms
+2024-12-12 03:15:15.772 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/ - null null
+2024-12-12 03:15:15.773 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.HomeController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:15.775 +03:00 [INF] Route matched with {action = "Index", controller = "Home", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult Index() on controller WEB_253505_Shpakovsky.UI.Controllers.HomeController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:15.776 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.HomeController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:15.780 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.HomeController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 4.3732ms.
+2024-12-12 03:15:15.782 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:15:15.799 +03:00 [INF] Executed ViewResult - view Index executed in 18.5542ms.
+2024-12-12 03:15:15.800 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.HomeController.Index (WEB_253505_Shpakovsky.UI) in 24.2709ms
+2024-12-12 03:15:15.800 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.HomeController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:15.800 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/ - 200 null text/html; charset=utf-8 27.935ms
+2024-12-12 03:15:16.359 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Admin - null null
+2024-12-12 03:15:16.360 +03:00 [INF] Executing endpoint '/Index'
+2024-12-12 03:15:16.360 +03:00 [INF] Route matched with {page = "/Index", area = "Admin", action = "", controller = ""}. Executing page /Index
+2024-12-12 03:15:16.361 +03:00 [INF] Executing handler method WEB_253505_Shpakovsky.UI.Areas.Admin.Pages.IndexModel.OnGetAsync - ModelState is "Valid"
+2024-12-12 03:15:16.362 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:16.362 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:16.370 +03:00 [INF] Received HTTP response headers after 7.6492ms - 200
+2024-12-12 03:15:16.370 +03:00 [INF] End processing HTTP request after 8.3102ms - 200
+2024-12-12 03:15:16.371 +03:00 [INF] Executed handler method OnGetAsync, returned result .
+2024-12-12 03:15:16.371 +03:00 [INF] Executing an implicit handler method - ModelState is "Valid"
+2024-12-12 03:15:16.371 +03:00 [INF] Executed an implicit handler method, returned result Microsoft.AspNetCore.Mvc.RazorPages.PageResult.
+2024-12-12 03:15:16.376 +03:00 [INF] Executed page /Index in 15.4605ms
+2024-12-12 03:15:16.376 +03:00 [INF] Executed endpoint '/Index'
+2024-12-12 03:15:16.376 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Admin - 200 null text/html; charset=utf-8 17.5981ms
+2024-12-12 03:15:17.117 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog - null null
+2024-12-12 03:15:17.118 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:17.118 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:17.120 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:17.120 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:17.120 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:17.126 +03:00 [INF] Received HTTP response headers after 5.8196ms - 200
+2024-12-12 03:15:17.127 +03:00 [INF] End processing HTTP request after 6.324ms - 200
+2024-12-12 03:15:17.128 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:17.128 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:17.137 +03:00 [INF] Received HTTP response headers after 8.8907ms - 200
+2024-12-12 03:15:17.137 +03:00 [INF] End processing HTTP request after 9.4922ms - 200
+2024-12-12 03:15:17.138 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 17.7924ms.
+2024-12-12 03:15:17.138 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:15:17.140 +03:00 [INF] Executed ViewResult - view Index executed in 2.1825ms.
+2024-12-12 03:15:17.141 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 22.2504ms
+2024-12-12 03:15:17.141 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:17.141 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog - 200 null text/html; charset=utf-8 24.8033ms
+2024-12-12 03:15:18.753 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7001/Cart/Add - application/x-www-form-urlencoded 264
+2024-12-12 03:15:18.763 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.CartController.Add (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:18.772 +03:00 [INF] Route matched with {action = "Add", controller = "Cart", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] Add(Int32, System.String) on controller WEB_253505_Shpakovsky.UI.Controllers.CartController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:18.786 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.CartController.Add (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:18.788 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies/2
+2024-12-12 03:15:18.788 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies/2
+2024-12-12 03:15:18.802 +03:00 [INF] Received HTTP response headers after 13.6923ms - 401
+2024-12-12 03:15:18.802 +03:00 [INF] End processing HTTP request after 14.0392ms - 401
+2024-12-12 03:15:18.805 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.CartController.Add (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.RedirectResult in 19.0141ms.
+2024-12-12 03:15:18.806 +03:00 [INF] Executing RedirectResult, redirecting to /catalog?pageNo=1.
+2024-12-12 03:15:18.806 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.CartController.Add (WEB_253505_Shpakovsky.UI) in 33.885ms
+2024-12-12 03:15:18.806 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.CartController.Add (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:18.806 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7001/Cart/Add - 302 0 null 52.8823ms
+2024-12-12 03:15:18.814 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog?pageNo=1 - null null
+2024-12-12 03:15:18.816 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:18.816 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:18.820 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:18.820 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:18.820 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:18.823 +03:00 [INF] Received HTTP response headers after 2.989ms - 200
+2024-12-12 03:15:18.823 +03:00 [INF] End processing HTTP request after 3.2575ms - 200
+2024-12-12 03:15:18.823 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:18.823 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:18.828 +03:00 [INF] Received HTTP response headers after 4.0436ms - 200
+2024-12-12 03:15:18.828 +03:00 [INF] End processing HTTP request after 4.2871ms - 200
+2024-12-12 03:15:18.828 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 8.135ms.
+2024-12-12 03:15:18.828 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:15:18.830 +03:00 [INF] Executed ViewResult - view Index executed in 2.0685ms.
+2024-12-12 03:15:18.830 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 14.5698ms
+2024-12-12 03:15:18.831 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:18.831 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog?pageNo=1 - 200 null text/html; charset=utf-8 17.0602ms
+2024-12-12 03:15:20.556 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/Cart - null null
+2024-12-12 03:15:20.559 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.CartController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:20.560 +03:00 [INF] Route matched with {action = "Index", controller = "Cart", page = "", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller WEB_253505_Shpakovsky.UI.Controllers.CartController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:20.560 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.CartController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:20.561 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.CartController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 0.4773ms.
+2024-12-12 03:15:20.562 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:15:20.570 +03:00 [INF] Executed ViewResult - view Index executed in 8.7323ms.
+2024-12-12 03:15:20.570 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.CartController.Index (WEB_253505_Shpakovsky.UI) in 9.9508ms
+2024-12-12 03:15:20.570 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.CartController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:20.570 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/Cart - 200 null text/html; charset=utf-8 14.1554ms
+2024-12-12 03:15:21.581 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog - null null
+2024-12-12 03:15:21.583 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:21.583 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:15:21.584 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:15:21.584 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:21.584 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:15:21.592 +03:00 [INF] Received HTTP response headers after 7.8141ms - 200
+2024-12-12 03:15:21.592 +03:00 [INF] End processing HTTP request after 8.2415ms - 200
+2024-12-12 03:15:21.593 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:21.593 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:15:21.599 +03:00 [INF] Received HTTP response headers after 6.3023ms - 200
+2024-12-12 03:15:21.599 +03:00 [INF] End processing HTTP request after 6.7534ms - 200
+2024-12-12 03:15:21.600 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 16.1567ms.
+2024-12-12 03:15:21.600 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:15:21.603 +03:00 [INF] Executed ViewResult - view Index executed in 2.3718ms.
+2024-12-12 03:15:21.603 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 19.739ms
+2024-12-12 03:15:21.603 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:15:21.603 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog - 200 null text/html; charset=utf-8 21.7857ms
+2024-12-12 03:15:29.278 +03:00 [INF] Application is shutting down...
+2024-12-12 03:17:25.891 +03:00 [INF] User profile is available. Using '/Users/anterg0/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2024-12-12 03:17:26.379 +03:00 [INF] Now listening on: https://localhost:7001
+2024-12-12 03:17:26.379 +03:00 [INF] Now listening on: http://localhost:5001
+2024-12-12 03:17:26.381 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-12 03:17:26.382 +03:00 [INF] Hosting environment: Development
+2024-12-12 03:17:26.382 +03:00 [INF] Content root path: /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.UI
+2024-12-12 03:17:31.221 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog - null null
+2024-12-12 03:17:31.271 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:31.289 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:17:31.305 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:17:31.315 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:31.317 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:31.566 +03:00 [INF] Received HTTP response headers after 247.7995ms - 200
+2024-12-12 03:17:31.568 +03:00 [INF] End processing HTTP request after 256.8542ms - 200
+2024-12-12 03:17:31.611 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:17:31.612 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies?pageNo=1
+2024-12-12 03:17:31.915 +03:00 [INF] Received HTTP response headers after 302.8374ms - 200
+2024-12-12 03:17:31.915 +03:00 [INF] End processing HTTP request after 303.3925ms - 200
+2024-12-12 03:17:31.947 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 639.1176ms.
+2024-12-12 03:17:31.958 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:17:32.125 +03:00 [INF] Executed ViewResult - view Index executed in 167.669ms.
+2024-12-12 03:17:32.129 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 839.3083ms
+2024-12-12 03:17:32.130 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:32.147 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog - 200 null text/html; charset=utf-8 926.7072ms
+2024-12-12 03:17:33.575 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog/scifi - null null
+2024-12-12 03:17:33.582 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:33.582 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:17:33.586 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:17:33.587 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:33.587 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:33.600 +03:00 [INF] Received HTTP response headers after 12.9058ms - 200
+2024-12-12 03:17:33.600 +03:00 [INF] End processing HTTP request after 13.4121ms - 200
+2024-12-12 03:17:33.600 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies/genre/scifi?pageNo=1
+2024-12-12 03:17:33.600 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies/genre/scifi?pageNo=1
+2024-12-12 03:17:33.665 +03:00 [INF] Received HTTP response headers after 64.4161ms - 200
+2024-12-12 03:17:33.665 +03:00 [INF] End processing HTTP request after 64.7578ms - 200
+2024-12-12 03:17:33.666 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 79.3571ms.
+2024-12-12 03:17:33.666 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:17:33.670 +03:00 [INF] Executed ViewResult - view Index executed in 4.0497ms.
+2024-12-12 03:17:33.671 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 88.4039ms
+2024-12-12 03:17:33.671 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:33.672 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog/scifi - 200 null text/html; charset=utf-8 97.1787ms
+2024-12-12 03:17:37.060 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog/aosijdsad - null null
+2024-12-12 03:17:37.063 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:37.064 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:17:37.068 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:17:37.068 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:37.068 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:37.087 +03:00 [INF] Received HTTP response headers after 18.4858ms - 200
+2024-12-12 03:17:37.087 +03:00 [INF] End processing HTTP request after 19.3365ms - 200
+2024-12-12 03:17:37.088 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies/genre/aosijdsad?pageNo=1
+2024-12-12 03:17:37.088 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies/genre/aosijdsad?pageNo=1
+2024-12-12 03:17:37.115 +03:00 [INF] Received HTTP response headers after 27.0482ms - 400
+2024-12-12 03:17:37.116 +03:00 [INF] End processing HTTP request after 27.606ms - 400
+2024-12-12 03:17:37.118 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 50.1058ms.
+2024-12-12 03:17:37.124 +03:00 [INF] Executing NotFoundObjectResult, writing value of type 'System.String'.
+2024-12-12 03:17:37.125 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 60.5627ms
+2024-12-12 03:17:37.125 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:37.125 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog/aosijdsad - 404 null text/plain; charset=utf-8 65.3868ms
+2024-12-12 03:17:52.707 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7001/catalog/scifi - null null
+2024-12-12 03:17:52.712 +03:00 [INF] Executing endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:52.715 +03:00 [INF] Route matched with {action = "Index", controller = "Product", page = "", area = ""}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index(System.String, Int32) on controller WEB_253505_Shpakovsky.UI.Controllers.ProductController (WEB_253505_Shpakovsky.UI).
+2024-12-12 03:17:52.717 +03:00 [INF] Executing action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) - Validation state: "Valid"
+2024-12-12 03:17:52.717 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:52.717 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Genres
+2024-12-12 03:17:52.736 +03:00 [INF] Received HTTP response headers after 18.0661ms - 200
+2024-12-12 03:17:52.736 +03:00 [INF] End processing HTTP request after 18.6354ms - 200
+2024-12-12 03:17:52.737 +03:00 [INF] Start processing HTTP request GET http://localhost:7002/api/Movies/genre/scifi?pageNo=1
+2024-12-12 03:17:52.737 +03:00 [INF] Sending HTTP request GET http://localhost:7002/api/Movies/genre/scifi?pageNo=1
+2024-12-12 03:17:52.751 +03:00 [INF] Received HTTP response headers after 14.6482ms - 200
+2024-12-12 03:17:52.752 +03:00 [INF] End processing HTTP request after 15.0358ms - 200
+2024-12-12 03:17:52.752 +03:00 [INF] Executed action method WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI), returned result Microsoft.AspNetCore.Mvc.ViewResult in 35.2034ms.
+2024-12-12 03:17:52.753 +03:00 [INF] Executing ViewResult, running view Index.
+2024-12-12 03:17:52.759 +03:00 [INF] Executed ViewResult - view Index executed in 6.4657ms.
+2024-12-12 03:17:52.759 +03:00 [INF] Executed action WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI) in 44.4766ms
+2024-12-12 03:17:52.760 +03:00 [INF] Executed endpoint 'WEB_253505_Shpakovsky.UI.Controllers.ProductController.Index (WEB_253505_Shpakovsky.UI)'
+2024-12-12 03:17:52.762 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7001/catalog/scifi - 200 null text/html; charset=utf-8 55.2823ms
+2024-12-12 03:18:02.547 +03:00 [INF] Application is shutting down...

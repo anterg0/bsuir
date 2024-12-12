@@ -40,7 +40,7 @@ namespace WEB_253505_Shpakovsky.API.Controllers
         }
 
         [HttpGet("{id}")]
-        [Authorize(Policy = "admin")]
+        [Authorize]
         public async Task<ActionResult<ResponseData<Movie>>> GetMovie(int id)
         {
             var result = await _movieService.GetMovieByIdAsync(id);
