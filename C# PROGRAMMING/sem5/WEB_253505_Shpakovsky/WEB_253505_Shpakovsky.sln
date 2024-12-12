@@ -8,6 +8,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253505_Shpakovsky.API",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253505_Shpakovsky.Tests", "WEB_253505_Shpakovsky.Tests\WEB_253505_Shpakovsky.Tests.csproj", "{273DD497-41DE-4037-B1B8-65E70C42F655}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WEB_253505_Shpakovsky.Blazor.SSR", "WEB_253505_Shpakovsky.Blazor.SSR\WEB_253505_Shpakovsky.Blazor.SSR.csproj", "{3B7DBF28-A88C-4550-8766-4A80AE72AAD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +32,9 @@ Global
 		{273DD497-41DE-4037-B1B8-65E70C42F655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{273DD497-41DE-4037-B1B8-65E70C42F655}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{273DD497-41DE-4037-B1B8-65E70C42F655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B7DBF28-A88C-4550-8766-4A80AE72AAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B7DBF28-A88C-4550-8766-4A80AE72AAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B7DBF28-A88C-4550-8766-4A80AE72AAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B7DBF28-A88C-4550-8766-4A80AE72AAD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
