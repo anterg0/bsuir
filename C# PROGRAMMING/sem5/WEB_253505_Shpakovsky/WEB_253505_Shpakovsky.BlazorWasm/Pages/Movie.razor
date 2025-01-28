@@ -1,0 +1,24 @@
+@page "/movie"
+@attribute [Authorize]
+@inject IDataService DataService
+
+<PageTitle>Movies</PageTitle>
+
+<GenreLayout />
+<MovieLayout MovieSelected="OnMovieSelected" />
+<Pager />
+<MovieDetails SelectedMovie="SelectedMovie" />
+
+@code {
+    private WEB_253505_Shpakovsky.Domain.Entities.Movie? SelectedMovie { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await DataService.GetProductListAsync();
+    }
+
+    private void OnMovieSelected(int id)
+    {
+        SelectedMovie = DataService.Movies.FirstOrDefault(d => d.ID == id);
+    }
+}

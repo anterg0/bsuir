@@ -1,0 +1,85 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = browser
+build_property.RootNamespace = WEB_253505_Shpakovsky.BlazorWasm
+build_property.RootNamespace = WEB_253505_Shpakovsky.BlazorWasm
+build_property.ProjectDir = /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = false
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/anterg0/Documents/bsuir/C# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/GenreLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L0dlbnJlTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/LoginDisplay.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L0xvZ2luRGlzcGxheS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/MovieDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01vdmllRGV0YWlscy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/MovieLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01vdmllTGF5b3V0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/Pager.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L1BhZ2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/RedirectToLogin.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L1JlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Pages/Authentication.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQXV0aGVudGljYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Pages/Movie.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTW92aWUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Pages/Weather.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvV2VhdGhlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qgin1r7evg
+
+[/Users/anterg0/Documents/bsuir/C\# PROGRAMMING/sem5/WEB_253505_Shpakovsky/WEB_253505_Shpakovsky.BlazorWasm/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = TGF5b3V0L05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-gnm5g9igeu

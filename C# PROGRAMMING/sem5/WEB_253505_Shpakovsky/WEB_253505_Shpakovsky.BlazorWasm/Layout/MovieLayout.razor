@@ -1,0 +1,61 @@
+@inject IDataService DataService
+@implements IDisposable
+
+
+@if (DataService.Movies == null || !DataService.Success)
+{
+    <p><em>Loading...</em></p>
+    @if (!string.IsNullOrEmpty(DataService.ErrorMessage))
+    {
+        <p><strong>Error:</strong> @DataService.ErrorMessage</p>
+    }
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Действие</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var movie in DataService.Movies)
+        {
+            <tr>
+                <td>@movie.Name</td>
+                <td>@movie.Description</td>
+                <td>
+                    <button class="btn btn-primary" @onclick="() => SelectMovie(movie.ID)">
+                        <i class="bi bi-search"></i> Подробнее
+                    </button>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@code {
+    [Parameter]
+    public EventCallback<int> MovieSelected { get; set; }
+
+    private async Task SelectMovie(int id)
+    {
+        if (MovieSelected.HasDelegate)
+        {
+            await MovieSelected.InvokeAsync(id);
+        }
+    }
+
+    protected override void OnInitialized()
+    {
+        DataService.DataLoaded += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        DataService.DataLoaded -= StateHasChanged;
+    }
+}

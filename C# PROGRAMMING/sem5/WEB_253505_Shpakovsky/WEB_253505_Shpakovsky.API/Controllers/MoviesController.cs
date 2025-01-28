@@ -18,6 +18,7 @@ namespace WEB_253505_Shpakovsky.API.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult<ResponseData<ListModel<Movie>>>> GetAllMovies(int pageNo = 1)
         {
             var result = await _movieService.GetMovieListAsync(null, pageNo); // null для всех категорий

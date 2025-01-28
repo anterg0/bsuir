@@ -24,6 +24,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.Audience = "account";
         options.RequireHttpsMetadata = false;
     });
+builder.Services.AddCors(opt => opt.AddPolicy("WasmClient",
+    policy => policy.WithOrigins("https://localhost:7012").AllowAnyMethod().AllowAnyHeader()));
 
 builder.Services.AddAuthorization(options =>
 {
@@ -46,6 +48,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseCors("WasmClient");
 
 app.UseStaticFiles();
 app.UseAuthentication();

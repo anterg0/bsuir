@@ -1,0 +1,17 @@
+@page "/MovieDetails"
+
+<div class="card" style="width: 18rem;">
+    @if (SelectedMovie != null)
+    {
+        <img src="@SelectedMovie.Image" class="card-img-top" alt="@SelectedMovie.Name">
+        <div class="card-body">
+            <h5 class="card-title">@SelectedMovie.Name</h5>
+            <p class="card-text">@SelectedMovie.Description</p>
+            <span class="badge bg-secondary">@SelectedMovie.Duration минут</span>
+        </div>
+    }
+</div>
+@code {
+    [Parameter]
+    public Movie? SelectedMovie { get; set; }
+}

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="../build/WEB_253505_Shpakovsky.Blazor.SSR.props" />
-</Project>
